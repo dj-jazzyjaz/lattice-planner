@@ -127,8 +127,9 @@ for angleind = 1:numberofangles
     for primind = 1:numberofprimsperangle
         
         if (formatted_print == 1)
-            fprintf(fout, 'primID: %d\n', primind-1);
-            fprintf(fout, 'startangle_c: %d\n', angleind-1);
+            fprintf(fout, '\n');
+            fprintf(fout, 'MP mp%d = MP(%d, \n', primind-1, primind-1);
+            fprintf(fout, ' %d, \n', angleind-1);
         else 
             fprintf(fout, 'primID: %d\n', primind-1);
             fprintf(fout, 'startangle_c: %d\n', angleind-1);
