@@ -39,7 +39,7 @@ function[] = genmprim_unicycle(outfilename)
 
 UNICYCLE_MPRIM_16DEGS = 1;
 
-formatted_print = 1;
+formatted_print = 1; % for making C++ MP class
 
 
 if UNICYCLE_MPRIM_16DEGS == 1
@@ -128,8 +128,8 @@ for angleind = 1:numberofangles
         
         if (formatted_print == 1)
             fprintf(fout, '\n');
-            fprintf(fout, 'MP mp%d = MP(%d, \n', primind-1, primind-1);
-            fprintf(fout, ' %d, \n', angleind-1);
+            fprintf(fout, 'MP mp%d = MP(\n  %d, \n', (angleind-1)*(numberofprimsperangle)+primind-1, primind-1);
+            fprintf(fout, '  %d, \n', angleind-1);
         else 
             fprintf(fout, 'primID: %d\n', primind-1);
             fprintf(fout, 'startangle_c: %d\n', angleind-1);
@@ -268,19 +268,33 @@ for angleind = 1:numberofangles
         end;
     
         %write out
-        fprintf(fout, 'endpose_c: %d %d %d\n', endpose_c(1), endpose_c(2), endpose_c(3));
-        fprintf(fout, 'additionalactioncostmult: %d\n', additionalactioncostmult);
-        fprintf(fout, 'intermediateposes: %d\n', size(intermcells_m,1));
-        for interind = 1:size(intermcells_m, 1)
-            fprintf(fout, '%.4f %.4f %.4f\n', intermcells_m(interind,1), intermcells_m(interind,2), intermcells_m(interind,3));
-        end;
         
+        if (formatted_print == 1)
+            fprintf(fout, '  Vec3( %d, %d, %d ), \n', endpose_c(1), endpose_c(2), endpose_c(3));
+            fprintf(fout, '  %d, \n', additionalactioncostmult);
+            fprintf(fout, '  { \n');
+            for interind = 1:size(intermcells_m, 1)
+                fprintf(fout, '    Vec3( %.4f, %.4f, %.4f )', intermcells_m(interind,1), intermcells_m(interind,2), intermcells_m(interind,3));
+                if(interind ~= size(intermcells_m, 1)) 
+                    fprintf(fout, ', \n');
+                end
+            end
+            fprintf(fout, '\n  } \n);\n');
+            fprintf(fout, 'mprims.push_back(mp%d);\n',(angleind-1)*(numberofprimsperangle)+primind-1); 
+        else 
+            fprintf(fout, 'endpose_c: %d %d %d\n', endpose_c(1), endpose_c(2), endpose_c(3));
+            fprintf(fout, 'additionalactioncostmult: %d\n', additionalactioncostmult);
+            fprintf(fout, 'intermediateposes: %d\n', size(intermcells_m,1));
+            for interind = 1:size(intermcells_m, 1)
+                fprintf(fout, '%.4f %.4f %.4f\n', intermcells_m(interind,1), intermcells_m(interind,2), intermcells_m(interind,3));
+            end
+        end
         plot(intermcells_m(:,1), intermcells_m(:,2));
         axis([-0.3 0.3 -0.3 0.3]);
         text(intermcells_m(numofsamples,1), intermcells_m(numofsamples,2), int2str(endpose_c(3)));
         hold on;
         
-    end;
+    end
     grid;
     pause;
 end;

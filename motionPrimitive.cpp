@@ -33,16 +33,6 @@ public:
 };
 
 int main() {
-    
-    MP mp = MP(0, 
-       0, 
-       Vec3(1, 2, 3),
-       1,
-       {Vec3(4, 5, 6), Vec3(7, 8, 9)}
-    );
-
-    cout << "x = " << mp.intermediate_poses.front().x << endl;
-    cout.flush();
 
     return 0;
 }
