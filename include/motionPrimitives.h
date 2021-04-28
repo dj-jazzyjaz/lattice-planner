@@ -1,8 +1,8 @@
+#pragma once
 #include <iostream>
 #include <vector>
 
 using namespace std;
-
 
 class Vec3 {
 public:
@@ -27,12 +27,13 @@ public:
     MP(){}
     MP(int ID, int startangle_c, Vec3 endpose, int cost_mult, vector<Vec3> intermediate_poses):
         ID(ID),  startangle_c(startangle_c), endpose(endpose), cost_mult(cost_mult), intermediate_poses(intermediate_poses) 
-    {
-        
-    }
+    {}
 };
 
-int main() {
+vector<MP> MPrims();
 
-    return 0;
-}
+
+
+
+
+

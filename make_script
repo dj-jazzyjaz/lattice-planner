@@ -1,0 +1,1 @@
+g++ src/planner.cpp src/motionPrimitives.cpp -o lattice-planner

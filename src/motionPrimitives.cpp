@@ -1,35 +1,8 @@
 #include <iostream>
 #include <vector>
+#include "../include/motionPrimitives.h"
 
 using namespace std;
-
-class Vec3 {
-public:
-    float x, y, theta;
-    Vec3(){}
-    Vec3(float x, float y, float theta){
-        this->x = x;
-        this->y = y;
-        this->theta = theta;
-    }
-};
-
-
-class MP {
-public:
-    int ID;
-    int startangle_c;
-    Vec3 endpose;
-    int cost_mult;
-    vector<Vec3> intermediate_poses;
-
-    MP(){}
-    MP(int ID, int startangle_c, Vec3 endpose, int cost_mult, vector<Vec3> intermediate_poses):
-        ID(ID),  startangle_c(startangle_c), endpose(endpose), cost_mult(cost_mult), intermediate_poses(intermediate_poses) 
-    {
-        
-    }
-};
 
 vector<MP> MPrims() { // copy and paste from MATLAB file here
 	vector<MP> mprims;
@@ -1318,18 +1291,6 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 
 	return mprims;
 };
-
-
-int main() {
-    
-	vector<MP> mprims = MPrims();
-
-	// for (auto i = mprims.begin(); i != mprims.end(); i++) {
- //          cout << "x = "  << (*i).intermediate_poses.front().theta << '\n';
- //    }
-    return 0;
-};
-
 
 
 

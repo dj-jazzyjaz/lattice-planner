@@ -8,16 +8,15 @@
 #include <tuple>
 #include <unordered_map>
 #include <unordered_set>
-#include <mex.h>
 #include <time.h>
-
-//access to the map is shifted to account for 0-based indexing in the map, whereas
-//1-based indexing in matlab (so, robotpose and goalpose are 1-indexed)
-#define GETMAPINDEX(X, Y, XSIZE, YSIZE) ((Y - 1) * XSIZE + (X - 1))
-
-#define NUMOFDIRS 8
+#include <functional>
+#include <memory>
+#include "map.h"
 
 using namespace std;
+class State;
+typedef shared_ptr<State> StatePtr;
+
 class StateCompare
 {
 public:
@@ -37,9 +36,10 @@ public:
     double g;    // Current cost
     double h;    // Heurstic
     double f;    // Cost
-    shared_ptr<State>prev; // Back pointer to previous state
+    StatePtr prev; // Back pointer to previous state
+    int mp_id; // ID of motion primitive that leads to this state
 
-    State(int x, int y, int t, double g, double h, shared_ptr<State>prev)
+    State(int x, int y, int t, double g, double h, shared_ptr<State>prev, int mp_id)
     {
         this->x = x;
         this->y = y;
@@ -48,6 +48,7 @@ public:
         this->h = h;
         this->f = g + h;
         this->prev = prev;
+        this->mp_id = mp_id;
     }
 
     State() {}
@@ -76,7 +77,9 @@ inline void hash_combine(std::size_t &seed, const T &v)
     seed ^= hasher(v) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
 }
 
-/* DATA STRUCTURE FOR HMAP
+/* DATA STRUCTURE FOR COORD (x, y)
+Hashes a state based on x, y. Therefore, two states with different theta but same
+x, y will be hashed to the same value.
 */
 typedef std::tuple<int, int> Coord;
 
@@ -104,6 +107,7 @@ struct coordEqual_to : std::binary_function<Coord, Coord, bool>
 typedef unordered_map<Coord, int, coordHash, coordEqual_to> gridMap;
 
 /* DATA STRUCTURE FOR STATES (X, Y, T)
+Hashes a state based on x, y, theta
 */
 struct stateHash : std::unary_function<shared_ptr<State>, std::size_t>
 {
@@ -150,10 +154,7 @@ struct stateXYEqual_to : std::binary_function<shared_ptr<State>, shared_ptr<Stat
 typedef unordered_set<shared_ptr<State>, stateHash, stateEqual_to> stateSet;
 typedef unordered_set<shared_ptr<State>, stateXYHash, stateXYEqual_to> stateXYSet;
 
-bool inline checkInDims(int x, int y, int size_x, int size_y)
-{
-    return x > 0 && y > 0 && x <= size_x && y <= size_y;
-}
+
 
 static void printQueue(priority_queue<shared_ptr<State>, std::vector<shared_ptr<State>>, StateCompare> pq)
 {
@@ -173,34 +174,22 @@ static void printQueue(priority_queue<shared_ptr<State>, std::vector<shared_ptr<
     }
 }
 
-static void heuristic2D(
-    double *map,
-    int collision_thresh,
-    int x_size,
-    int y_size,
-    int target_steps,
-    double *target_traj,
-    gridMap *gMap
 
+// TODO: We can create a 2D heurstic with A* on (x, y) to use for 3D (x, y, t)
+static void heuristic2D(
+    Map* map,
+    int poseX,
+    int poseY,
+    gridMap *gMap
 )
 {
-    cout << "heuristic 2d" << endl;
-    //8-connected grid
-    int dX[NUMOFDIRS] = {-1, -1, -1, 0, 0, 1, 1, 1};
-    int dY[NUMOFDIRS] = {-1, 0, 1, -1, 1, -1, 0, 1};
-
+    /*cout << "heuristic 2d" << endl;
     // Priority Queue
     priority_queue<shared_ptr<State>, std::vector<shared_ptr<State>>, StateCompare> pq;
 
     // Initialize with all states
-    int poseX, poseY;
-    for (int i = 0; i < target_steps; i++)
-    {
-        poseX = (int)target_traj[i];
-        poseY = (int)target_traj[i + target_steps];
-        shared_ptr<State> init_state = make_shared<State>(poseX, poseY, 0, 0, 0, nullptr);
-        pq.push(init_state);
-    }
+    StatePtr init_state = make_shared<State>(poseX, poseY, 0, 0, 0, nullptr, -1);
+    pq.push(init_state);
 
     while (!pq.empty())
     {
@@ -236,5 +225,5 @@ static void heuristic2D(
         }
         // Mark state as closed
         gMap->insert(make_pair<Coord, int>(Coord(state->x, state->y), (int)state->g));
-    }
+    }*/
 }
