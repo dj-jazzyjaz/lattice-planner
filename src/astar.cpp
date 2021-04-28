@@ -32,7 +32,7 @@ bool astar(
     bool found_goal = false;
     StatePtr found_goal_state;
     int c = 0;
-    int c_limit = 20000000; // Time out after ~20 seconds
+    int c_limit = 100; // Time out after ~20 seconds
 
     // Start search
     while (!pq.empty() && !found_goal && c < c_limit)
@@ -41,7 +41,7 @@ bool astar(
         // Pop state
         StatePtr state = pq.top();
         pq.pop();
-
+        printf("Searching:"); state->print();
         // Check if goalPose
         if (state->x == goalNode->x && state->y == goalNode->y && state->t == goalNode->t)
         {
@@ -49,30 +49,29 @@ bool astar(
             found_goal_state = state;
             break;
         }
-
         // Skip if state has alread been searched
         bool isClosed = closed.find(state) != closed.end();
         if (isClosed){
             continue;
         }
-        
+
         for (auto mp : mprims)
         {
             // Add neighbor if the MP start_angle is equal to current state's angle
             if(mp.startangle_c == state->t) {
                  // TODO: I don't think this is the right way to make new states:
-                int newx = state->x + mp.x;
-                int newy = state->y + mp.y;
-                int newth = mp.endpose;
+                int newx = state->x + mp.endpose.x;
+                int newy = state->y + mp.endpose.y;
+                int newth = mp.endpose.theta;
                 if (map->isFree(newx, newy))
                 {
                     double g = state->g;
                     double h = 0; // TODO: create heuristic
-                    StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state);
+                    StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state, mp.ID);
+                    printf("New state:"); new_s->print();
                     pq.push(new_s);         
                 }
-            }
-            
+            }   
         }
         // Mark state as closed
         closed.insert(state);
@@ -82,12 +81,11 @@ bool astar(
     {
         cout << "Failed to find goal" << endl;
         cout << "PQ Size " << pq.size() << " c" << c << endl;
-        return;
+        return false;
     }
 
     // Construct list using backpointers
-    vector<shared_ptr<State>> path;
-    shared_ptr<State>curr = found_goal_state;
+    StatePtr curr = found_goal_state;
     c = 0; // Prevent timeout.
     while (curr->prev != nullptr && c < c_limit)
     {
@@ -100,10 +98,10 @@ bool astar(
 
     // Print Path
     cout << "Start";
-    init_state->print();
     for (int i = 0; i < path.size(); i++)
     {
         path[i]->print();
     }
     cout << "Path length: " << path.size() << endl;
+    return true;
 }
