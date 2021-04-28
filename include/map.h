@@ -15,13 +15,17 @@ public:
     Map(string fileName) {
         string line;
         std::ifstream inFile;
-        inFile.open("map0.txt");
+        inFile.open(fileName);
+        if(inFile.bad() || !inFile.is_open()) {
+            cerr << "Bad open" << endl;
+            return;
+        }
         inFile.ignore();
+        getline(inFile, line);
         inFile >> width;
         inFile.ignore();
         inFile >> height;
         
-        cout << "w, h" << width << " " << height << endl;
         getline(inFile, line);
         inFile.ignore();
         map_data = new int[width*height];
@@ -35,7 +39,7 @@ public:
         }
     }
 
-    int getValue(int x, int y) {
+    int getValue(int x, int y) const  {
         if(!inDims(x, y)) {
             cerr << "Not within dims" << endl;
             return 0;
@@ -45,12 +49,22 @@ public:
         }
     }
 
-    bool isFree(int x, int y) {
+    bool isFree(int x, int y) const {
         // Returns true is (x, y) is within the map and free space
         return inDims(x, y) && map_data[x + y*width] <= obstacle_threshold;
     }
 
-    bool inDims(int x, int y) {
-        return x > 0 && y > 0 && x <= width && y <= height;
+    bool inDims(int x, int y) const {
+        return x >= 0 && y >= 0 && x < width && y < height;
+    }
+
+    void printMap() {
+        printf("*** Printing map of size %d by %d *** \n", height, width);
+        for(int r = 0; r < height; r++) {
+            for(int c = 0; c < width; c++) {
+                printf("%d ", getValue(c, r));
+            }
+            printf("\n");
+        }
     }
 };

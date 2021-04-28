@@ -1,1 +1,1 @@
-g++ src/planner.cpp src/motionPrimitives.cpp -o lattice-planner
+g++ src/planner.cpp src/motionPrimitives.cpp src/astar.cpp -std=c++11 -o lattice-planner
