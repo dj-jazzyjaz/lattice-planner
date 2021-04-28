@@ -39,7 +39,7 @@ function[] = genmprim_unicycle(outfilename)
 
 UNICYCLE_MPRIM_16DEGS = 1;
 
-formatted_print = 1; % for making C++ MP class
+formatted_print = 0; % for making C++ MP class
 
 
 if UNICYCLE_MPRIM_16DEGS == 1
@@ -131,8 +131,8 @@ for angleind = 1:numberofangles
             fprintf(fout, 'MP mp%d = MP(\n  %d, \n', (angleind-1)*(numberofprimsperangle)+primind-1, primind-1);
             fprintf(fout, '  %d, \n', angleind-1);
         else 
-            fprintf(fout, 'primID: %d\n', primind-1);
-            fprintf(fout, 'startangle_c: %d\n', angleind-1);
+%             fprintf(fout, 'primID: %d\n', primind-1);
+%             fprintf(fout, 'startangle_c: %d\n', angleind-1);
         end
 
         %current angle
@@ -282,12 +282,14 @@ for angleind = 1:numberofangles
             fprintf(fout, '\n  } \n);\n');
             fprintf(fout, 'mprims.push_back(mp%d);\n',(angleind-1)*(numberofprimsperangle)+primind-1); 
         else 
-            fprintf(fout, 'endpose_c: %d %d %d\n', endpose_c(1), endpose_c(2), endpose_c(3));
-            fprintf(fout, 'additionalactioncostmult: %d\n', additionalactioncostmult);
-            fprintf(fout, 'intermediateposes: %d\n', size(intermcells_m,1));
+%             fprintf(fout, 'endpose_c: %d %d %d\n', endpose_c(1), endpose_c(2), endpose_c(3));
+%             fprintf(fout, 'additionalactioncostmult: %d\n', additionalactioncostmult);
+%             fprintf(fout, 'intermediateposes: %d\n', size(intermcells_m,1));
+            fprintf(fout, '[ \n');
             for interind = 1:size(intermcells_m, 1)
-                fprintf(fout, '%.4f %.4f %.4f\n', intermcells_m(interind,1), intermcells_m(interind,2), intermcells_m(interind,3));
+                fprintf(fout, '[%.4f %.4f %.4f]; \n', intermcells_m(interind,1), intermcells_m(interind,2), intermcells_m(interind,3));
             end
+            fprintf(fout, ']; \n');
         end
         plot(intermcells_m(:,1), intermcells_m(:,2));
         axis([-0.3 0.3 -0.3 0.3]);

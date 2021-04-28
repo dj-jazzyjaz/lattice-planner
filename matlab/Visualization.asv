@@ -1,0 +1,29 @@
+close all;
+plan = [[ 0 0 0 1]; [8 0 0 3]];
+drone_shape = [[0, 0]; [1, 0]; [0.5, 2]];
+
+Visualize(plan, drone_shape)
+
+function[] = Visualize(plan, drone_shape)
+      
+    plan_size = size(plan, 1);
+    
+    figure();
+    hold on;
+    xlim([-10, 10]);
+    ylim([-10,  10]);
+    
+    for i=1:plan_size
+        %draw drone
+        th = plan(i, 3) *2*pi/16 -pi/2;
+        Xs = drone_shape(:,1)*cos(th) - drone_shape(:,2)*sin(th) + plan(i, 1);
+        Ys = drone_shape(:,1)*sin(th) + drone_shape(:,2)*cos(th) + plan(i, 2);
+        plot(polyshape(Xs, Ys), 'FaceColor','red');
+        
+        %draw primitive
+        prim_num = ;
+        
+             
+    end
+
+end
