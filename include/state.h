@@ -68,6 +68,10 @@ public:
     {
         cout << "(" << this->x << "," << this->y << ") t=" << this->t << " g=" << this->g << " h=" << this->h << " f=" << this->f << endl;
     }
+
+    void printShort() {
+        cout << "(" << this->x << ", " << this->y << ", " << this->t << ", " << this->mp_id << ")" << endl;
+    }
 };
 
 template <class T>

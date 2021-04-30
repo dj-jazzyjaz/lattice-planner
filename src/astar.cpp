@@ -32,7 +32,7 @@ bool astar(
     bool found_goal = false;
     StatePtr found_goal_state;
     int c = 0;
-    int c_limit = 100; // Time out after ~20 seconds
+    int c_limit = 10000; // Time out after ~20 seconds
 
     // Start search
     while (!pq.empty() && !found_goal && c < c_limit)
@@ -65,10 +65,10 @@ bool astar(
                 int newth = mp.endpose.theta;
                 if (map->isFree(newx, newy))
                 {
-                    double g = state->g;
-                    double h = 0; // TODO: create heuristic
+                    double g = state->g + 1;
+                    double h = sqrt((newx - goalNode->x) * (newx - goalNode->x) + (newy - goalNode->y) * (newy - goalNode->y)); // TODO: create heuristic
                     StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state, mp.ID);
-                    printf("New state:"); new_s->print();
+                    // printf("New state:"); new_s->print();
                     pq.push(new_s);         
                 }
             }   
@@ -97,10 +97,10 @@ bool astar(
     reverse(path.begin(), path.end());
 
     // Print Path
-    cout << "Start";
-    for (int i = 0; i < path.size(); i++)
+    cout << "Start" << endl;;
+    for (int i = 0; i < path.size()-1; i++)
     {
-        path[i]->print();
+        cout << path[i]->x << " " << path[i]->x << " " << path[i]->x << " " << path[i+1]->mp_id << endl;
     }
     cout << "Path length: " << path.size() << endl;
     return true;

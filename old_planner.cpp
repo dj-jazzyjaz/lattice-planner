@@ -332,5 +332,9 @@ void mexFunction(int nlhs, mxArray *plhs[],
     /* Do the actual planning in a subroutine */
     planner(map, collision_thresh, x_size, y_size, robotposeX, robotposeY, target_steps, targettrajV, targetposeX, targetposeY, curr_time, &action_ptr[0]);
     // printf("DONE PLANNING!\n");
+
+    // Write to an output file
+
+    // Need matlab script that takes in a list of (state, motion primitive) and visualizes them. 
     return;
 }
