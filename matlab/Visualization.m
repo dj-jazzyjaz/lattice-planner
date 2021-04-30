@@ -31,7 +31,9 @@ function[] = Visualize(plan, drone_shape)
         plot(polyshape(Xs, Ys), 'FaceColor','red');
         
         %draw primitive
-        prim_num = plan(i, 3)*num_prims_per_angle + plan(i, 4);
+        plan(i, 3)
+        prim_num = mod(plan(i, 3),num_prims_per_angle)*num_prims_per_angle + plan(i, 4)
+        prim_num*num_intermediates+1
         Inter_pts = Intermediate_Pts(prim_num*num_intermediates+1:(prim_num+1)*num_intermediates, :);
         plot(Inter_pts(:, 1)+plan(i, 1)*resolution, Inter_pts(:, 2)+plan(i, 2)*resolution, ':', 'linewidth', 2);
         
