@@ -64,6 +64,8 @@ public:
         return this->f < s2.f;
     }
 
+    
+
     void print()
     {
         cout << "(" << this->x << "," << this->y << ") t=" << this->t << " g=" << this->g << " h=" << this->h << " f=" << this->f << endl;
