@@ -9,21 +9,22 @@
 using namespace std;
 
 int main() {
-    Map map("maps/map5.txt");
-    map.printMap();
+    string output_filename = "matlab/plan.txt";
+    Map map("maps/map7.txt");
+    // map.printMap();
     vector<MP> mprims = MPrims();
     int startX = 0;
     int startY = 0;
     int startTh = 0;
-    int goalX = 99;
+    int goalX = 59;
     int goalY = 99;
-    int goalTh = 0; 
+    int goalTh = 7; 
     StatePtr initState = make_shared<State>(startX, startY, startTh, 0, 0, nullptr, -1);
     StatePtr goalState = make_shared<State>(goalX, goalY, goalTh, 0, 0, nullptr, -1);
     vector<StatePtr> path;
     
     // Do planning
-    astar(initState, goalState, path, mprims, &map);
+    astar(initState, goalState, path, mprims, &map, output_filename);
 
     /* Write to output file:
     List of (state, action) tuples, where 

@@ -9,6 +9,17 @@
 #include <vector>
 #include <queue>
 
+double computeH(int x1, int y1, int th1, const StatePtr s2, int num_Angle_Discretizations) 
+{
+    double dist = hypot(x1- s2->x, y1 - s2->y);
+
+    double s = abs(th1 - s2->t);
+    double angleDiff = min(s, num_Angle_Discretizations - s);
+
+    double angleScale = dist == 0 ? 10 : (10/dist);
+    // printf("Dist = %.2f, Angle Scale = %.2f, s = %.2f, h=%.2f\n", dist, angleScale, s, dist+angleScale*s);
+    return dist + angleScale * s;
+}
 
 // Set the parent of each node to be previous in a path from start->goal
 bool astar(
@@ -16,14 +27,20 @@ bool astar(
   StatePtr goalNode,
   vector<StatePtr>& path,
   const vector<MP>& mprims,
-  const Map* map)
+  const Map* map,
+  string output_filename)
 {
+    if(!map->isFree(goalNode->x, goalNode->y)) {
+        cerr << "Goal post is obstacle" << endl;
+        return false;
+    }
     path.clear();
 
     // Priority Queue
     priority_queue<shared_ptr<State>, std::vector<shared_ptr<State>>, StateCompare> pq;
 
     // Add initial state to PQ
+    startNode->h = INFINITY;
     pq.push(startNode);
 
     // Closed Set
@@ -31,8 +48,9 @@ bool astar(
 
     bool found_goal = false;
     StatePtr found_goal_state;
+    StatePtr closest_goal_state = startNode;
     int c = 0;
-    int c_limit = 10000; // Time out after ~20 seconds
+    int c_limit = 50000; // Time out after ~20 seconds
 
     // Start search
     while (!pq.empty() && !found_goal && c < c_limit)
@@ -41,7 +59,9 @@ bool astar(
         // Pop state
         StatePtr state = pq.top();
         pq.pop();
-        printf("Searching:"); state->print();
+        if(c % 100 == 0) {
+            printf("Searching iter %d:", c); state->print();
+        } 
         // Check if goalPose
         if (state->x == goalNode->x && state->y == goalNode->y && state->t == goalNode->t)
         {
@@ -49,6 +69,7 @@ bool astar(
             found_goal_state = state;
             break;
         }
+        if (state->h < closest_goal_state->h) closest_goal_state = state;
         // Skip if state has alread been searched
         bool isClosed = closed.find(state) != closed.end();
         if (isClosed){
@@ -65,8 +86,8 @@ bool astar(
                 int newth = mp.endpose.theta;
                 if (map->isFree(newx, newy))
                 {
-                    double g = state->g + 1;
-                    double h = sqrt((newx - goalNode->x) * (newx - goalNode->x) + (newy - goalNode->y) * (newy - goalNode->y)); // TODO: create heuristic
+                    double g = state->g + mp.cost_mult;
+                    double h = computeH(newx, newy, newth, goalNode, 16); // TODO: fix angle disc
                     StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state, mp.ID);
                     // printf("New state:"); new_s->print();
                     pq.push(new_s);         
@@ -77,15 +98,19 @@ bool astar(
         closed.insert(state);
     }
 
+    StatePtr curr;
     if (!found_goal)
     {
         cout << "Failed to find goal" << endl;
         cout << "PQ Size " << pq.size() << " c" << c << endl;
-        return false;
+        //cout << "Best h " << closest_goal_state->h << endl;
+        printf("Best state: (%d, %d, %d) h=%.2f\n", closest_goal_state->x, closest_goal_state->y, closest_goal_state->t, closest_goal_state->h);
+        curr = closest_goal_state;
+    } else {
+        curr = found_goal_state;
     }
 
     // Construct list using backpointers
-    StatePtr curr = found_goal_state;
     c = 0; // Prevent timeout.
     while (curr->prev != nullptr && c < c_limit)
     {
@@ -96,12 +121,15 @@ bool astar(
     path.push_back(curr); // Insert start state
     reverse(path.begin(), path.end());
 
-    // Print Path
-    cout << "Start" << endl;;
+    // Write path to file
+    ofstream output;
+    output.open(output_filename, ofstream::out | ofstream::trunc);
+    cout << "Writing path to " << output_filename << endl;;
     for (int i = 0; i < path.size()-1; i++)
     {
-        cout << path[i]->x << " " << path[i]->x << " " << path[i]->x << " " << path[i+1]->mp_id << endl;
+        output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i+1]->mp_id << endl;
     }
+    output.close();
     cout << "Path length: " << path.size() << endl;
     return true;
 }
