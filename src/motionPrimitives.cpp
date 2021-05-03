@@ -4,7 +4,7 @@
 
 using namespace std;
 
-vector<MP> MPrims() { // copy and paste from MATLAB file here
+vector<MP> MPrims_highres() { // copy and paste from MATLAB file here
 	vector<MP> mprims;
 
 	MP mp0 = MP(
@@ -1287,7 +1287,13 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp63);
 
-	MP mp64 = MP(
+	return mprims;
+};
+
+vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
+	vector<MP> mprims;
+
+	MP mp0 = MP(
 	  0, 
 	  0, 
 	  Vec3( 1, 0, 0 ), 
@@ -1307,7 +1313,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp0);
 
-	MP mp65 = MP(
+	MP mp1 = MP(
 	  1, 
 	  0, 
 	  Vec3( 8, 0, 0 ), 
@@ -1327,7 +1333,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp1);
 
-	MP mp66 = MP(
+	MP mp2 = MP(
 	  2, 
 	  0, 
 	  Vec3( 6, 6, 1 ), 
@@ -1347,7 +1353,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp2);
 
-	MP mp67 = MP(
+	MP mp3 = MP(
 	  3, 
 	  0, 
 	  Vec3( 6, -6, -1 ), 
@@ -1367,7 +1373,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp3);
 
-	MP mp68 = MP(
+	MP mp4 = MP(
 	  0, 
 	  1, 
 	  Vec3( 1, 1, 1 ), 
@@ -1387,7 +1393,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp4);
 
-	MP mp69 = MP(
+	MP mp5 = MP(
 	  1, 
 	  1, 
 	  Vec3( 6, 6, 1 ), 
@@ -1407,7 +1413,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp5);
 
-	MP mp70 = MP(
+	MP mp6 = MP(
 	  2, 
 	  1, 
 	  Vec3( 0, 8, 2 ), 
@@ -1427,7 +1433,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp6);
 
-	MP mp71 = MP(
+	MP mp7 = MP(
 	  3, 
 	  1, 
 	  Vec3( 8, 0, 0 ), 
@@ -1447,7 +1453,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp7);
 
-	MP mp72 = MP(
+	MP mp8 = MP(
 	  0, 
 	  2, 
 	  Vec3( 0, 1, 2 ), 
@@ -1467,7 +1473,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp8);
 
-	MP mp73 = MP(
+	MP mp9 = MP(
 	  1, 
 	  2, 
 	  Vec3( 0, 8, 2 ), 
@@ -1487,7 +1493,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp9);
 
-	MP mp74 = MP(
+	MP mp10 = MP(
 	  2, 
 	  2, 
 	  Vec3( -6, 6, 3 ), 
@@ -1507,7 +1513,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp10);
 
-	MP mp75 = MP(
+	MP mp11 = MP(
 	  3, 
 	  2, 
 	  Vec3( 6, 6, 1 ), 
@@ -1527,7 +1533,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp11);
 
-	MP mp76 = MP(
+	MP mp12 = MP(
 	  0, 
 	  3, 
 	  Vec3( -1, 1, 3 ), 
@@ -1547,7 +1553,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp12);
 
-	MP mp77 = MP(
+	MP mp13 = MP(
 	  1, 
 	  3, 
 	  Vec3( -6, 6, 3 ), 
@@ -1567,7 +1573,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp13);
 
-	MP mp78 = MP(
+	MP mp14 = MP(
 	  2, 
 	  3, 
 	  Vec3( -8, 0, 4 ), 
@@ -1587,7 +1593,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp14);
 
-	MP mp79 = MP(
+	MP mp15 = MP(
 	  3, 
 	  3, 
 	  Vec3( 0, 8, 2 ), 
@@ -1607,7 +1613,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp15);
 
-	MP mp80 = MP(
+	MP mp16 = MP(
 	  0, 
 	  4, 
 	  Vec3( -1, 0, 4 ), 
@@ -1627,7 +1633,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp16);
 
-	MP mp81 = MP(
+	MP mp17 = MP(
 	  1, 
 	  4, 
 	  Vec3( -8, 0, 4 ), 
@@ -1647,7 +1653,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp17);
 
-	MP mp82 = MP(
+	MP mp18 = MP(
 	  2, 
 	  4, 
 	  Vec3( -6, -6, 5 ), 
@@ -1667,7 +1673,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp18);
 
-	MP mp83 = MP(
+	MP mp19 = MP(
 	  3, 
 	  4, 
 	  Vec3( -6, 6, 3 ), 
@@ -1687,7 +1693,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp19);
 
-	MP mp84 = MP(
+	MP mp20 = MP(
 	  0, 
 	  5, 
 	  Vec3( -1, -1, 5 ), 
@@ -1707,7 +1713,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp20);
 
-	MP mp85 = MP(
+	MP mp21 = MP(
 	  1, 
 	  5, 
 	  Vec3( -6, -6, 5 ), 
@@ -1727,7 +1733,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp21);
 
-	MP mp86 = MP(
+	MP mp22 = MP(
 	  2, 
 	  5, 
 	  Vec3( 0, -8, 6 ), 
@@ -1747,7 +1753,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp22);
 
-	MP mp87 = MP(
+	MP mp23 = MP(
 	  3, 
 	  5, 
 	  Vec3( -8, 0, 4 ), 
@@ -1767,7 +1773,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp23);
 
-	MP mp88 = MP(
+	MP mp24 = MP(
 	  0, 
 	  6, 
 	  Vec3( 0, -1, 6 ), 
@@ -1787,7 +1793,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp24);
 
-	MP mp89 = MP(
+	MP mp25 = MP(
 	  1, 
 	  6, 
 	  Vec3( 0, -8, 6 ), 
@@ -1807,7 +1813,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp25);
 
-	MP mp90 = MP(
+	MP mp26 = MP(
 	  2, 
 	  6, 
 	  Vec3( 6, -6, 7 ), 
@@ -1827,7 +1833,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp26);
 
-	MP mp91 = MP(
+	MP mp27 = MP(
 	  3, 
 	  6, 
 	  Vec3( -6, -6, 5 ), 
@@ -1847,7 +1853,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp27);
 
-	MP mp92 = MP(
+	MP mp28 = MP(
 	  0, 
 	  7, 
 	  Vec3( 1, -1, 7 ), 
@@ -1867,7 +1873,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp28);
 
-	MP mp93 = MP(
+	MP mp29 = MP(
 	  1, 
 	  7, 
 	  Vec3( 6, -6, 7 ), 
@@ -1887,7 +1893,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp29);
 
-	MP mp94 = MP(
+	MP mp30 = MP(
 	  2, 
 	  7, 
 	  Vec3( 8, 0, 0 ), 
@@ -1907,7 +1913,7 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	);
 	mprims.push_back(mp30);
 
-	MP mp95 = MP(
+	MP mp31 = MP(
 	  3, 
 	  7, 
 	  Vec3( 0, -8, 6 ), 
@@ -1928,7 +1934,14 @@ vector<MP> MPrims() { // copy and paste from MATLAB file here
 	mprims.push_back(mp31);
 
 	return mprims;
-};
+}
+
+int main() {
+	return 1;
+}
+
+
+
 
 
 
