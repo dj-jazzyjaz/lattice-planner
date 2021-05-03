@@ -1294,7 +1294,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	vector<MP> mprims;
 
 	MP mp0 = MP(
-	  0, 
+	  0, git p
 	  0, 
 	  Vec3( 1, 0, 0 ), 
 	  1, 
@@ -1932,6 +1932,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	  } 
 	);
 	mprims.push_back(mp31);
+
 
 	return mprims;
 }

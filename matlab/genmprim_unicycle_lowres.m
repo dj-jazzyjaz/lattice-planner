@@ -224,7 +224,7 @@ for angleind = 1:numberofangles
                 S = pinv(R)*[endpt(1) - startpt(1); endpt(2) - startpt(2)];
                 l = S(1); 
                 tvoverrv = S(2);
-                rv = (baseendpose_c(3)*2*pi/numberofangles + l/tvoverrv);
+                rv = 2*(baseendpose_c(3)*2*pi/(numberofangles) + l/tvoverrv); % 2* added
                 tv = tvoverrv*rv;
                          
                 if l < 0
