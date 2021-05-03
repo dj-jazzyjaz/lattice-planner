@@ -1,7 +1,7 @@
 
 function [map] = Make_Map(points)
-    width = 500;
-    height = 500;
+    width = 10;
+    height = 10;
     
     map = zeros(height, width);
     for i=1:size(points, 1)
@@ -19,4 +19,7 @@ function [map] = Make_Map(points)
         fprintf(fileID, "%d\n", map(r, width));
     end
     fclose(fileID);
+    
+    image(map,'CDataMapping','scaled')
+    colorbar
 end
