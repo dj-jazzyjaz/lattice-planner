@@ -25,9 +25,7 @@ function[] = Visualize(plan, drone_shape, map)
     figure();
     hold on;
     axis equal;
-    
-  
-    
+
     for i=1:plan_size
        
         switch plan(i, 4)

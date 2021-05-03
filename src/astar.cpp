@@ -26,7 +26,8 @@ bool astar(
   StatePtr startNode,
   StatePtr goalNode,
   vector<StatePtr>& path,
-  const vector<MP>& mprims,
+  const vector<MP>& mprims_hi_res,
+  const vector<MP>& mprims_lo_res,
   const Map* map,
   string output_filename)
 {
@@ -76,6 +77,14 @@ bool astar(
             continue;
         }
 
+        // Choose between hi and lo res
+        // Use lo res when getting close to goal or navigating through obstacles.
+        // Must be an angle that is available in the lo res 
+        
+        bool closeToGoal = hypot(state->x-goalNode->x, state->y-goalNode->y);
+        bool angleDisc = state->t % 2 == 0; // TODO: Should we store theta in degress so that we can check if they match
+        // TODO: Dist to obs
+        const vector<MP>& mprims = (closeToGoal || !angleDisc) ? mprims_hi_res : mprims_lo_res;
         for (auto mp : mprims)
         {
             // Add neighbor if the MP start_angle is equal to current state's angle
