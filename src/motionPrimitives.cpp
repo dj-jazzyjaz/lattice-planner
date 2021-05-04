@@ -1,8 +1,16 @@
 #include <iostream>
 #include <vector>
 #include "../include/motionPrimitives.h"
+#include "../include/map.h"
 
 using namespace std;
+
+bool MP::isFree(Map m) {
+	for(Vec3 p: intermediate_poses) {
+		if(!m.isFree(p.x, p.y)) return false;
+	}
+	return true;
+}
 
 vector<MP> MPrims_highres() { // copy and paste from MATLAB file here
 	vector<MP> mprims;
@@ -1932,21 +1940,13 @@ MP mp31 = MP(
   } 
 );
 
-mprims.push_back(mp31);
+    mprims.push_back(mp31);
 
 
 
 
 	return mprims;
 }
-
-
-int main() {
-	return 1;
-}
-
-
-
 
 
 
