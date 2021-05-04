@@ -163,6 +163,15 @@ bool astar(
     for (i = 0; i < path.size()-1; i++)
     {
         output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i]->mp_id << " " << path[i]->mp_type << endl;
+        /*if(path[i]->mp_type == 0) {
+            size_t last = mprims_hi_res[path[i]->mp_id].intermediate_poses.size() - 1;
+            output << " " << mprims_hi_res[path[i]->mp_id].intermediate_poses[0].theta << " " << 
+                mprims_hi_res[path[i]->mp_id].intermediate_poses[last].theta << endl;
+        } else {
+            size_t last = mprims_lo_res[path[i]->mp_id].intermediate_poses.size() - 1;
+            output << " " << mprims_lo_res[path[i]->mp_id].intermediate_poses[0].theta <<  " " << 
+                mprims_lo_res[path[i]->mp_id].intermediate_poses[last].theta << endl;
+        }*/
     }
 
     //output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << -1 << " " << -1 << endl;
