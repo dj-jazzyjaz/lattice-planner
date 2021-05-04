@@ -39,10 +39,7 @@ function[] = genmprim_unicycle(outfilename)
 
 UNICYCLE_MPRIM_16DEGS = 1;
 
-formatted_print = 0; % for making C++ MP class
-
-Up-Down = 0;
-
+formatted_print = 1; % for making C++ MP class
 
 if UNICYCLE_MPRIM_16DEGS == 1
     resolution = 0.025; % m
@@ -130,7 +127,7 @@ for angleind = 1:numberofangles
         
         if (formatted_print == 1)
             fprintf(fout, '\n');
-            fprintf(fout, 'MP mp%d = MP(\n  %d, \n', (angleind-1)*(numberofprimsperangle)+primind-1, primind-1);
+            fprintf(fout, 'MP mp%d = MP(\n  %d, \n', (angleind-1)*(numberofprimsperangle)+primind-1, (angleind-1)*(numberofprimsperangle)+primind-1);
             fprintf(fout, '  %d, \n', angleind-1);
         else 
 %             fprintf(fout, 'primID: %d\n', primind-1);
