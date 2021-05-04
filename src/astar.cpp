@@ -10,18 +10,20 @@
 #include <queue>
 
 // Threshold of distance from goal to switch from using high-resolution primitives to low-resolution primitives
-#define HI_RES_THRESH 15 // TODO: play around with this parameter
+#define HI_RES_THRESH 25 // TODO: play around with this parameter
 
-double computeH(int x1, int y1, int th1, const StatePtr s2, int num_Angle_Discretizations) 
+double computeH(int x1, int y1, int th1, int z1, const StatePtr s2, int num_Angle_Discretizations, bool threeD) 
 {
     double dist = hypot(x1- s2->x, y1 - s2->y);
+    if(threeD) dist = hypot(dist, z1 - s2->z);
 
     double s = abs(th1 - s2->t);
     double angleDiff = min(s, num_Angle_Discretizations - s);
 
+    // TODO: play around more with this heuristic 
     double angleScale = dist == 0 ? 10 : (10/dist);
     // printf("Dist = %.2f, Angle Scale = %.2f, s = %.2f, h=%.2f\n", dist, angleScale, s, dist+angleScale*s);
-    return dist + angleScale * s;
+    return dist + + angleScale * s;
 }
 
 bool startAngleEqual(StatePtr prevState, int new_mp_type, int new_angle){
@@ -72,7 +74,7 @@ bool astar(
     StatePtr found_goal_state;
     StatePtr closest_goal_state = startNode;
     int c = 0;
-    int c_limit = 10000; // Time out after ~20 seconds
+    int c_limit = 20000; // Time out after ~20 seconds
 
     // Start search
     while (!pq.empty() && !found_goal && c < c_limit)
@@ -81,11 +83,12 @@ bool astar(
         // Pop state
         StatePtr state = pq.top();
         pq.pop();
+        // printf("Searching iter %d:", c); state->print();
         if(c % 100 == 0) {
             printf("Searching iter %d:", c); state->print();
         } 
         // Check if goalPose
-        if (state->x == goalNode->x && state->y == goalNode->y && state->t == goalNode->t)
+        if (state->x == goalNode->x && state->y == goalNode->y && state->t == goalNode->t && (!threeD || state->z == goalNode->z))
         {
             found_goal = true;
             found_goal_state = state;
@@ -118,10 +121,11 @@ bool astar(
                 int newy = state->y + mp.endpose.y;
                 int newz = threeD ? state->z + mp.endpose.z : 0;
                 int newth = mp.endpose.theta;
-                if ((!threeD && map->isFree(newx, newy)) || (threeD && map->isAbove(newx, newy, newz)))
+                if ((!threeD && map->isFree(newx, newy) && mp.isFree(map)) 
+                    || (threeD && map->isAbove(newx, newy, newz) && mp.isAbove(map, (float)state->z)))
                 {
                     double g = state->g + mp.cost_mult;
-                    double h = computeH(newx, newy, newth, goalNode, 16); // TODO: fix angle disc
+                    double h = computeH(newx, newy, newth, newz, goalNode, isHighRes ? 16 : 8, threeD); // TODO: fix angle disc
                     StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state, mp.ID, new_mp_type, newz);
                     // printf("New state:"); new_s->print();
                     pq.push(new_s);         
@@ -138,7 +142,7 @@ bool astar(
         cout << "Failed to find goal" << endl;
         cout << "PQ Size " << pq.size() << " c" << c << endl;
         //cout << "Best h " << closest_goal_state->h << endl;
-        printf("Best state: (%d, %d, %d) h=%.2f\n", closest_goal_state->x, closest_goal_state->y, closest_goal_state->t, closest_goal_state->h);
+        printf("Best state: (%d, %d, %d) th=%d, h=%.2f\n", closest_goal_state->x, closest_goal_state->y, closest_goal_state->z, closest_goal_state->t, closest_goal_state->h);
         curr = closest_goal_state;
     } else {
         curr = found_goal_state;
@@ -162,16 +166,10 @@ bool astar(
     int i;
     for (i = 0; i < path.size()-1; i++)
     {
-        output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i]->mp_id << " " << path[i]->mp_type << endl;
-        /*if(path[i]->mp_type == 0) {
-            size_t last = mprims_hi_res[path[i]->mp_id].intermediate_poses.size() - 1;
-            output << " " << mprims_hi_res[path[i]->mp_id].intermediate_poses[0].theta << " " << 
-                mprims_hi_res[path[i]->mp_id].intermediate_poses[last].theta << endl;
-        } else {
-            size_t last = mprims_lo_res[path[i]->mp_id].intermediate_poses.size() - 1;
-            output << " " << mprims_lo_res[path[i]->mp_id].intermediate_poses[0].theta <<  " " << 
-                mprims_lo_res[path[i]->mp_id].intermediate_poses[last].theta << endl;
-        }*/
+        output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i]->mp_id << " " << path[i]->mp_type;
+        if(threeD) output << " " << path[i]->z;
+        output << endl;
+        path[i]->printWithMp(path[i]->mp_type == 0 ? mprims_hi_res : mprims_lo_res);
     }
 
     //output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << -1 << " " << -1 << endl;

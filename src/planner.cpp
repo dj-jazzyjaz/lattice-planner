@@ -10,22 +10,34 @@ using namespace std;
 
 int main() {
     string output_filename = "matlab/plan.txt";
-    Map map("maps/map2.txt");
+    Map map("maps/map5.txt");
     // map.printMap();
-    vector<MP> mprims_highres = MPrims_highres();
-    vector<MP> mprims_lowres = MPrims_lowres();
-    int startX = 0;
-    int startY = 0;
+    vector<MP> mprims_highres, mprims_lowres;
+
+    bool threeD = true;
+    
+    if(threeD) {
+        mprims_highres = MPrims_highres3D();
+        mprims_lowres = MPrims_lowres3D();
+    } else {
+        mprims_highres = MPrims_highres();
+        mprims_lowres = MPrims_lowres();
+    }
+
+    int startX = 120;
+    int startY = 570;
     int startTh = 0;
-    int goalX = 59;
-    int goalY = 78;
-    int goalTh = 7; 
-    StatePtr initState = make_shared<State>(startX, startY, startTh, 0, 0, nullptr, -1, 1, 1);
-    StatePtr goalState = make_shared<State>(goalX, goalY, goalTh, 0, 0, nullptr, -1, -1, -1);
+    int startZ = 10;
+    int goalX = 200;
+    int goalY = 200;
+    int goalTh = 7;
+    int goalZ = 6; 
+    StatePtr initState = make_shared<State>(startX, startY, startTh, 0, 0, nullptr, -1, 1, startZ);
+    StatePtr goalState = make_shared<State>(goalX, goalY, goalTh, 0, 0, nullptr, -1, -1, startZ);
     vector<StatePtr> path;
     
     // Do planning
-    astar(initState, goalState, path, mprims_highres, mprims_lowres, &map, output_filename, false);
+    astar(initState, goalState, path, mprims_highres, mprims_lowres, &map, output_filename, threeD);
 
     /* Write to output file:
     List of (state, action) tuples, where 

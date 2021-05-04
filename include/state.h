@@ -12,6 +12,7 @@
 #include <functional>
 #include <memory>
 #include "map.h"
+#include "./motionPrimitives.h"
 
 using namespace std;
 class State;
@@ -40,9 +41,8 @@ public:
     StatePtr prev; // Back pointer to previous state
     int mp_id; // ID of motion primitive that leads to this state
     int mp_type; // 0 if high-res, 1 if lo-res
-    int state_type;
 
-    State(int x, int y, int t, double g, double h, shared_ptr<State>prev, int mp_id, int mp_type, int state_type, int z = 0)
+    State(int x, int y, int t, double g, double h, shared_ptr<State>prev, int mp_id, int mp_type, int z = 0)
     {
         this->x = x;
         this->y = y;
@@ -53,7 +53,6 @@ public:
         this->prev = prev;
         this->mp_id = mp_id;
         this->mp_type = mp_type; // hi or lo res for mp
-        this->state_type = state_type; // hi or lo res for mp
         this->z = z;
     }
 
@@ -74,7 +73,15 @@ public:
 
     void print()
     {
-        cout << "(" << this->x << "," << this->y << ") t=" << this->t << " g=" << this->g << " h=" << this->h << " f=" << this->f << endl;
+        printf("(%d, %d, %d) th=%d g=%.2f h=%.2f f=%.2f\n", x, y, z, t, g, h, f);
+    }
+
+    void printWithMp(const vector<MP> & mps) 
+    {
+        Vec4 mp_end = mps[mp_id].endpose;
+        printf("MP: type=%d start_angle=%d endpose=(%.2f, %.2f, %.2f) th=%.2f State: (%d, %d, %d) th=%d\n", 
+            mp_type, mps[mp_id].startangle_c, mp_end.x, mp_end.y, mp_end.z, mp_end.theta,
+            x, y, z, t);
     }
 
     void printShort() {

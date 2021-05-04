@@ -31,11 +31,14 @@ public:
         ID(ID),  startangle_c(startangle_c), endpose(endpose), cost_mult(cost_mult), intermediate_poses(intermediate_poses) 
     {}
 
-    bool isFree(Map m);
+    bool isFree(const Map* m);
+    bool isAbove(const Map* m, float z);
 };
 
 vector<MP> MPrims_highres();
 vector<MP> MPrims_lowres();
+vector<MP> MPrims_highres3D();
+vector<MP> MPrims_lowres3D();
 
 
 

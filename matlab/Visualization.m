@@ -7,7 +7,7 @@ plan = plan';
 
 drone_shape = [[-.25, -.3]; [.25, -.3]; [0, .7]];
 
-tablemap = readtable('../maps/map2.txt');
+tablemap = readtable('../maps/map5.txt');
 envmap = table2array(tablemap);
 
 

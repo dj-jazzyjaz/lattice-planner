@@ -8,7 +8,7 @@ for i = 1:15
     y0 = randi(height);
     sx = randi(60) + 15;
     sy = randi(60) + 15;
-    A = randi(30)+1;
+    A = randi(5)+1;
     for x_i = 1:width
         for y_i = 1:height
                 map(y_i, x_i) = map(y_i, x_i) + gauss_distribution(x_i, y_i, x0, y0, sx, sy, A); 
@@ -17,6 +17,7 @@ for i = 1:15
     end
 end
 
+map = round(map)
 image(map,'CDataMapping','scaled')
 colorbar
 

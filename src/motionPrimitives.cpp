@@ -5,9 +5,16 @@
 
 using namespace std;
 
-bool MP::isFree(Map m) {
+bool MP::isFree(const Map* m) {
 	for(Vec4 p: intermediate_poses) {
-		if(!m.isFree(p.x, p.y)) return false;
+		if(!m->isFree(p.x, p.y)) return false;
+	}
+	return true;
+}
+
+bool MP::isAbove(const Map* m, float z) {
+	for(Vec4 p: intermediate_poses) {
+		if(!m->isAbove(p.x, p.y, p.z + z)) return false;
 	}
 	return true;
 }
@@ -1948,7 +1955,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	return mprims;
 }
 
-	vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
+vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 		vector<MP> mprims;
 
 	MP mp0 = MP(

@@ -11,7 +11,7 @@ class Map{
 public:
     int width, height;
     int* map_data;
-    int obstacle_threshold = 5;
+    int obstacle_threshold = 4;
     Map(){}
 
     Map(string fileName) {
