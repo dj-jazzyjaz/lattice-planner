@@ -1,7 +1,7 @@
 close all;
 formatSpec = '%d %d %d %d %d';
 sizePlan = [5 Inf];
-file = fopen('plan.txt', 'r');
+file = fopen('plan1.txt', 'r');
 plan = fscanf(file,formatSpec,sizePlan);
 plan = plan';
 
@@ -42,16 +42,23 @@ function[] = Visualize(plan, drone_shape, map)
         
         low_res = plan(i, 5);
        
-        switch plan(i, 4)
-            case 0
-                color = [.7 0 1];
-            case 1
-                color = [0 1 0];
-            case 2
-                color = [0 0 1];
-            case 3
-                color = [1 .5 0];
+%         switch plan(i, 4)
+%             case 0
+%                 color = [.7 0 1];
+%             case 1
+%                 color = [0 1 0];
+%             case 2
+%                 color = [0 0 1];
+%             case 3
+%                 color = [1 .5 0];
+%         end
+
+        if (low_res)
+            color = [.7 0 1];
+        else
+            color = [.2 1 .7];
         end
+            
        
 
         %draw drone
