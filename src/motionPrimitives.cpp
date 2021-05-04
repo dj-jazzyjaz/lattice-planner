@@ -1383,7 +1383,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp3);
 
 	MP mp4 = MP(
-	  0, 
+	  4, 
 	  1, 
 	  Vec3( 2, 2, 1 ), 
 	  1, 
@@ -1403,7 +1403,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp4);
 
 	MP mp5 = MP(
-	  1, 
+	  5, 
 	  1, 
 	  Vec3( 12, 12, 1 ), 
 	  1, 
@@ -1423,7 +1423,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp5);
 
 	MP mp6 = MP(
-	  2, 
+	  6, 
 	  1, 
 	  Vec3( 0, 16, 2 ), 
 	  2, 
@@ -1443,7 +1443,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp6);
 
 	MP mp7 = MP(
-	  3, 
+	  7, 
 	  1, 
 	  Vec3( 16, 0, 0 ), 
 	  2, 
@@ -1463,7 +1463,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp7);
 
 	MP mp8 = MP(
-	  0, 
+	  8, 
 	  2, 
 	  Vec3( 0, 2, 2 ), 
 	  1, 
@@ -1483,7 +1483,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp8);
 
 	MP mp9 = MP(
-	  1, 
+	  9, 
 	  2, 
 	  Vec3( 0, 16, 2 ), 
 	  1, 
@@ -1503,7 +1503,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp9);
 
 	MP mp10 = MP(
-	  2, 
+	  10, 
 	  2, 
 	  Vec3( -12, 12, 3 ), 
 	  2, 
@@ -1523,7 +1523,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp10);
 
 	MP mp11 = MP(
-	  3, 
+	  11, 
 	  2, 
 	  Vec3( 12, 12, 1 ), 
 	  2, 
@@ -1543,7 +1543,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp11);
 
 	MP mp12 = MP(
-	  0, 
+	  12, 
 	  3, 
 	  Vec3( -2, 2, 3 ), 
 	  1, 
@@ -1563,7 +1563,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp12);
 
 	MP mp13 = MP(
-	  1, 
+	  13, 
 	  3, 
 	  Vec3( -12, 12, 3 ), 
 	  1, 
@@ -1583,7 +1583,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp13);
 
 	MP mp14 = MP(
-	  2, 
+	  14, 
 	  3, 
 	  Vec3( -16, 0, 4 ), 
 	  2, 
@@ -1603,7 +1603,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp14);
 
 	MP mp15 = MP(
-	  3, 
+	  15, 
 	  3, 
 	  Vec3( 0, 16, 2 ), 
 	  2, 
@@ -1623,7 +1623,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp15);
 
 	MP mp16 = MP(
-	  0, 
+	  16, 
 	  4, 
 	  Vec3( -2, 0, 4 ), 
 	  1, 
@@ -1643,7 +1643,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp16);
 
 	MP mp17 = MP(
-	  1, 
+	  17, 
 	  4, 
 	  Vec3( -16, 0, 4 ), 
 	  1, 
@@ -1663,7 +1663,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp17);
 
 	MP mp18 = MP(
-	  2, 
+	  18, 
 	  4, 
 	  Vec3( -12, -12, 5 ), 
 	  2, 
@@ -1683,7 +1683,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp18);
 
 	MP mp19 = MP(
-	  3, 
+	  19, 
 	  4, 
 	  Vec3( -12, 12, 3 ), 
 	  2, 
@@ -1703,7 +1703,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp19);
 
 	MP mp20 = MP(
-	  0, 
+	  20, 
 	  5, 
 	  Vec3( -2, -2, 5 ), 
 	  1, 
@@ -1723,7 +1723,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp20);
 
 	MP mp21 = MP(
-	  1, 
+	  21, 
 	  5, 
 	  Vec3( -12, -12, 5 ), 
 	  1, 
@@ -1743,7 +1743,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp21);
 
 	MP mp22 = MP(
-	  2, 
+	  22, 
 	  5, 
 	  Vec3( 0, -16, 6 ), 
 	  2, 
@@ -1763,7 +1763,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp22);
 
 	MP mp23 = MP(
-	  3, 
+	  23, 
 	  5, 
 	  Vec3( -16, 0, 4 ), 
 	  2, 
@@ -1783,7 +1783,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp23);
 
 	MP mp24 = MP(
-	  0, 
+	  24, 
 	  6, 
 	  Vec3( 0, -2, 6 ), 
 	  1, 
@@ -1803,7 +1803,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp24);
 
 	MP mp25 = MP(
-	  1, 
+	  25, 
 	  6, 
 	  Vec3( 0, -16, 6 ), 
 	  1, 
@@ -1823,7 +1823,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp25);
 
 	MP mp26 = MP(
-	  2, 
+	  26, 
 	  6, 
 	  Vec3( 12, -12, 7 ), 
 	  2, 
@@ -1843,7 +1843,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp26);
 
 	MP mp27 = MP(
-	  3, 
+	  27, 
 	  6, 
 	  Vec3( -12, -12, 5 ), 
 	  2, 
@@ -1863,7 +1863,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp27);
 
 	MP mp28 = MP(
-	  0, 
+	  28, 
 	  7, 
 	  Vec3( 2, -2, 7 ), 
 	  1, 
@@ -1883,7 +1883,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp28);
 
 	MP mp29 = MP(
-	  1, 
+	  29, 
 	  7, 
 	  Vec3( 12, -12, 7 ), 
 	  1, 
@@ -1903,7 +1903,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp29);
 
 	MP mp30 = MP(
-	  2, 
+	  30, 
 	  7, 
 	  Vec3( 16, 0, 0 ), 
 	  2, 
@@ -1923,7 +1923,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp30);
 
 	MP mp31 = MP(
-	  3, 
+	  31, 
 	  7, 
 	  Vec3( 0, -16, 6 ), 
 	  2, 
@@ -1941,10 +1941,6 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	  } 
 	);
 	mprims.push_back(mp31);
-
-
-
-
 
 	return mprims;
 }
