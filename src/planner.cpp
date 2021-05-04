@@ -20,8 +20,8 @@ int main() {
     int goalX = 59;
     int goalY = 78;
     int goalTh = 7; 
-    StatePtr initState = make_shared<State>(startX, startY, startTh, 0, 0, nullptr, 0, -1);
-    StatePtr goalState = make_shared<State>(goalX, goalY, goalTh, 0, 0, nullptr, -1, -1);
+    StatePtr initState = make_shared<State>(startX, startY, startTh, 0, 0, nullptr, -1, 1, 1);
+    StatePtr goalState = make_shared<State>(goalX, goalY, goalTh, 0, 0, nullptr, -1, -1, -1);
     vector<StatePtr> path;
     
     // Do planning

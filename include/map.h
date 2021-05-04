@@ -56,6 +56,10 @@ public:
         return inDims(x, y) && map_data[x + y*width] <= obstacle_threshold;
     }
 
+    bool isAbove(int x, int y, int z) const {
+        return inDims(x, y) && map_data[x + y*width] < z;
+    }
+
     int computeDistFromObstacle(int x, int y) const {
         if(!inDims(x, y)) return 0;
         if(!isFree(x, y)) return 0;

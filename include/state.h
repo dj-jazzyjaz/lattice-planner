@@ -32,6 +32,7 @@ class State
 public:
     int x;
     int y;
+    int z;
     int t;
     double g;    // Current cost
     double h;    // Heurstic
@@ -39,8 +40,9 @@ public:
     StatePtr prev; // Back pointer to previous state
     int mp_id; // ID of motion primitive that leads to this state
     int mp_type; // 0 if high-res, 1 if lo-res
+    int state_type;
 
-    State(int x, int y, int t, double g, double h, shared_ptr<State>prev, int mp_id, int mp_type)
+    State(int x, int y, int t, double g, double h, shared_ptr<State>prev, int mp_id, int mp_type, int state_type, int z = 0)
     {
         this->x = x;
         this->y = y;
@@ -50,7 +52,9 @@ public:
         this->f = g + h;
         this->prev = prev;
         this->mp_id = mp_id;
-        this->mp_type = mp_type;
+        this->mp_type = mp_type; // hi or lo res for mp
+        this->state_type = state_type; // hi or lo res for mp
+        this->z = z;
     }
 
     State() {}

@@ -24,6 +24,23 @@ double computeH(int x1, int y1, int th1, const StatePtr s2, int num_Angle_Discre
     return dist + angleScale * s;
 }
 
+bool startAngleEqual(StatePtr prevState, int new_mp_type, int new_angle){
+    bool start_angle_same = true;
+            
+    if(prevState->mp_type == new_mp_type) {
+        start_angle_same = new_angle == prevState->t;
+    } else if (new_mp_type == 0) {
+        // state is lo res, new is hi res
+        
+        start_angle_same = new_angle == 2 * prevState->t;
+    } else {
+        // new is lo res, state is hi res
+        start_angle_same = 2 * new_angle == prevState->t;
+    }
+
+    return start_angle_same;
+}
+
 // Set the parent of each node to be previous in a path from start->goal
 bool astar(
   StatePtr startNode,
@@ -92,26 +109,8 @@ bool astar(
         for (auto mp : mprims)
         {
             // Add neighbor if the MP start_angle is equal to current state's angle
-            bool start_angle_same = true;
             int new_mp_type = isHighRes ? 0 : 1;
-            if(state->mp_type == new_mp_type) {
-                start_angle_same = mp.startangle_c == state->t;
-            } else if (new_mp_type == 0) {
-                // state is lo res, new is hi res
-                
-                start_angle_same = mp.startangle_c == 2 * state->t;
-                if(start_angle_same) {
-                    printf("New is hi res\n");
-                    printf("%d %d \n", mp.startangle_c, state->t);
-                }
-            } else {
-                // new is lo res, state is hi res
-                start_angle_same = 2 * mp.startangle_c == state->t;
-                if(start_angle_same) {
-                    printf("New is lo res\n");
-                    printf("%d %d \n", mp.startangle_c, state->t);
-                }
-            }
+            bool start_angle_same = startAngleEqual(state, new_mp_type, mp.startangle_c);
 
             if(start_angle_same) {
                 int newx = state->x + mp.endpose.x;
@@ -161,7 +160,7 @@ bool astar(
     int i;
     for (i = 0; i < path.size()-1; i++)
     {
-        output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i]->mp_id << " " << path[i]->mp_type << endl;
+        output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i]->state_type << " " << path[i]->mp_id << " " << path[i]->mp_type; //<< endl;
     }
 
     //output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << -1 << " " << -1 << endl;
