@@ -54,7 +54,7 @@ bool astar(
     StatePtr found_goal_state;
     StatePtr closest_goal_state = startNode;
     int c = 0;
-    int c_limit = 50000; // Time out after ~20 seconds
+    int c_limit = 10000; // Time out after ~20 seconds
 
     // Start search
     while (!pq.empty() && !found_goal && c < c_limit)
@@ -86,13 +86,34 @@ bool astar(
         bool closeToGoal = hypot(state->x-goalNode->x, state->y-goalNode->y) < HI_RES_THRESH; 
         bool isHighRes = closeToGoal; 
 
-        if(isHighRes) printf("Using hi res on iter %d\n", c);
+        // if(isHighRes) printf("Using hi res on iter %d\n", c);
         // TODO: Dist to obs
         const vector<MP>& mprims = isHighRes ? mprims_hi_res : mprims_lo_res;
         for (auto mp : mprims)
         {
             // Add neighbor if the MP start_angle is equal to current state's angle
-            if(mp.startangle_c == state->t) {
+            bool start_angle_same = true;
+            int new_mp_type = isHighRes ? 0 : 1;
+            if(state->mp_type == new_mp_type) {
+                start_angle_same = mp.startangle_c == state->t;
+            } else if (new_mp_type == 0) {
+                // state is lo res, new is hi res
+                
+                start_angle_same = mp.startangle_c == 2 * state->t;
+                if(start_angle_same) {
+                    printf("New is hi res\n");
+                    printf("%d %d \n", mp.startangle_c, state->t);
+                }
+            } else {
+                // new is lo res, state is hi res
+                start_angle_same = 2 * mp.startangle_c == state->t;
+                if(start_angle_same) {
+                    printf("New is lo res\n");
+                    printf("%d %d \n", mp.startangle_c, state->t);
+                }
+            }
+
+            if(start_angle_same) {
                 int newx = state->x + mp.endpose.x;
                 int newy = state->y + mp.endpose.y;
                 int newth = mp.endpose.theta;
@@ -100,7 +121,7 @@ bool astar(
                 {
                     double g = state->g + mp.cost_mult;
                     double h = computeH(newx, newy, newth, goalNode, 16); // TODO: fix angle disc
-                    StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state, mp.ID, isHighRes ? 0 : 1);
+                    StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state, mp.ID, new_mp_type);
                     // printf("New state:"); new_s->print();
                     pq.push(new_s);         
                 }
@@ -140,10 +161,10 @@ bool astar(
     int i;
     for (i = 0; i < path.size()-1; i++)
     {
-        output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i+1]->mp_id << " " << path[i+1]->mp_type << endl;
+        output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i]->mp_id << " " << path[i]->mp_type << endl;
     }
 
-    output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << -1 << " " << -1 << endl;
+    //output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << -1 << " " << -1 << endl;
     output.close();
     cout << "Path length: " << path.size() << endl;
     return true;

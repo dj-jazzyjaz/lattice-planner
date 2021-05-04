@@ -2,6 +2,8 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <math.h>
+#include <cfloat>
 
 using namespace std;
 
@@ -58,7 +60,7 @@ public:
         if(!inDims(x, y)) return 0;
         if(!isFree(x, y)) return 0;
         // Todo: could make this better
-        double nearestDist = INFINITY;
+        double nearestDist = DBL_MAX;
         for(int r = 0; r < height; r++) {
             for(int c = 0; c < height; c++) {
                 if(!isFree(r, c)) {
