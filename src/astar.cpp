@@ -116,7 +116,7 @@ bool astar(
             if(start_angle_same) {
                 int newx = state->x + mp.endpose.x;
                 int newy = state->y + mp.endpose.y;
-                int newz = 0; // int newz = threeD ? state->z + mp.endpose.z : 0
+                int newz = threeD ? state->z + mp.endpose.z : 0;
                 int newth = mp.endpose.theta;
                 if ((!threeD && map->isFree(newx, newy)) || (threeD && map->isAbove(newx, newy, newz)))
                 {
