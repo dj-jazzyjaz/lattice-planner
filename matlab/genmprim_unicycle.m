@@ -41,6 +41,8 @@ UNICYCLE_MPRIM_16DEGS = 1;
 
 formatted_print = 0; % for making C++ MP class
 
+Up-Down = 0;
+
 
 if UNICYCLE_MPRIM_16DEGS == 1
     resolution = 0.025; % m

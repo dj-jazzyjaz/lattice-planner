@@ -71,20 +71,21 @@ function[] = Visualize(plan, drone_shape, map)
         Xs = drone_shape(:,1)*cos(th)*drone_scale - drone_shape(:,2)*sin(th)*drone_scale + plan(i, 1)*resolution;
         Ys = drone_shape(:,1)*sin(th)*drone_scale + drone_shape(:,2)*cos(th)*drone_scale + plan(i, 2)*resolution;
         plot(polyshape(Xs, Ys), 'FaceColor','red');
+        text(Xs(1), Ys(1), int2str(i));
         
         %draw primitive
-        if(i ~= size(plan, 1)) % no primitive for last point
+        if(i ~= 1) % no primitive for last point
             if (low_res)
-                prim_num = mod(plan(i, 3), 8)*num_prims_per_angle + plan(i, 4);
+                prim_num = mod(plan(i-1, 3), 8)*num_prims_per_angle + plan(i, 4); % i-1 b/c prim of previous
             else
-                prim_num = mod(plan(i, 3),16)*num_prims_per_angle + plan(i, 4);
+                prim_num = mod(plan(i-1, 3),16)*num_prims_per_angle + plan(i, 4);
             end
             if (~low_res)
                 Inter_pts = Intermediate_Pts_Highres(prim_num*num_intermediates+1:(prim_num+1)*num_intermediates, :);
             elseif (low_res)
                 Inter_pts = Intermediate_Pts_Lowres(prim_num*num_intermediates+1:(prim_num+1)*num_intermediates, :);
             end
-            plot(Inter_pts(:, 1)*scale+plan(i, 1)*resolution, Inter_pts(:, 2)*scale+plan(i, 2)*resolution, ':', 'Color', color, 'linewidth', 2);
+            plot(Inter_pts(:, 1)*scale+plan(i-1, 1)*resolution, Inter_pts(:, 2)*scale+plan(i-1, 2)*resolution, ':', 'Color', color, 'linewidth', 2);
         end
     end
 
