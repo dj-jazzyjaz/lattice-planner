@@ -12,8 +12,8 @@ bool MP::isFree(Map m) {
 	return true;
 }
 
-vector<MP> MPrims_highres() { // copy and paste from MATLAB file here
-	vector<MP> mprims;
+	vector<MP> MPrims_highres() { // copy and paste from MATLAB file here
+		vector<MP> mprims;
 
 	MP mp0 = MP(
 	  0, 
@@ -78,7 +78,7 @@ vector<MP> MPrims_highres() { // copy and paste from MATLAB file here
 	MP mp3 = MP(
 	  3, 
 	  0, 
-	  Vec4( 8, -1, -1 ), 
+	  Vec4( 8, -1, 15 ), 
 	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000 ), 
@@ -1296,6 +1296,8 @@ vector<MP> MPrims_highres() { // copy and paste from MATLAB file here
 	mprims.push_back(mp63);
 
 
+
+
 	return mprims;
 };
 
@@ -1365,7 +1367,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	MP mp3 = MP(
 	  3, 
 	  0, 
-	  Vec4( 12, -12, -1 ), 
+	  Vec4( 12, -12, 7 ), 
 	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000 ), 
@@ -1941,6 +1943,7 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	  } 
 	);
 	mprims.push_back(mp31);
+
 
 	return mprims;
 }
