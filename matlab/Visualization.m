@@ -75,11 +75,7 @@ function[] = Visualize(plan, drone_shape, map)
         
         %draw primitive
         if(i ~= 1) % no primitive for last point
-            if (low_res)
-                prim_num = mod(plan(i-1, 3), 8)*num_prims_per_angle + plan(i, 4); % i-1 b/c prim of previous
-            else
-                prim_num = mod(plan(i-1, 3),16)*num_prims_per_angle + plan(i, 4);
-            end
+            prim_num = plan(i, 4); 
             if (~low_res)
                 Inter_pts = Intermediate_Pts_Highres(prim_num*num_intermediates+1:(prim_num+1)*num_intermediates, :);
             elseif (low_res)
