@@ -14,6 +14,7 @@ bool astar(
   StatePtr startNode,
   StatePtr goalNode,
   vector<StatePtr>& path,
-  const vector<MP>& mprims,
+  const vector<MP>& mprims_hi_res,
+  const vector<MP>& mprims_lo_res,
   const Map* map,
   string output_filename);

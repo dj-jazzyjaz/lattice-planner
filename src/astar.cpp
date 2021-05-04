@@ -9,6 +9,9 @@
 #include <vector>
 #include <queue>
 
+// Threshold of distance from goal to switch from using high-resolution primitives to low-resolution primitives
+#define HI_RES_THRESH 15 // TODO: play around with this parameter
+
 double computeH(int x1, int y1, int th1, const StatePtr s2, int num_Angle_Discretizations) 
 {
     double dist = hypot(x1- s2->x, y1 - s2->y);
@@ -80,16 +83,16 @@ bool astar(
         // Choose between hi and lo res
         // Use lo res when getting close to goal or navigating through obstacles.
         // Must be an angle that is available in the lo res 
-        
-        bool closeToGoal = hypot(state->x-goalNode->x, state->y-goalNode->y);
-        bool angleDisc = state->t % 2 == 0; // TODO: Should we store theta in degress so that we can check if they match
+        bool closeToGoal = hypot(state->x-goalNode->x, state->y-goalNode->y) < HI_RES_THRESH; 
+        bool isHighRes = closeToGoal; 
+
+        if(isHighRes) printf("Using hi res on iter %d\n", c);
         // TODO: Dist to obs
-        const vector<MP>& mprims = (closeToGoal || !angleDisc) ? mprims_hi_res : mprims_lo_res;
+        const vector<MP>& mprims = isHighRes ? mprims_hi_res : mprims_lo_res;
         for (auto mp : mprims)
         {
             // Add neighbor if the MP start_angle is equal to current state's angle
             if(mp.startangle_c == state->t) {
-                 // TODO: I don't think this is the right way to make new states:
                 int newx = state->x + mp.endpose.x;
                 int newy = state->y + mp.endpose.y;
                 int newth = mp.endpose.theta;
@@ -97,7 +100,7 @@ bool astar(
                 {
                     double g = state->g + mp.cost_mult;
                     double h = computeH(newx, newy, newth, goalNode, 16); // TODO: fix angle disc
-                    StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state, mp.ID);
+                    StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state, mp.ID, isHighRes ? 0 : 1);
                     // printf("New state:"); new_s->print();
                     pq.push(new_s);         
                 }
@@ -134,10 +137,13 @@ bool astar(
     ofstream output;
     output.open(output_filename, ofstream::out | ofstream::trunc);
     cout << "Writing path to " << output_filename << endl;;
-    for (int i = 0; i < path.size()-1; i++)
+    int i;
+    for (i = 0; i < path.size()-1; i++)
     {
-        output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i+1]->mp_id << endl;
+        output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i+1]->mp_id << " " << path[i+1]->mp_type << endl;
     }
+
+    output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << -1 << " " << -1 << endl;
     output.close();
     cout << "Path length: " << path.size() << endl;
     return true;

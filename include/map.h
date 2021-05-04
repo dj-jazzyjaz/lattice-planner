@@ -54,6 +54,20 @@ public:
         return inDims(x, y) && map_data[x + y*width] <= obstacle_threshold;
     }
 
+    int computeDistFromObstacle(int x, int y) const {
+        if(!inDims(x, y)) return 0;
+        if(!isFree(x, y)) return 0;
+        // Todo: could make this better
+        double nearestDist = INFINITY;
+        for(int r = 0; r < height; r++) {
+            for(int c = 0; c < height; c++) {
+                if(!isFree(r, c)) {
+                    if(hypot(r-y, c-x) < nearestDist) nearestDist = hypot(r-y, c-x);
+                }
+            }
+        }
+    }
+
     bool inDims(int x, int y) const {
         return x >= 0 && y >= 0 && x < width && y < height;
     }

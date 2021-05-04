@@ -38,8 +38,9 @@ public:
     double f;    // Cost
     StatePtr prev; // Back pointer to previous state
     int mp_id; // ID of motion primitive that leads to this state
+    int mp_type; // 0 if high-res, 1 if lo-res
 
-    State(int x, int y, int t, double g, double h, shared_ptr<State>prev, int mp_id)
+    State(int x, int y, int t, double g, double h, shared_ptr<State>prev, int mp_id, int mp_type)
     {
         this->x = x;
         this->y = y;
@@ -49,6 +50,7 @@ public:
         this->f = g + h;
         this->prev = prev;
         this->mp_id = mp_id;
+        this->mp_type = mp_type;
     }
 
     State() {}

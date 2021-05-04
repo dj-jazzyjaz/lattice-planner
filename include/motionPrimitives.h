@@ -30,8 +30,8 @@ public:
     {}
 };
 
-vector<MP> MPrims();
-
+vector<MP> MPrims_highres();
+vector<MP> MPrims_lowres();
 
 
 

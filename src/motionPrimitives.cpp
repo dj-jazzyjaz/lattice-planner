@@ -1936,10 +1936,6 @@ vector<MP> MPrims_lowres() { // copy and paste from MATLAB file here
 	return mprims;
 }
 
-int main() {
-	return 1;
-}
-
 
 
 
