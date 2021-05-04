@@ -49,7 +49,8 @@ bool astar(
   const vector<MP>& mprims_hi_res,
   const vector<MP>& mprims_lo_res,
   const Map* map,
-  string output_filename)
+  string output_filename,
+  bool threeD)
 {
     if(!map->isFree(goalNode->x, goalNode->y)) {
         cerr << "Goal post is obstacle" << endl;
@@ -115,12 +116,13 @@ bool astar(
             if(start_angle_same) {
                 int newx = state->x + mp.endpose.x;
                 int newy = state->y + mp.endpose.y;
+                int newz = 0; // int newz = threeD ? state->z + mp.endpose.z : 0
                 int newth = mp.endpose.theta;
-                if (map->isFree(newx, newy))
+                if ((!threeD && map->isFree(newx, newy)) || (threeD && map->isAbove(newx, newy, newz)))
                 {
                     double g = state->g + mp.cost_mult;
                     double h = computeH(newx, newy, newth, goalNode, 16); // TODO: fix angle disc
-                    StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state, mp.ID, new_mp_type);
+                    StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state, mp.ID, new_mp_type, newz);
                     // printf("New state:"); new_s->print();
                     pq.push(new_s);         
                 }
@@ -160,7 +162,7 @@ bool astar(
     int i;
     for (i = 0; i < path.size()-1; i++)
     {
-        output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i]->state_type << " " << path[i]->mp_id << " " << path[i]->mp_type; //<< endl;
+        output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i]->mp_id << " " << path[i]->mp_type << endl;
     }
 
     //output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << -1 << " " << -1 << endl;

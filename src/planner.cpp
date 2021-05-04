@@ -25,7 +25,7 @@ int main() {
     vector<StatePtr> path;
     
     // Do planning
-    astar(initState, goalState, path, mprims_highres, mprims_lowres, &map, output_filename);
+    astar(initState, goalState, path, mprims_highres, mprims_lowres, &map, output_filename, false);
 
     /* Write to output file:
     List of (state, action) tuples, where 
