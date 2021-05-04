@@ -39,7 +39,7 @@ function[] = genmprim_unicycle_lowres(outfilename)
 
 UNICYCLE_MPRIM_16DEGS = 1;
 
-formatted_print = 1; % for making C++ MP class
+formatted_print = 0; % for making C++ MP class
 
 
 if UNICYCLE_MPRIM_16DEGS == 1
@@ -66,7 +66,7 @@ if UNICYCLE_MPRIM_16DEGS == 1
     % basemprimendpts0_c(3,:) = [-1 0 0 backwardcostmult];    
     %1/8 theta change
     basemprimendpts0_c(3,:) = [12 12 1 forwardandturncostmult];
-    basemprimendpts0_c(4,:) = [12 -12 -1 forwardandturncostmult];
+    basemprimendpts0_c(4,:) = [ -6 -1 forwardandturncostmult];
     %turn in place
     %basemprimendpts0_c(6,:) = [0 0 1 turninplacecostmult];
     %basemprimendpts0_c(7,:) = [0 0 -1 turninplacecostmult];
@@ -76,12 +76,12 @@ if UNICYCLE_MPRIM_16DEGS == 1
     %x aligned with the heading of the robot, angles are positive
     %counterclockwise
     %0 theta change 
-    basemprimendpts45_c(1,:) = [2 2 0 forwardcostmult];
-    basemprimendpts45_c(2,:) = [12 12 0 forwardcostmult];
+    basemprimendpts45_c(1,:) = [1 1 0 forwardcostmult];
+    basemprimendpts45_c(2,:) = [6 6 0 forwardcostmult];
     % basemprimendpts45_c(3,:) = [-1 -1 0 backwardcostmult];    
     %1/8 theta change
-    basemprimendpts45_c(3,:) = [0 16 1 forwardandturncostmult];
-    basemprimendpts45_c(4,:) = [16 0 -1 forwardandturncostmult];    
+    basemprimendpts45_c(3,:) = [0 8 1 forwardandturncostmult];
+    basemprimendpts45_c(4,:) = [8 0 -1 forwardandturncostmult];    
     %turn in place
     %basemprimendpts45_c(6,:) = [0 0 1 turninplacecostmult];
     %basemprimendpts45_c(7,:) = [0 0 -1 turninplacecostmult];
@@ -91,12 +91,12 @@ if UNICYCLE_MPRIM_16DEGS == 1
     %x aligned with the heading of the robot, angles are positive
     %counterclockwise
     %0 theta change     
-    basemprimendpts22p5_c(1,:) = [4 2 0 forwardcostmult];
-    basemprimendpts22p5_c(2,:) = [12 6 0 forwardcostmult];    
+    basemprimendpts22p5_c(1,:) = [2 1 0 forwardcostmult];
+    basemprimendpts22p5_c(2,:) = [6 3 0 forwardcostmult];    
     % basemprimendpts22p5_c(3,:) = [-2 -1 0 backwardcostmult];     
     %1/16 theta change
-    basemprimendpts22p5_c(3,:) = [10 8 1 forwardandturncostmult];
-    basemprimendpts22p5_c(4,:) = [14 4 -1 forwardandturncostmult];    
+    basemprimendpts22p5_c(3,:) = [5 4 1 forwardandturncostmult];
+    basemprimendpts22p5_c(4,:) = [7 2 -1 forwardandturncostmult];    
     %turn in place
     %basemprimendpts22p5_c(6,:) = [0 0 1 turninplacecostmult];
     %basemprimendpts22p5_c(7,:) = [0 0 -1 turninplacecostmult];
@@ -128,7 +128,7 @@ for angleind = 1:numberofangles
         
         if (formatted_print == 1)
             fprintf(fout, '\n');
-            fprintf(fout, 'MP mp%d = MP(\n  %d, \n', (angleind-1)*(numberofprimsperangle)+primind-1, primind-1);
+            fprintf(fout, 'MP mp%d = MP(\n  %d, \n', 64+(angleind-1)*(numberofprimsperangle)+primind-1, primind-1);
             fprintf(fout, '  %d, \n', angleind-1);
         else 
 %             fprintf(fout, 'primID: %d\n', primind-1);

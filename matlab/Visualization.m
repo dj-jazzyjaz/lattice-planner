@@ -1,7 +1,7 @@
 close all;
 formatSpec = '%d %d %d %d %d';
 sizePlan = [5 Inf];
-file = fopen('plan1.txt', 'r');
+file = fopen('plan.txt', 'r');
 plan = fscanf(file,formatSpec,sizePlan);
 plan = plan';
 
