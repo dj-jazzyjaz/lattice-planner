@@ -1,6 +1,6 @@
 close all;
-formatSpec = '%d %d %d %d %d';
-sizePlan = [5 Inf];
+formatSpec = '%d %d %d %d';
+sizePlan = [4 Inf];
 file = fopen('plan.txt', 'r');
 plan = fscanf(file,formatSpec,sizePlan);
 plan = plan';
@@ -21,7 +21,7 @@ function[] = Visualize(plan, drone_shape, map)
     drone_scale = 4;
 
     Intermediate_Pts_Highres = load('IntermediatePointsHighRes.mat');
-    Intermediate_Pts_Highres = Intermediate_Pts_Highres.Intermediate_Pts_Highres;
+    Intermediate_Pts_Highres = Intermediate_Pts.Intermediate_Pts_Highres;
     
     Intermediate_Pts_Lowres = load('IntermediatePointsLowRes.mat');
     Intermediate_Pts_Lowres = Intermediate_Pts_Lowres.Intermediate_Pts_Lowres;
@@ -67,14 +67,10 @@ function[] = Visualize(plan, drone_shape, map)
         
         %draw primitive
         if(i ~= size(plan, 1)) % no primitive for last point
-            if (low_res)
-                prim_num = mod(plan(i, 3), 8)*num_prims_per_angle + plan(i, 4);
-            else
-                prim_num = mod(plan(i, 3),16)*num_prims_per_angle + plan(i, 4);
-            end
-            if (~low_res)
+            prim_num = mod(plan(i, 3),16)*num_prims_per_angle + plan(i, 4);
+            if (plan(i, 5) == 0)
                 Inter_pts = Intermediate_Pts_Highres(prim_num*num_intermediates+1:(prim_num+1)*num_intermediates, :);
-            elseif (low_res)
+            elseif (plan(i, 5) == 1)
                 Inter_pts = Intermediate_Pts_Lowres(prim_num*num_intermediates+1:(prim_num+1)*num_intermediates, :);
             end
             plot(Inter_pts(:, 1)*scale+plan(i, 1)*resolution, Inter_pts(:, 2)*scale+plan(i, 2)*resolution, ':', 'Color', color, 'linewidth', 2);
