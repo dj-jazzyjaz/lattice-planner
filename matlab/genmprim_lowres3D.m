@@ -51,6 +51,7 @@ if UNICYCLE_MPRIM_16DEGS == 1
     forwardcostmult = 1;
     % backwardcostmult = 5;
     forwardandturncostmult = 2;
+    upmult = 1;
     % sidestepcostmult = 10;
     % turninplacecostmult = 5;
     
@@ -64,18 +65,18 @@ if UNICYCLE_MPRIM_16DEGS == 1
     basemprimendpts0_c(1,:) = [2 0 0 0 forwardcostmult];
     basemprimendpts0_c(2,:) = [16 0 0 0 forwardcostmult];    
     %1/8 theta change
-    basemprimendpts0_c(3,:) = [12 12 1 0 forwardandturncostmult];
-    basemprimendpts0_c(4,:) = [12 -12 -1 0 forwardandturncostmult];
+    basemprimendpts0_c(3,:) = [14 6 1 0 forwardandturncostmult];
+    basemprimendpts0_c(4,:) = [14 -6 -1 0 forwardandturncostmult];
     % Up
-    basemprimendpts0_c(5,:) = [16 0 0 1 forwardcostmult];    
+    basemprimendpts0_c(5,:) = [16 0 0 1 forwardcostmult+upmult];    
     %1/8 theta change
-    basemprimendpts0_c(6,:) = [12 12 1 1 forwardandturncostmult];
-    basemprimendpts0_c(7,:) = [12 -12 -1 1 forwardandturncostmult];
+    basemprimendpts0_c(6,:) = [14 6 1 1 forwardandturncostmult+upmult];
+    basemprimendpts0_c(7,:) = [14 -6 -1 1 forwardandturncostmult+upmult];
     % Down
     basemprimendpts0_c(8,:) = [16 0 0 -1 forwardcostmult];    
     %1/8 theta change
-    basemprimendpts0_c(9,:) = [12 12 1 -1 forwardandturncostmult];
-    basemprimendpts0_c(10,:) = [12 -12 -1 -1 forwardandturncostmult];
+    basemprimendpts0_c(9,:) = [14 6 1 -1 forwardandturncostmult];
+    basemprimendpts0_c(10,:) = [14 -6 -1 -1 forwardandturncostmult];
 
     %45 degrees
     basemprimendpts45_c = zeros(numberofprimsperangle, 5); %x,y,theta,costmult (multiplier is used as costmult*cost)
@@ -85,18 +86,18 @@ if UNICYCLE_MPRIM_16DEGS == 1
     basemprimendpts45_c(1,:) = [2 2 0 0 forwardcostmult];
     basemprimendpts45_c(2,:) = [12 12 0 0 forwardcostmult];
     %1/8 theta change
-    basemprimendpts45_c(3,:) = [0 16 1 0 forwardandturncostmult];
-    basemprimendpts45_c(4,:) = [16 0 -1 0 forwardandturncostmult]; 
+    basemprimendpts45_c(3,:) = [5 12 1 0 forwardandturncostmult];
+    basemprimendpts45_c(4,:) = [12 5 -1 0 forwardandturncostmult]; 
     % Up
-    basemprimendpts45_c(5,:) = [12 12 0 1 forwardcostmult];
+    basemprimendpts45_c(5,:) = [12 12 0 1 forwardcostmult+upmult];
     %1/8 theta change
-    basemprimendpts45_c(6,:) = [0 16 1 1 forwardandturncostmult];
-    basemprimendpts45_c(7,:) = [16 0 -1 1 forwardandturncostmult]; 
+    basemprimendpts45_c(6,:) = [5 12 1 1 forwardandturncostmult+upmult];
+    basemprimendpts45_c(7,:) = [12 5 -1 1 forwardandturncostmult+upmult]; 
     % Down
     basemprimendpts45_c(8,:) = [12 12 0 -1 forwardcostmult];
     %1/8 theta change
-    basemprimendpts45_c(9,:) = [0 16 1 -1 forwardandturncostmult];
-    basemprimendpts45_c(10,:) = [16 0 -1 -1 forwardandturncostmult]; 
+    basemprimendpts45_c(9,:) = [5 12 1 -1 forwardandturncostmult];
+    basemprimendpts45_c(10,:) = [12 5 -1 -1 forwardandturncostmult]; 
 
     %22.5 degrees
     basemprimendpts22p5_c = zeros(numberofprimsperangle, 5); %x,y,theta,costmult (multiplier is used as costmult*cost)
@@ -109,10 +110,10 @@ if UNICYCLE_MPRIM_16DEGS == 1
     basemprimendpts22p5_c(3,:) = [10 8 1 0 forwardandturncostmult];
     basemprimendpts22p5_c(4,:) = [14 4 -1 0 forwardandturncostmult];    
     % Up
-    basemprimendpts22p5_c(5,:) = [12 6 0 1 forwardcostmult];    
+    basemprimendpts22p5_c(5,:) = [12 6 0 1 forwardcostmult+upmult];    
     %1/16 theta change
-    basemprimendpts22p5_c(6,:) = [10 8 1 1 forwardandturncostmult];
-    basemprimendpts22p5_c(7,:) = [14 4 -1 1 forwardandturncostmult];  
+    basemprimendpts22p5_c(6,:) = [10 8 1 1 forwardandturncostmult+upmult];
+    basemprimendpts22p5_c(7,:) = [14 4 -1 1 forwardandturncostmult+upmult];  
     % Down
     basemprimendpts22p5_c(8,:) = [12 6 0 -1 forwardcostmult];    
     %1/16 theta change
@@ -206,7 +207,7 @@ for angleind = 1:numberofangles
         
         %now figure out what action will be        
         baseendpose_c = basemprimendpts_c(1:4);
-        additionalactioncostmult = basemprimendpts_c(4);        
+        additionalactioncostmult = basemprimendpts_c(5);        
         endx_c = round(baseendpose_c(1)*cos(angle) - baseendpose_c(2)*sin(angle));        
         endy_c = round(baseendpose_c(1)*sin(angle) + baseendpose_c(2)*cos(angle));
         endtheta_c = rem(angleind - 1 + baseendpose_c(3), numberofangles);
@@ -245,7 +246,7 @@ for angleind = 1:numberofangles
                 S = pinv(R)*[endpt(1) - startpt(1); endpt(2) - startpt(2)];
                 l = S(1); 
                 tvoverrv = S(2);
-                rv = 2*(baseendpose_c(3)*2*pi/(numberofangles) + l/tvoverrv); % 2* added
+                rv = 1*(baseendpose_c(3)*2*pi/(numberofangles) + l/tvoverrv); % 
                 tv = tvoverrv*rv;
                          
                 if l < 0
@@ -315,7 +316,7 @@ for angleind = 1:numberofangles
             fprintf(fout, ']; \n');
         end
         plot(intermcells_m(:,1), intermcells_m(:,2));
-        axis([-0.3 0.3 -0.3 0.3]);
+        axis([-0.5 0.5 -0.5 0.5]);
         text(intermcells_m(numofsamples,1), intermcells_m(numofsamples,2), int2str(endpose_c(3)));
         hold on;
         

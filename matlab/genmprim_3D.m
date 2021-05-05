@@ -50,6 +50,7 @@ if UNICYCLE_MPRIM_16DEGS == 1
     forwardcostmult = 1;
     % backwardcostmult = 5;
     forwardandturncostmult = 2;
+    upmult = 1;
     % sidestepcostmult = 10;
     % turninplacecostmult = 5;
     
@@ -66,10 +67,10 @@ if UNICYCLE_MPRIM_16DEGS == 1
     basemprimendpts0_c(3,:) = [8 1 1 0 forwardandturncostmult];
     basemprimendpts0_c(4,:) = [8 -1 -1 0 forwardandturncostmult];
     %Up
-    basemprimendpts0_c(5,:) = [8 0 0 1 forwardcostmult];
+    basemprimendpts0_c(5,:) = [8 0 0 1 forwardcostmult+upmult];
     %1/16 theta change
-    basemprimendpts0_c(6,:) = [8 1 1 1 forwardandturncostmult];
-    basemprimendpts0_c(7,:) = [8 -1 -1 1 forwardandturncostmult];
+    basemprimendpts0_c(6,:) = [8 1 1 1 forwardandturncostmult+upmult];
+    basemprimendpts0_c(7,:) = [8 -1 -1 1 forwardandturncostmult+upmult];
     % Down
     basemprimendpts0_c(8,:) = [8 0 0 -1 forwardcostmult];
     %1/16 theta change
@@ -88,10 +89,10 @@ if UNICYCLE_MPRIM_16DEGS == 1
     basemprimendpts45_c(3,:) = [5 7 1 0 forwardandturncostmult];
     basemprimendpts45_c(4,:) = [7 5 -1 0 forwardandturncostmult];    
     % Up
-    basemprimendpts45_c(5,:) = [6 6 0 1 forwardcostmult];
+    basemprimendpts45_c(5,:) = [6 6 0 1 forwardcostmult+upmult];
     %1/16 theta change
-    basemprimendpts45_c(6,:) = [5 7 1 1 forwardandturncostmult];
-    basemprimendpts45_c(7,:) = [7 5 -1 1 forwardandturncostmult];
+    basemprimendpts45_c(6,:) = [5 7 1 1 forwardandturncostmult+upmult];
+    basemprimendpts45_c(7,:) = [7 5 -1 1 forwardandturncostmult+upmult];
     % Down
     basemprimendpts45_c(8,:) = [6 6 0 -1 forwardcostmult];
     %1/16 theta change
@@ -109,10 +110,10 @@ if UNICYCLE_MPRIM_16DEGS == 1
     basemprimendpts22p5_c(3,:) = [5 4 1 0 forwardandturncostmult];
     basemprimendpts22p5_c(4,:) = [7 2 -1 0 forwardandturncostmult];    
     %Up
-    basemprimendpts22p5_c(5,:) = [6 3 0 1 forwardcostmult];    
+    basemprimendpts22p5_c(5,:) = [6 3 0 1 forwardcostmult+upmult];    
     %1/16 theta change
-    basemprimendpts22p5_c(6,:) = [5 4 1 1 forwardandturncostmult];
-    basemprimendpts22p5_c(7,:) = [7 2 -1 1 forwardandturncostmult]; 
+    basemprimendpts22p5_c(6,:) = [5 4 1 1 forwardandturncostmult+upmult];
+    basemprimendpts22p5_c(7,:) = [7 2 -1 1 forwardandturncostmult+upmult]; 
     % Down
     basemprimendpts22p5_c(8,:) = [6 3 0 -1 forwardcostmult];    
     %1/16 theta change
@@ -206,7 +207,7 @@ for angleind = 1:numberofangles
         
         %now figure out what action will be        
         baseendpose_c = basemprimendpts_c(1:4);
-        additionalactioncostmult = basemprimendpts_c(4);        
+        additionalactioncostmult = basemprimendpts_c(5);        
         endx_c = round(baseendpose_c(1)*cos(angle) - baseendpose_c(2)*sin(angle));        
         endy_c = round(baseendpose_c(1)*sin(angle) + baseendpose_c(2)*cos(angle));
         endtheta_c = rem(angleind - 1 + baseendpose_c(3), numberofangles);
