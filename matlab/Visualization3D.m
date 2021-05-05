@@ -1,7 +1,7 @@
 close all;
 formatSpec = '%d %d %d %d %d %d';
 sizePlan = [6 Inf];
-file = fopen('plan.txt', 'r');
+file = fopen('plan_around_the_mountain.txt', 'r');
 text = textscan(file,formatSpec, 'headerlines', 8);
 
 cols = size(text, 2);

@@ -16,7 +16,7 @@ bool MP::isAbove(const Map* m, int x, int y, int z) {
 	for(Vec4 p: intermediate_poses) {
 		int x_r = (int)floor(p.x*40 + (double)x)-1;
 		int y_r = (int)floor(p.x*40 + (double)y)-1;
-		int z_r = (int)floor(p.z*40 + (double)z)-1;
+		int z_r = (int)floor(p.z*40 + (double)z);
 		if(!m->isAbove(x_r, y_r, z_r)) {
 			return false;
 		}
