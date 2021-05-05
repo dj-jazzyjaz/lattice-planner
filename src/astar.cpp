@@ -17,15 +17,17 @@ double computeH(int x1, int y1, int th1, int z1, const StatePtr s2, int num_Angl
 {
     double dist = hypot(x1- s2->x, y1 - s2->y);
     if(threeD) dist = hypot(dist, (z1 - s2->z));
-    dist = dist;
+    dist = 0.1 * dist;
 
     double s = abs(th1 - s2->t);
     double angleDiff = min(s, num_Angle_Discretizations - s);
 
     // TODO: play around more with this heuristic 
     double angleScale = dist == 0 ? 10 : (10/dist);
+
+    s = dist < 40 ? angleDiff : 0; 
     // printf("Dist = %.2f, Angle Scale = %.2f, s = %.2f, h=%.2f\n", dist, angleScale, s, dist+angleScale*s);
-    return dist; // + angleScale * s;
+    return dist + s;
 }
 
 bool startAngleEqual(StatePtr prevState, int new_mp_type, int new_angle){
