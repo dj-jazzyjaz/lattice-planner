@@ -1962,7 +1962,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  0, 
 	  0, 
 	  Vec4( 1, 0, 0, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
 	    Vec4( 0.0028, 0.0000, 0.0000, 0.0000 ), 
@@ -1982,7 +1982,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  1, 
 	  0, 
 	  Vec4( 8, 0, 0, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
 	    Vec4( 0.0222, 0.0000, 0.0000, 0.0000 ), 
@@ -2002,7 +2002,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  2, 
 	  0, 
 	  Vec4( 8, 1, 1, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
 	    Vec4( 0.0226, -0.0000, 0.0000, 0.0000 ), 
@@ -2022,7 +2022,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  3, 
 	  0, 
 	  Vec4( 8, -1, 15, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
 	    Vec4( 0.0226, 0.0000, 0.0000, 0.0000 ), 
@@ -2042,7 +2042,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  4, 
 	  0, 
 	  Vec4( 8, 0, 0, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
 	    Vec4( 0.0222, 0.0000, 0.0000, 0.0028 ), 
@@ -2062,7 +2062,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  5, 
 	  0, 
 	  Vec4( 8, 1, 1, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
 	    Vec4( 0.0226, -0.0000, 0.0000, 0.0028 ), 
@@ -2082,7 +2082,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  6, 
 	  0, 
 	  Vec4( 8, -1, 15, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
 	    Vec4( 0.0226, 0.0000, 0.0000, 0.0028 ), 
@@ -2102,7 +2102,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  7, 
 	  0, 
 	  Vec4( 8, 0, 0, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
 	    Vec4( 0.0222, 0.0000, 0.0000, -0.0028 ), 
@@ -2122,7 +2122,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  8, 
 	  0, 
 	  Vec4( 8, 1, 1, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
 	    Vec4( 0.0226, -0.0000, 0.0000, -0.0028 ), 
@@ -2142,7 +2142,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  9, 
 	  0, 
 	  Vec4( 8, -1, 15, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
 	    Vec4( 0.0226, 0.0000, 0.0000, -0.0028 ), 
@@ -2162,7 +2162,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  10, 
 	  1, 
 	  Vec4( 2, 1, 1, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.3927, 0.0000 ), 
 	    Vec4( 0.0056, 0.0028, 0.3927, 0.0000 ), 
@@ -2182,7 +2182,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  11, 
 	  1, 
 	  Vec4( 6, 3, 1, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.3927, 0.0000 ), 
 	    Vec4( 0.0167, 0.0083, 0.3927, 0.0000 ), 
@@ -2202,7 +2202,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  12, 
 	  1, 
 	  Vec4( 5, 4, 2, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.3927, 0.0000 ), 
 	    Vec4( 0.0149, 0.0092, 0.4230, 0.0000 ), 
@@ -2222,7 +2222,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  13, 
 	  1, 
 	  Vec4( 7, 2, 0, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.3927, 0.0000 ), 
 	    Vec4( 0.0188, 0.0078, 0.3927, 0.0000 ), 
@@ -2242,7 +2242,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  14, 
 	  1, 
 	  Vec4( 6, 3, 1, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.3927, 0.0000 ), 
 	    Vec4( 0.0167, 0.0083, 0.3927, 0.0028 ), 
@@ -2262,7 +2262,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  15, 
 	  1, 
 	  Vec4( 5, 4, 2, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.3927, 0.0000 ), 
 	    Vec4( 0.0149, 0.0092, 0.4230, 0.0028 ), 
@@ -2282,7 +2282,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  16, 
 	  1, 
 	  Vec4( 7, 2, 0, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.3927, 0.0000 ), 
 	    Vec4( 0.0188, 0.0078, 0.3927, 0.0028 ), 
@@ -2302,7 +2302,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  17, 
 	  1, 
 	  Vec4( 6, 3, 1, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.3927, 0.0000 ), 
 	    Vec4( 0.0167, 0.0083, 0.3927, -0.0028 ), 
@@ -2322,7 +2322,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  18, 
 	  1, 
 	  Vec4( 5, 4, 2, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.3927, 0.0000 ), 
 	    Vec4( 0.0149, 0.0092, 0.4230, -0.0028 ), 
@@ -2342,7 +2342,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  19, 
 	  1, 
 	  Vec4( 7, 2, 0, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.3927, 0.0000 ), 
 	    Vec4( 0.0188, 0.0078, 0.3927, -0.0028 ), 
@@ -2362,7 +2362,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  20, 
 	  2, 
 	  Vec4( 1, 1, 2, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
 	    Vec4( 0.0028, 0.0028, 0.7854, 0.0000 ), 
@@ -2382,7 +2382,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  21, 
 	  2, 
 	  Vec4( 6, 6, 2, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
 	    Vec4( 0.0167, 0.0167, 0.7854, 0.0000 ), 
@@ -2402,7 +2402,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  22, 
 	  2, 
 	  Vec4( 5, 7, 3, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
 	    Vec4( 0.0170, 0.0170, 0.7854, 0.0000 ), 
@@ -2422,7 +2422,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  23, 
 	  2, 
 	  Vec4( 7, 5, 1, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
 	    Vec4( 0.0170, 0.0170, 0.7854, 0.0000 ), 
@@ -2442,7 +2442,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  24, 
 	  2, 
 	  Vec4( 6, 6, 2, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
 	    Vec4( 0.0167, 0.0167, 0.7854, 0.0028 ), 
@@ -2462,7 +2462,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  25, 
 	  2, 
 	  Vec4( 5, 7, 3, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
 	    Vec4( 0.0170, 0.0170, 0.7854, 0.0028 ), 
@@ -2482,7 +2482,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  26, 
 	  2, 
 	  Vec4( 7, 5, 1, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
 	    Vec4( 0.0170, 0.0170, 0.7854, 0.0028 ), 
@@ -2502,7 +2502,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  27, 
 	  2, 
 	  Vec4( 6, 6, 2, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
 	    Vec4( 0.0167, 0.0167, 0.7854, -0.0028 ), 
@@ -2522,7 +2522,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  28, 
 	  2, 
 	  Vec4( 5, 7, 3, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
 	    Vec4( 0.0170, 0.0170, 0.7854, -0.0028 ), 
@@ -2542,7 +2542,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  29, 
 	  2, 
 	  Vec4( 7, 5, 1, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
 	    Vec4( 0.0170, 0.0170, 0.7854, -0.0028 ), 
@@ -2562,7 +2562,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  30, 
 	  3, 
 	  Vec4( 1, 2, 3, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.1781, 0.0000 ), 
 	    Vec4( 0.0028, 0.0056, 1.1781, 0.0000 ), 
@@ -2582,7 +2582,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  31, 
 	  3, 
 	  Vec4( 3, 6, 3, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.1781, 0.0000 ), 
 	    Vec4( 0.0083, 0.0167, 1.1781, 0.0000 ), 
@@ -2602,7 +2602,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  32, 
 	  3, 
 	  Vec4( 4, 5, 2, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.1781, 0.0000 ), 
 	    Vec4( 0.0092, 0.0149, 1.1478, 0.0000 ), 
@@ -2622,7 +2622,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  33, 
 	  3, 
 	  Vec4( 2, 7, 4, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.1781, 0.0000 ), 
 	    Vec4( 0.0078, 0.0188, 1.1781, 0.0000 ), 
@@ -2642,7 +2642,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  34, 
 	  3, 
 	  Vec4( 3, 6, 3, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.1781, 0.0000 ), 
 	    Vec4( 0.0083, 0.0167, 1.1781, 0.0028 ), 
@@ -2662,7 +2662,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  35, 
 	  3, 
 	  Vec4( 4, 5, 2, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.1781, 0.0000 ), 
 	    Vec4( 0.0092, 0.0149, 1.1478, 0.0028 ), 
@@ -2682,7 +2682,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  36, 
 	  3, 
 	  Vec4( 2, 7, 4, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.1781, 0.0000 ), 
 	    Vec4( 0.0078, 0.0188, 1.1781, 0.0028 ), 
@@ -2702,7 +2702,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  37, 
 	  3, 
 	  Vec4( 3, 6, 3, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.1781, 0.0000 ), 
 	    Vec4( 0.0083, 0.0167, 1.1781, -0.0028 ), 
@@ -2722,7 +2722,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  38, 
 	  3, 
 	  Vec4( 4, 5, 2, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.1781, 0.0000 ), 
 	    Vec4( 0.0092, 0.0149, 1.1478, -0.0028 ), 
@@ -2742,7 +2742,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  39, 
 	  3, 
 	  Vec4( 2, 7, 4, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.1781, 0.0000 ), 
 	    Vec4( 0.0078, 0.0188, 1.1781, -0.0028 ), 
@@ -2762,7 +2762,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  40, 
 	  4, 
 	  Vec4( 0, 1, 4, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
 	    Vec4( 0.0000, 0.0028, 1.5708, 0.0000 ), 
@@ -2782,7 +2782,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  41, 
 	  4, 
 	  Vec4( 0, 8, 4, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
 	    Vec4( 0.0000, 0.0222, 1.5708, 0.0000 ), 
@@ -2802,7 +2802,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  42, 
 	  4, 
 	  Vec4( -1, 8, 5, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
 	    Vec4( 0.0000, 0.0226, 1.5708, 0.0000 ), 
@@ -2822,7 +2822,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  43, 
 	  4, 
 	  Vec4( 1, 8, 3, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
 	    Vec4( -0.0000, 0.0226, 1.5708, 0.0000 ), 
@@ -2842,7 +2842,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  44, 
 	  4, 
 	  Vec4( 0, 8, 4, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
 	    Vec4( 0.0000, 0.0222, 1.5708, 0.0028 ), 
@@ -2862,7 +2862,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  45, 
 	  4, 
 	  Vec4( -1, 8, 5, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
 	    Vec4( 0.0000, 0.0226, 1.5708, 0.0028 ), 
@@ -2882,7 +2882,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  46, 
 	  4, 
 	  Vec4( 1, 8, 3, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
 	    Vec4( -0.0000, 0.0226, 1.5708, 0.0028 ), 
@@ -2902,7 +2902,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  47, 
 	  4, 
 	  Vec4( 0, 8, 4, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
 	    Vec4( 0.0000, 0.0222, 1.5708, -0.0028 ), 
@@ -2922,7 +2922,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  48, 
 	  4, 
 	  Vec4( -1, 8, 5, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
 	    Vec4( 0.0000, 0.0226, 1.5708, -0.0028 ), 
@@ -2942,7 +2942,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  49, 
 	  4, 
 	  Vec4( 1, 8, 3, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
 	    Vec4( -0.0000, 0.0226, 1.5708, -0.0028 ), 
@@ -2962,7 +2962,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  50, 
 	  5, 
 	  Vec4( -1, 2, 5, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.9635, 0.0000 ), 
 	    Vec4( -0.0028, 0.0056, 1.9635, 0.0000 ), 
@@ -2982,7 +2982,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  51, 
 	  5, 
 	  Vec4( -3, 6, 5, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.9635, 0.0000 ), 
 	    Vec4( -0.0083, 0.0167, 1.9635, 0.0000 ), 
@@ -3002,7 +3002,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  52, 
 	  5, 
 	  Vec4( -4, 5, 6, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.9635, 0.0000 ), 
 	    Vec4( -0.0092, 0.0149, 1.9938, 0.0000 ), 
@@ -3022,7 +3022,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  53, 
 	  5, 
 	  Vec4( -2, 7, 4, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.9635, 0.0000 ), 
 	    Vec4( -0.0078, 0.0188, 1.9635, 0.0000 ), 
@@ -3042,7 +3042,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  54, 
 	  5, 
 	  Vec4( -3, 6, 5, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.9635, 0.0000 ), 
 	    Vec4( -0.0083, 0.0167, 1.9635, 0.0028 ), 
@@ -3062,7 +3062,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  55, 
 	  5, 
 	  Vec4( -4, 5, 6, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.9635, 0.0000 ), 
 	    Vec4( -0.0092, 0.0149, 1.9938, 0.0028 ), 
@@ -3082,7 +3082,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  56, 
 	  5, 
 	  Vec4( -2, 7, 4, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.9635, 0.0000 ), 
 	    Vec4( -0.0078, 0.0188, 1.9635, 0.0028 ), 
@@ -3102,7 +3102,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  57, 
 	  5, 
 	  Vec4( -3, 6, 5, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.9635, 0.0000 ), 
 	    Vec4( -0.0083, 0.0167, 1.9635, -0.0028 ), 
@@ -3122,7 +3122,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  58, 
 	  5, 
 	  Vec4( -4, 5, 6, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.9635, 0.0000 ), 
 	    Vec4( -0.0092, 0.0149, 1.9938, -0.0028 ), 
@@ -3142,7 +3142,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  59, 
 	  5, 
 	  Vec4( -2, 7, 4, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 1.9635, 0.0000 ), 
 	    Vec4( -0.0078, 0.0188, 1.9635, -0.0028 ), 
@@ -3162,7 +3162,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  60, 
 	  6, 
 	  Vec4( -1, 1, 6, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
 	    Vec4( -0.0028, 0.0028, 2.3562, 0.0000 ), 
@@ -3182,7 +3182,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  61, 
 	  6, 
 	  Vec4( -6, 6, 6, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
 	    Vec4( -0.0167, 0.0167, 2.3562, 0.0000 ), 
@@ -3202,7 +3202,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  62, 
 	  6, 
 	  Vec4( -7, 5, 7, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
 	    Vec4( -0.0170, 0.0170, 2.3562, 0.0000 ), 
@@ -3222,7 +3222,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  63, 
 	  6, 
 	  Vec4( -5, 7, 5, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
 	    Vec4( -0.0170, 0.0170, 2.3562, 0.0000 ), 
@@ -3242,7 +3242,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  64, 
 	  6, 
 	  Vec4( -6, 6, 6, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
 	    Vec4( -0.0167, 0.0167, 2.3562, 0.0028 ), 
@@ -3262,7 +3262,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  65, 
 	  6, 
 	  Vec4( -7, 5, 7, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
 	    Vec4( -0.0170, 0.0170, 2.3562, 0.0028 ), 
@@ -3282,7 +3282,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  66, 
 	  6, 
 	  Vec4( -5, 7, 5, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
 	    Vec4( -0.0170, 0.0170, 2.3562, 0.0028 ), 
@@ -3302,7 +3302,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  67, 
 	  6, 
 	  Vec4( -6, 6, 6, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
 	    Vec4( -0.0167, 0.0167, 2.3562, -0.0028 ), 
@@ -3322,7 +3322,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  68, 
 	  6, 
 	  Vec4( -7, 5, 7, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
 	    Vec4( -0.0170, 0.0170, 2.3562, -0.0028 ), 
@@ -3342,7 +3342,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  69, 
 	  6, 
 	  Vec4( -5, 7, 5, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
 	    Vec4( -0.0170, 0.0170, 2.3562, -0.0028 ), 
@@ -3362,7 +3362,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  70, 
 	  7, 
 	  Vec4( -2, 1, 7, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.7489, 0.0000 ), 
 	    Vec4( -0.0056, 0.0028, 2.7489, 0.0000 ), 
@@ -3382,7 +3382,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  71, 
 	  7, 
 	  Vec4( -6, 3, 7, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.7489, 0.0000 ), 
 	    Vec4( -0.0167, 0.0083, 2.7489, 0.0000 ), 
@@ -3402,7 +3402,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  72, 
 	  7, 
 	  Vec4( -5, 4, 6, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.7489, 0.0000 ), 
 	    Vec4( -0.0149, 0.0092, 2.7186, 0.0000 ), 
@@ -3422,7 +3422,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  73, 
 	  7, 
 	  Vec4( -7, 2, 8, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.7489, 0.0000 ), 
 	    Vec4( -0.0188, 0.0078, 2.7489, 0.0000 ), 
@@ -3442,7 +3442,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  74, 
 	  7, 
 	  Vec4( -6, 3, 7, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.7489, 0.0000 ), 
 	    Vec4( -0.0167, 0.0083, 2.7489, 0.0028 ), 
@@ -3462,7 +3462,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  75, 
 	  7, 
 	  Vec4( -5, 4, 6, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.7489, 0.0000 ), 
 	    Vec4( -0.0149, 0.0092, 2.7186, 0.0028 ), 
@@ -3482,7 +3482,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  76, 
 	  7, 
 	  Vec4( -7, 2, 8, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.7489, 0.0000 ), 
 	    Vec4( -0.0188, 0.0078, 2.7489, 0.0028 ), 
@@ -3502,7 +3502,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  77, 
 	  7, 
 	  Vec4( -6, 3, 7, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.7489, 0.0000 ), 
 	    Vec4( -0.0167, 0.0083, 2.7489, -0.0028 ), 
@@ -3522,7 +3522,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  78, 
 	  7, 
 	  Vec4( -5, 4, 6, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.7489, 0.0000 ), 
 	    Vec4( -0.0149, 0.0092, 2.7186, -0.0028 ), 
@@ -3542,7 +3542,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  79, 
 	  7, 
 	  Vec4( -7, 2, 8, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 2.7489, 0.0000 ), 
 	    Vec4( -0.0188, 0.0078, 2.7489, -0.0028 ), 
@@ -3562,7 +3562,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  80, 
 	  8, 
 	  Vec4( -1, 0, 8, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
 	    Vec4( -0.0028, 0.0000, 3.1416, 0.0000 ), 
@@ -3582,7 +3582,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  81, 
 	  8, 
 	  Vec4( -8, 0, 8, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
 	    Vec4( -0.0222, 0.0000, 3.1416, 0.0000 ), 
@@ -3602,7 +3602,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  82, 
 	  8, 
 	  Vec4( -8, -1, 9, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
 	    Vec4( -0.0226, 0.0000, 3.1416, 0.0000 ), 
@@ -3622,7 +3622,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  83, 
 	  8, 
 	  Vec4( -8, 1, 7, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
 	    Vec4( -0.0226, 0.0000, 3.1416, 0.0000 ), 
@@ -3642,7 +3642,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  84, 
 	  8, 
 	  Vec4( -8, 0, 8, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
 	    Vec4( -0.0222, 0.0000, 3.1416, 0.0028 ), 
@@ -3662,7 +3662,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  85, 
 	  8, 
 	  Vec4( -8, -1, 9, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
 	    Vec4( -0.0226, 0.0000, 3.1416, 0.0028 ), 
@@ -3682,7 +3682,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  86, 
 	  8, 
 	  Vec4( -8, 1, 7, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
 	    Vec4( -0.0226, 0.0000, 3.1416, 0.0028 ), 
@@ -3702,7 +3702,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  87, 
 	  8, 
 	  Vec4( -8, 0, 8, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
 	    Vec4( -0.0222, 0.0000, 3.1416, -0.0028 ), 
@@ -3722,7 +3722,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  88, 
 	  8, 
 	  Vec4( -8, -1, 9, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
 	    Vec4( -0.0226, 0.0000, 3.1416, -0.0028 ), 
@@ -3742,7 +3742,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  89, 
 	  8, 
 	  Vec4( -8, 1, 7, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
 	    Vec4( -0.0226, 0.0000, 3.1416, -0.0028 ), 
@@ -3762,7 +3762,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  90, 
 	  9, 
 	  Vec4( -2, -1, 9, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.5343, 0.0000 ), 
 	    Vec4( -0.0056, -0.0028, 3.5343, 0.0000 ), 
@@ -3782,7 +3782,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  91, 
 	  9, 
 	  Vec4( -6, -3, 9, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.5343, 0.0000 ), 
 	    Vec4( -0.0167, -0.0083, 3.5343, 0.0000 ), 
@@ -3802,7 +3802,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  92, 
 	  9, 
 	  Vec4( -5, -4, 10, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.5343, 0.0000 ), 
 	    Vec4( -0.0149, -0.0092, 3.5646, 0.0000 ), 
@@ -3822,7 +3822,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  93, 
 	  9, 
 	  Vec4( -7, -2, 8, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.5343, 0.0000 ), 
 	    Vec4( -0.0188, -0.0078, 3.5343, 0.0000 ), 
@@ -3842,7 +3842,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  94, 
 	  9, 
 	  Vec4( -6, -3, 9, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.5343, 0.0000 ), 
 	    Vec4( -0.0167, -0.0083, 3.5343, 0.0028 ), 
@@ -3862,7 +3862,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  95, 
 	  9, 
 	  Vec4( -5, -4, 10, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.5343, 0.0000 ), 
 	    Vec4( -0.0149, -0.0092, 3.5646, 0.0028 ), 
@@ -3882,7 +3882,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  96, 
 	  9, 
 	  Vec4( -7, -2, 8, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.5343, 0.0000 ), 
 	    Vec4( -0.0188, -0.0078, 3.5343, 0.0028 ), 
@@ -3902,7 +3902,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  97, 
 	  9, 
 	  Vec4( -6, -3, 9, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.5343, 0.0000 ), 
 	    Vec4( -0.0167, -0.0083, 3.5343, -0.0028 ), 
@@ -3922,7 +3922,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  98, 
 	  9, 
 	  Vec4( -5, -4, 10, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.5343, 0.0000 ), 
 	    Vec4( -0.0149, -0.0092, 3.5646, -0.0028 ), 
@@ -3942,7 +3942,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  99, 
 	  9, 
 	  Vec4( -7, -2, 8, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.5343, 0.0000 ), 
 	    Vec4( -0.0188, -0.0078, 3.5343, -0.0028 ), 
@@ -3962,7 +3962,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  100, 
 	  10, 
 	  Vec4( -1, -1, 10, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
 	    Vec4( -0.0028, -0.0028, 3.9270, 0.0000 ), 
@@ -3982,7 +3982,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  101, 
 	  10, 
 	  Vec4( -6, -6, 10, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
 	    Vec4( -0.0167, -0.0167, 3.9270, 0.0000 ), 
@@ -4002,7 +4002,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  102, 
 	  10, 
 	  Vec4( -5, -7, 11, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
 	    Vec4( -0.0170, -0.0170, 3.9270, 0.0000 ), 
@@ -4022,7 +4022,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  103, 
 	  10, 
 	  Vec4( -7, -5, 9, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
 	    Vec4( -0.0170, -0.0170, 3.9270, 0.0000 ), 
@@ -4042,7 +4042,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  104, 
 	  10, 
 	  Vec4( -6, -6, 10, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
 	    Vec4( -0.0167, -0.0167, 3.9270, 0.0028 ), 
@@ -4062,7 +4062,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  105, 
 	  10, 
 	  Vec4( -5, -7, 11, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
 	    Vec4( -0.0170, -0.0170, 3.9270, 0.0028 ), 
@@ -4082,7 +4082,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  106, 
 	  10, 
 	  Vec4( -7, -5, 9, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
 	    Vec4( -0.0170, -0.0170, 3.9270, 0.0028 ), 
@@ -4102,7 +4102,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  107, 
 	  10, 
 	  Vec4( -6, -6, 10, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
 	    Vec4( -0.0167, -0.0167, 3.9270, -0.0028 ), 
@@ -4122,7 +4122,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  108, 
 	  10, 
 	  Vec4( -5, -7, 11, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
 	    Vec4( -0.0170, -0.0170, 3.9270, -0.0028 ), 
@@ -4142,7 +4142,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  109, 
 	  10, 
 	  Vec4( -7, -5, 9, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
 	    Vec4( -0.0170, -0.0170, 3.9270, -0.0028 ), 
@@ -4162,7 +4162,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  110, 
 	  11, 
 	  Vec4( -1, -2, 11, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.3197, 0.0000 ), 
 	    Vec4( -0.0028, -0.0056, 4.3197, 0.0000 ), 
@@ -4182,7 +4182,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  111, 
 	  11, 
 	  Vec4( -3, -6, 11, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.3197, 0.0000 ), 
 	    Vec4( -0.0083, -0.0167, 4.3197, 0.0000 ), 
@@ -4202,7 +4202,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  112, 
 	  11, 
 	  Vec4( -4, -5, 10, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.3197, 0.0000 ), 
 	    Vec4( -0.0092, -0.0149, 4.2894, 0.0000 ), 
@@ -4222,7 +4222,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  113, 
 	  11, 
 	  Vec4( -2, -7, 12, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.3197, 0.0000 ), 
 	    Vec4( -0.0078, -0.0188, 4.3197, 0.0000 ), 
@@ -4242,7 +4242,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  114, 
 	  11, 
 	  Vec4( -3, -6, 11, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.3197, 0.0000 ), 
 	    Vec4( -0.0083, -0.0167, 4.3197, 0.0028 ), 
@@ -4262,7 +4262,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  115, 
 	  11, 
 	  Vec4( -4, -5, 10, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.3197, 0.0000 ), 
 	    Vec4( -0.0092, -0.0149, 4.2894, 0.0028 ), 
@@ -4282,7 +4282,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  116, 
 	  11, 
 	  Vec4( -2, -7, 12, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.3197, 0.0000 ), 
 	    Vec4( -0.0078, -0.0188, 4.3197, 0.0028 ), 
@@ -4302,7 +4302,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  117, 
 	  11, 
 	  Vec4( -3, -6, 11, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.3197, 0.0000 ), 
 	    Vec4( -0.0083, -0.0167, 4.3197, -0.0028 ), 
@@ -4322,7 +4322,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  118, 
 	  11, 
 	  Vec4( -4, -5, 10, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.3197, 0.0000 ), 
 	    Vec4( -0.0092, -0.0149, 4.2894, -0.0028 ), 
@@ -4342,7 +4342,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  119, 
 	  11, 
 	  Vec4( -2, -7, 12, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.3197, 0.0000 ), 
 	    Vec4( -0.0078, -0.0188, 4.3197, -0.0028 ), 
@@ -4362,7 +4362,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  120, 
 	  12, 
 	  Vec4( 0, -1, 12, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
 	    Vec4( 0.0000, -0.0028, 4.7124, 0.0000 ), 
@@ -4382,7 +4382,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  121, 
 	  12, 
 	  Vec4( 0, -8, 12, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
 	    Vec4( 0.0000, -0.0222, 4.7124, 0.0000 ), 
@@ -4402,7 +4402,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  122, 
 	  12, 
 	  Vec4( 1, -8, 13, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
 	    Vec4( 0.0000, -0.0226, 4.7124, 0.0000 ), 
@@ -4422,7 +4422,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  123, 
 	  12, 
 	  Vec4( -1, -8, 11, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
 	    Vec4( -0.0000, -0.0226, 4.7124, 0.0000 ), 
@@ -4442,7 +4442,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  124, 
 	  12, 
 	  Vec4( 0, -8, 12, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
 	    Vec4( 0.0000, -0.0222, 4.7124, 0.0028 ), 
@@ -4462,7 +4462,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  125, 
 	  12, 
 	  Vec4( 1, -8, 13, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
 	    Vec4( 0.0000, -0.0226, 4.7124, 0.0028 ), 
@@ -4482,7 +4482,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  126, 
 	  12, 
 	  Vec4( -1, -8, 11, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
 	    Vec4( -0.0000, -0.0226, 4.7124, 0.0028 ), 
@@ -4502,7 +4502,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  127, 
 	  12, 
 	  Vec4( 0, -8, 12, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
 	    Vec4( 0.0000, -0.0222, 4.7124, -0.0028 ), 
@@ -4522,7 +4522,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  128, 
 	  12, 
 	  Vec4( 1, -8, 13, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
 	    Vec4( 0.0000, -0.0226, 4.7124, -0.0028 ), 
@@ -4542,7 +4542,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  129, 
 	  12, 
 	  Vec4( -1, -8, 11, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
 	    Vec4( -0.0000, -0.0226, 4.7124, -0.0028 ), 
@@ -4562,7 +4562,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  130, 
 	  13, 
 	  Vec4( 1, -2, 13, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.1051, 0.0000 ), 
 	    Vec4( 0.0028, -0.0056, 5.1051, 0.0000 ), 
@@ -4582,7 +4582,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  131, 
 	  13, 
 	  Vec4( 3, -6, 13, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.1051, 0.0000 ), 
 	    Vec4( 0.0083, -0.0167, 5.1051, 0.0000 ), 
@@ -4602,7 +4602,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  132, 
 	  13, 
 	  Vec4( 4, -5, 14, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.1051, 0.0000 ), 
 	    Vec4( 0.0092, -0.0149, 5.1354, 0.0000 ), 
@@ -4622,7 +4622,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  133, 
 	  13, 
 	  Vec4( 2, -7, 12, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.1051, 0.0000 ), 
 	    Vec4( 0.0078, -0.0188, 5.1051, 0.0000 ), 
@@ -4642,7 +4642,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  134, 
 	  13, 
 	  Vec4( 3, -6, 13, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.1051, 0.0000 ), 
 	    Vec4( 0.0083, -0.0167, 5.1051, 0.0028 ), 
@@ -4662,7 +4662,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  135, 
 	  13, 
 	  Vec4( 4, -5, 14, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.1051, 0.0000 ), 
 	    Vec4( 0.0092, -0.0149, 5.1354, 0.0028 ), 
@@ -4682,7 +4682,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  136, 
 	  13, 
 	  Vec4( 2, -7, 12, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.1051, 0.0000 ), 
 	    Vec4( 0.0078, -0.0188, 5.1051, 0.0028 ), 
@@ -4702,7 +4702,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  137, 
 	  13, 
 	  Vec4( 3, -6, 13, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.1051, 0.0000 ), 
 	    Vec4( 0.0083, -0.0167, 5.1051, -0.0028 ), 
@@ -4722,7 +4722,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  138, 
 	  13, 
 	  Vec4( 4, -5, 14, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.1051, 0.0000 ), 
 	    Vec4( 0.0092, -0.0149, 5.1354, -0.0028 ), 
@@ -4742,7 +4742,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  139, 
 	  13, 
 	  Vec4( 2, -7, 12, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.1051, 0.0000 ), 
 	    Vec4( 0.0078, -0.0188, 5.1051, -0.0028 ), 
@@ -4762,7 +4762,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  140, 
 	  14, 
 	  Vec4( 1, -1, 14, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
 	    Vec4( 0.0028, -0.0028, 5.4978, 0.0000 ), 
@@ -4782,7 +4782,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  141, 
 	  14, 
 	  Vec4( 6, -6, 14, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
 	    Vec4( 0.0167, -0.0167, 5.4978, 0.0000 ), 
@@ -4802,7 +4802,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  142, 
 	  14, 
 	  Vec4( 7, -5, 15, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
 	    Vec4( 0.0170, -0.0170, 5.4978, 0.0000 ), 
@@ -4822,7 +4822,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  143, 
 	  14, 
 	  Vec4( 5, -7, 13, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
 	    Vec4( 0.0170, -0.0170, 5.4978, 0.0000 ), 
@@ -4842,7 +4842,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  144, 
 	  14, 
 	  Vec4( 6, -6, 14, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
 	    Vec4( 0.0167, -0.0167, 5.4978, 0.0028 ), 
@@ -4862,7 +4862,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  145, 
 	  14, 
 	  Vec4( 7, -5, 15, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
 	    Vec4( 0.0170, -0.0170, 5.4978, 0.0028 ), 
@@ -4882,7 +4882,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  146, 
 	  14, 
 	  Vec4( 5, -7, 13, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
 	    Vec4( 0.0170, -0.0170, 5.4978, 0.0028 ), 
@@ -4902,7 +4902,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  147, 
 	  14, 
 	  Vec4( 6, -6, 14, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
 	    Vec4( 0.0167, -0.0167, 5.4978, -0.0028 ), 
@@ -4922,7 +4922,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  148, 
 	  14, 
 	  Vec4( 7, -5, 15, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
 	    Vec4( 0.0170, -0.0170, 5.4978, -0.0028 ), 
@@ -4942,7 +4942,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  149, 
 	  14, 
 	  Vec4( 5, -7, 13, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
 	    Vec4( 0.0170, -0.0170, 5.4978, -0.0028 ), 
@@ -4962,7 +4962,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  150, 
 	  15, 
 	  Vec4( 2, -1, 15, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.8905, 0.0000 ), 
 	    Vec4( 0.0056, -0.0028, 5.8905, 0.0000 ), 
@@ -4982,7 +4982,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  151, 
 	  15, 
 	  Vec4( 6, -3, 15, 0), 
-	  0, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.8905, 0.0000 ), 
 	    Vec4( 0.0167, -0.0083, 5.8905, 0.0000 ), 
@@ -5002,7 +5002,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  152, 
 	  15, 
 	  Vec4( 5, -4, 14, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.8905, 0.0000 ), 
 	    Vec4( 0.0149, -0.0092, 5.8602, 0.0000 ), 
@@ -5022,7 +5022,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  153, 
 	  15, 
 	  Vec4( 7, -2, 0, 0), 
-	  0, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.8905, 0.0000 ), 
 	    Vec4( 0.0188, -0.0078, 5.8905, 0.0000 ), 
@@ -5042,7 +5042,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  154, 
 	  15, 
 	  Vec4( 6, -3, 15, 1), 
-	  1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.8905, 0.0000 ), 
 	    Vec4( 0.0167, -0.0083, 5.8905, 0.0028 ), 
@@ -5062,7 +5062,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  155, 
 	  15, 
 	  Vec4( 5, -4, 14, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.8905, 0.0000 ), 
 	    Vec4( 0.0149, -0.0092, 5.8602, 0.0028 ), 
@@ -5082,7 +5082,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  156, 
 	  15, 
 	  Vec4( 7, -2, 0, 1), 
-	  1, 
+	  3, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.8905, 0.0000 ), 
 	    Vec4( 0.0188, -0.0078, 5.8905, 0.0028 ), 
@@ -5102,7 +5102,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  157, 
 	  15, 
 	  Vec4( 6, -3, 15, -1), 
-	  -1, 
+	  1, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.8905, 0.0000 ), 
 	    Vec4( 0.0167, -0.0083, 5.8905, -0.0028 ), 
@@ -5122,7 +5122,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  158, 
 	  15, 
 	  Vec4( 5, -4, 14, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.8905, 0.0000 ), 
 	    Vec4( 0.0149, -0.0092, 5.8602, -0.0028 ), 
@@ -5142,7 +5142,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	  159, 
 	  15, 
 	  Vec4( 7, -2, 0, -1), 
-	  -1, 
+	  2, 
 	  { 
 	    Vec4( 0.0000, 0.0000, 5.8905, 0.0000 ), 
 	    Vec4( 0.0188, -0.0078, 5.8905, -0.0028 ), 
@@ -5156,9 +5156,7 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 	    Vec4( 0.1750, -0.0500, 6.2832, -0.0250 )
 	  } 
 	);
-	mprims.push_back(mp159);
-
-
+	mprims.push_back(mp159); 	
 
 	return mprims;
 }
@@ -5167,1604 +5165,1604 @@ vector<MP> MPrims_highres3D() { // copy and paste from MATLAB file here
 		vector<MP> mprims;
 
 	MP mp0 = MP(
-	  0, 
-	  0, 
-	  Vec4( 2, 0, 0, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0056, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0111, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0167, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0222, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0278, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0333, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0389, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0444, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0500, 0.0000, 0.0000, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp0);
-
-	MP mp1 = MP(
-	  1, 
-	  0, 
-	  Vec4( 16, 0, 0, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0444, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0889, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.1333, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.1778, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.2222, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.2667, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.3111, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.3556, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.4000, 0.0000, 0.0000, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp1);
-
-	MP mp2 = MP(
-	  2, 
-	  0, 
-	  Vec4( 12, 12, 1, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0408, 0.0069, 0.0825, 0.0000 ), 
-	    Vec4( 0.0810, 0.0207, 0.1650, 0.0000 ), 
-	    Vec4( 0.1201, 0.0414, 0.2475, 0.0000 ), 
-	    Vec4( 0.1574, 0.0688, 0.3299, 0.0000 ), 
-	    Vec4( 0.1925, 0.1028, 0.4124, 0.0000 ), 
-	    Vec4( 0.2249, 0.1432, 0.4949, 0.0000 ), 
-	    Vec4( 0.2539, 0.1898, 0.5774, 0.0000 ), 
-	    Vec4( 0.2791, 0.2421, 0.6599, 0.0000 ), 
-	    Vec4( 0.3000, 0.3000, 0.7424, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp2);
-
-	MP mp3 = MP(
-	  3, 
-	  0, 
-	  Vec4( 12, -12, 7, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0408, -0.0069, -0.0825, 0.0000 ), 
-	    Vec4( 0.0810, -0.0207, -0.1650, 0.0000 ), 
-	    Vec4( 0.1201, -0.0414, -0.2475, 0.0000 ), 
-	    Vec4( 0.1574, -0.0688, -0.3299, 0.0000 ), 
-	    Vec4( 0.1925, -0.1028, -0.4124, 0.0000 ), 
-	    Vec4( 0.2249, -0.1432, -0.4949, 0.0000 ), 
-	    Vec4( 0.2539, -0.1898, -0.5774, 0.0000 ), 
-	    Vec4( 0.2791, -0.2421, -0.6599, 0.0000 ), 
-	    Vec4( 0.3000, -0.3000, -0.7424, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp3);
-
-	MP mp4 = MP(
-	  4, 
-	  0, 
-	  Vec4( 16, 0, 0, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0444, 0.0000, 0.0000, 0.0028 ), 
-	    Vec4( 0.0889, 0.0000, 0.0000, 0.0056 ), 
-	    Vec4( 0.1333, 0.0000, 0.0000, 0.0083 ), 
-	    Vec4( 0.1778, 0.0000, 0.0000, 0.0111 ), 
-	    Vec4( 0.2222, 0.0000, 0.0000, 0.0139 ), 
-	    Vec4( 0.2667, 0.0000, 0.0000, 0.0167 ), 
-	    Vec4( 0.3111, 0.0000, 0.0000, 0.0194 ), 
-	    Vec4( 0.3556, 0.0000, 0.0000, 0.0222 ), 
-	    Vec4( 0.4000, 0.0000, 0.0000, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp4);
-
-	MP mp5 = MP(
-	  5, 
-	  0, 
-	  Vec4( 12, 12, 1, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0408, 0.0069, 0.0825, 0.0028 ), 
-	    Vec4( 0.0810, 0.0207, 0.1650, 0.0056 ), 
-	    Vec4( 0.1201, 0.0414, 0.2475, 0.0083 ), 
-	    Vec4( 0.1574, 0.0688, 0.3299, 0.0111 ), 
-	    Vec4( 0.1925, 0.1028, 0.4124, 0.0139 ), 
-	    Vec4( 0.2249, 0.1432, 0.4949, 0.0167 ), 
-	    Vec4( 0.2539, 0.1898, 0.5774, 0.0194 ), 
-	    Vec4( 0.2791, 0.2421, 0.6599, 0.0222 ), 
-	    Vec4( 0.3000, 0.3000, 0.7424, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp5);
-
-	MP mp6 = MP(
-	  6, 
-	  0, 
-	  Vec4( 12, -12, 7, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0408, -0.0069, -0.0825, 0.0028 ), 
-	    Vec4( 0.0810, -0.0207, -0.1650, 0.0056 ), 
-	    Vec4( 0.1201, -0.0414, -0.2475, 0.0083 ), 
-	    Vec4( 0.1574, -0.0688, -0.3299, 0.0111 ), 
-	    Vec4( 0.1925, -0.1028, -0.4124, 0.0139 ), 
-	    Vec4( 0.2249, -0.1432, -0.4949, 0.0167 ), 
-	    Vec4( 0.2539, -0.1898, -0.5774, 0.0194 ), 
-	    Vec4( 0.2791, -0.2421, -0.6599, 0.0222 ), 
-	    Vec4( 0.3000, -0.3000, -0.7424, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp6);
-
-	MP mp7 = MP(
-	  7, 
-	  0, 
-	  Vec4( 16, 0, 0, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0444, 0.0000, 0.0000, -0.0028 ), 
-	    Vec4( 0.0889, 0.0000, 0.0000, -0.0056 ), 
-	    Vec4( 0.1333, 0.0000, 0.0000, -0.0083 ), 
-	    Vec4( 0.1778, 0.0000, 0.0000, -0.0111 ), 
-	    Vec4( 0.2222, 0.0000, 0.0000, -0.0139 ), 
-	    Vec4( 0.2667, 0.0000, 0.0000, -0.0167 ), 
-	    Vec4( 0.3111, 0.0000, 0.0000, -0.0194 ), 
-	    Vec4( 0.3556, 0.0000, 0.0000, -0.0222 ), 
-	    Vec4( 0.4000, 0.0000, 0.0000, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp7);
-
-	MP mp8 = MP(
-	  8, 
-	  0, 
-	  Vec4( 12, 12, 1, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0408, 0.0069, 0.0825, -0.0028 ), 
-	    Vec4( 0.0810, 0.0207, 0.1650, -0.0056 ), 
-	    Vec4( 0.1201, 0.0414, 0.2475, -0.0083 ), 
-	    Vec4( 0.1574, 0.0688, 0.3299, -0.0111 ), 
-	    Vec4( 0.1925, 0.1028, 0.4124, -0.0139 ), 
-	    Vec4( 0.2249, 0.1432, 0.4949, -0.0167 ), 
-	    Vec4( 0.2539, 0.1898, 0.5774, -0.0194 ), 
-	    Vec4( 0.2791, 0.2421, 0.6599, -0.0222 ), 
-	    Vec4( 0.3000, 0.3000, 0.7424, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp8);
-
-	MP mp9 = MP(
-	  9, 
-	  0, 
-	  Vec4( 12, -12, 7, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
-	    Vec4( 0.0408, -0.0069, -0.0825, -0.0028 ), 
-	    Vec4( 0.0810, -0.0207, -0.1650, -0.0056 ), 
-	    Vec4( 0.1201, -0.0414, -0.2475, -0.0083 ), 
-	    Vec4( 0.1574, -0.0688, -0.3299, -0.0111 ), 
-	    Vec4( 0.1925, -0.1028, -0.4124, -0.0139 ), 
-	    Vec4( 0.2249, -0.1432, -0.4949, -0.0167 ), 
-	    Vec4( 0.2539, -0.1898, -0.5774, -0.0194 ), 
-	    Vec4( 0.2791, -0.2421, -0.6599, -0.0222 ), 
-	    Vec4( 0.3000, -0.3000, -0.7424, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp9);
-
-	MP mp10 = MP(
-	  10, 
-	  1, 
-	  Vec4( 2, 2, 1, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
-	    Vec4( 0.0056, 0.0056, 0.7854, 0.0000 ), 
-	    Vec4( 0.0111, 0.0111, 0.7854, 0.0000 ), 
-	    Vec4( 0.0167, 0.0167, 0.7854, 0.0000 ), 
-	    Vec4( 0.0222, 0.0222, 0.7854, 0.0000 ), 
-	    Vec4( 0.0278, 0.0278, 0.7854, 0.0000 ), 
-	    Vec4( 0.0333, 0.0333, 0.7854, 0.0000 ), 
-	    Vec4( 0.0389, 0.0389, 0.7854, 0.0000 ), 
-	    Vec4( 0.0444, 0.0444, 0.7854, 0.0000 ), 
-	    Vec4( 0.0500, 0.0500, 0.7854, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp10);
-
-	MP mp11 = MP(
-	  11, 
-	  1, 
-	  Vec4( 12, 12, 1, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
-	    Vec4( 0.0333, 0.0333, 0.7854, 0.0000 ), 
-	    Vec4( 0.0667, 0.0667, 0.7854, 0.0000 ), 
-	    Vec4( 0.1000, 0.1000, 0.7854, 0.0000 ), 
-	    Vec4( 0.1333, 0.1333, 0.7854, 0.0000 ), 
-	    Vec4( 0.1667, 0.1667, 0.7854, 0.0000 ), 
-	    Vec4( 0.2000, 0.2000, 0.7854, 0.0000 ), 
-	    Vec4( 0.2333, 0.2333, 0.7854, 0.0000 ), 
-	    Vec4( 0.2667, 0.2667, 0.7854, 0.0000 ), 
-	    Vec4( 0.3000, 0.3000, 0.7854, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp11);
-
-	MP mp12 = MP(
-	  12, 
-	  1, 
-	  Vec4( 0, 16, 2, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
-	    Vec4( 0.0226, 0.0318, 0.8679, 0.0000 ), 
-	    Vec4( 0.0402, 0.0678, 0.9504, 0.0000 ), 
-	    Vec4( 0.0525, 0.1076, 1.0329, 0.0000 ), 
-	    Vec4( 0.0591, 0.1508, 1.1153, 0.0000 ), 
-	    Vec4( 0.0598, 0.1969, 1.1978, 0.0000 ), 
-	    Vec4( 0.0544, 0.2454, 1.2803, 0.0000 ), 
-	    Vec4( 0.0427, 0.2957, 1.3628, 0.0000 ), 
-	    Vec4( 0.0246, 0.3475, 1.4453, 0.0000 ), 
-	    Vec4( 0.0000, 0.4000, 1.5278, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp12);
-
-	MP mp13 = MP(
-	  13, 
-	  1, 
-	  Vec4( 16, 0, 0, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
-	    Vec4( 0.0318, 0.0226, 0.7029, 0.0000 ), 
-	    Vec4( 0.0678, 0.0402, 0.6204, 0.0000 ), 
-	    Vec4( 0.1076, 0.0525, 0.5379, 0.0000 ), 
-	    Vec4( 0.1508, 0.0591, 0.4555, 0.0000 ), 
-	    Vec4( 0.1969, 0.0598, 0.3730, 0.0000 ), 
-	    Vec4( 0.2454, 0.0544, 0.2905, 0.0000 ), 
-	    Vec4( 0.2957, 0.0427, 0.2080, 0.0000 ), 
-	    Vec4( 0.3475, 0.0246, 0.1255, 0.0000 ), 
-	    Vec4( 0.4000, 0.0000, 0.0430, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp13);
-
-	MP mp14 = MP(
-	  14, 
-	  1, 
-	  Vec4( 12, 12, 1, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
-	    Vec4( 0.0333, 0.0333, 0.7854, 0.0028 ), 
-	    Vec4( 0.0667, 0.0667, 0.7854, 0.0056 ), 
-	    Vec4( 0.1000, 0.1000, 0.7854, 0.0083 ), 
-	    Vec4( 0.1333, 0.1333, 0.7854, 0.0111 ), 
-	    Vec4( 0.1667, 0.1667, 0.7854, 0.0139 ), 
-	    Vec4( 0.2000, 0.2000, 0.7854, 0.0167 ), 
-	    Vec4( 0.2333, 0.2333, 0.7854, 0.0194 ), 
-	    Vec4( 0.2667, 0.2667, 0.7854, 0.0222 ), 
-	    Vec4( 0.3000, 0.3000, 0.7854, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp14);
-
-	MP mp15 = MP(
-	  15, 
-	  1, 
-	  Vec4( 0, 16, 2, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
-	    Vec4( 0.0226, 0.0318, 0.8679, 0.0028 ), 
-	    Vec4( 0.0402, 0.0678, 0.9504, 0.0056 ), 
-	    Vec4( 0.0525, 0.1076, 1.0329, 0.0083 ), 
-	    Vec4( 0.0591, 0.1508, 1.1153, 0.0111 ), 
-	    Vec4( 0.0598, 0.1969, 1.1978, 0.0139 ), 
-	    Vec4( 0.0544, 0.2454, 1.2803, 0.0167 ), 
-	    Vec4( 0.0427, 0.2957, 1.3628, 0.0194 ), 
-	    Vec4( 0.0246, 0.3475, 1.4453, 0.0222 ), 
-	    Vec4( 0.0000, 0.4000, 1.5278, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp15);
-
-	MP mp16 = MP(
-	  16, 
-	  1, 
-	  Vec4( 16, 0, 0, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
-	    Vec4( 0.0318, 0.0226, 0.7029, 0.0028 ), 
-	    Vec4( 0.0678, 0.0402, 0.6204, 0.0056 ), 
-	    Vec4( 0.1076, 0.0525, 0.5379, 0.0083 ), 
-	    Vec4( 0.1508, 0.0591, 0.4555, 0.0111 ), 
-	    Vec4( 0.1969, 0.0598, 0.3730, 0.0139 ), 
-	    Vec4( 0.2454, 0.0544, 0.2905, 0.0167 ), 
-	    Vec4( 0.2957, 0.0427, 0.2080, 0.0194 ), 
-	    Vec4( 0.3475, 0.0246, 0.1255, 0.0222 ), 
-	    Vec4( 0.4000, 0.0000, 0.0430, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp16);
-
-	MP mp17 = MP(
-	  17, 
-	  1, 
-	  Vec4( 12, 12, 1, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
-	    Vec4( 0.0333, 0.0333, 0.7854, -0.0028 ), 
-	    Vec4( 0.0667, 0.0667, 0.7854, -0.0056 ), 
-	    Vec4( 0.1000, 0.1000, 0.7854, -0.0083 ), 
-	    Vec4( 0.1333, 0.1333, 0.7854, -0.0111 ), 
-	    Vec4( 0.1667, 0.1667, 0.7854, -0.0139 ), 
-	    Vec4( 0.2000, 0.2000, 0.7854, -0.0167 ), 
-	    Vec4( 0.2333, 0.2333, 0.7854, -0.0194 ), 
-	    Vec4( 0.2667, 0.2667, 0.7854, -0.0222 ), 
-	    Vec4( 0.3000, 0.3000, 0.7854, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp17);
-
-	MP mp18 = MP(
-	  18, 
-	  1, 
-	  Vec4( 0, 16, 2, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
-	    Vec4( 0.0226, 0.0318, 0.8679, -0.0028 ), 
-	    Vec4( 0.0402, 0.0678, 0.9504, -0.0056 ), 
-	    Vec4( 0.0525, 0.1076, 1.0329, -0.0083 ), 
-	    Vec4( 0.0591, 0.1508, 1.1153, -0.0111 ), 
-	    Vec4( 0.0598, 0.1969, 1.1978, -0.0139 ), 
-	    Vec4( 0.0544, 0.2454, 1.2803, -0.0167 ), 
-	    Vec4( 0.0427, 0.2957, 1.3628, -0.0194 ), 
-	    Vec4( 0.0246, 0.3475, 1.4453, -0.0222 ), 
-	    Vec4( 0.0000, 0.4000, 1.5278, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp18);
-
-	MP mp19 = MP(
-	  19, 
-	  1, 
-	  Vec4( 16, 0, 0, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
-	    Vec4( 0.0318, 0.0226, 0.7029, -0.0028 ), 
-	    Vec4( 0.0678, 0.0402, 0.6204, -0.0056 ), 
-	    Vec4( 0.1076, 0.0525, 0.5379, -0.0083 ), 
-	    Vec4( 0.1508, 0.0591, 0.4555, -0.0111 ), 
-	    Vec4( 0.1969, 0.0598, 0.3730, -0.0139 ), 
-	    Vec4( 0.2454, 0.0544, 0.2905, -0.0167 ), 
-	    Vec4( 0.2957, 0.0427, 0.2080, -0.0194 ), 
-	    Vec4( 0.3475, 0.0246, 0.1255, -0.0222 ), 
-	    Vec4( 0.4000, 0.0000, 0.0430, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp19);
-
-	MP mp20 = MP(
-	  20, 
-	  2, 
-	  Vec4( 0, 2, 2, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0056, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0111, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0167, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0222, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0278, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0333, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0389, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0444, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0500, 1.5708, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp20);
-
-	MP mp21 = MP(
-	  21, 
-	  2, 
-	  Vec4( 0, 16, 2, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0444, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0889, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.1333, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.1778, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.2222, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.2667, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.3111, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.3556, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.4000, 1.5708, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp21);
-
-	MP mp22 = MP(
-	  22, 
-	  2, 
-	  Vec4( -12, 12, 3, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
-	    Vec4( -0.0069, 0.0408, 1.6533, 0.0000 ), 
-	    Vec4( -0.0207, 0.0810, 1.7358, 0.0000 ), 
-	    Vec4( -0.0414, 0.1201, 1.8183, 0.0000 ), 
-	    Vec4( -0.0688, 0.1574, 1.9007, 0.0000 ), 
-	    Vec4( -0.1028, 0.1925, 1.9832, 0.0000 ), 
-	    Vec4( -0.1432, 0.2249, 2.0657, 0.0000 ), 
-	    Vec4( -0.1898, 0.2539, 2.1482, 0.0000 ), 
-	    Vec4( -0.2421, 0.2791, 2.2307, 0.0000 ), 
-	    Vec4( -0.3000, 0.3000, 2.3132, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp22);
-
-	MP mp23 = MP(
-	  23, 
-	  2, 
-	  Vec4( 12, 12, 1, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
-	    Vec4( 0.0069, 0.0408, 1.4883, 0.0000 ), 
-	    Vec4( 0.0207, 0.0810, 1.4058, 0.0000 ), 
-	    Vec4( 0.0414, 0.1201, 1.3233, 0.0000 ), 
-	    Vec4( 0.0688, 0.1574, 1.2409, 0.0000 ), 
-	    Vec4( 0.1028, 0.1925, 1.1584, 0.0000 ), 
-	    Vec4( 0.1432, 0.2249, 1.0759, 0.0000 ), 
-	    Vec4( 0.1898, 0.2539, 0.9934, 0.0000 ), 
-	    Vec4( 0.2421, 0.2791, 0.9109, 0.0000 ), 
-	    Vec4( 0.3000, 0.3000, 0.8284, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp23);
-
-	MP mp24 = MP(
-	  24, 
-	  2, 
-	  Vec4( 0, 16, 2, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0444, 1.5708, 0.0028 ), 
-	    Vec4( 0.0000, 0.0889, 1.5708, 0.0056 ), 
-	    Vec4( 0.0000, 0.1333, 1.5708, 0.0083 ), 
-	    Vec4( 0.0000, 0.1778, 1.5708, 0.0111 ), 
-	    Vec4( 0.0000, 0.2222, 1.5708, 0.0139 ), 
-	    Vec4( 0.0000, 0.2667, 1.5708, 0.0167 ), 
-	    Vec4( 0.0000, 0.3111, 1.5708, 0.0194 ), 
-	    Vec4( 0.0000, 0.3556, 1.5708, 0.0222 ), 
-	    Vec4( 0.0000, 0.4000, 1.5708, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp24);
-
-	MP mp25 = MP(
-	  25, 
-	  2, 
-	  Vec4( -12, 12, 3, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
-	    Vec4( -0.0069, 0.0408, 1.6533, 0.0028 ), 
-	    Vec4( -0.0207, 0.0810, 1.7358, 0.0056 ), 
-	    Vec4( -0.0414, 0.1201, 1.8183, 0.0083 ), 
-	    Vec4( -0.0688, 0.1574, 1.9007, 0.0111 ), 
-	    Vec4( -0.1028, 0.1925, 1.9832, 0.0139 ), 
-	    Vec4( -0.1432, 0.2249, 2.0657, 0.0167 ), 
-	    Vec4( -0.1898, 0.2539, 2.1482, 0.0194 ), 
-	    Vec4( -0.2421, 0.2791, 2.2307, 0.0222 ), 
-	    Vec4( -0.3000, 0.3000, 2.3132, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp25);
-
-	MP mp26 = MP(
-	  26, 
-	  2, 
-	  Vec4( 12, 12, 1, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
-	    Vec4( 0.0069, 0.0408, 1.4883, 0.0028 ), 
-	    Vec4( 0.0207, 0.0810, 1.4058, 0.0056 ), 
-	    Vec4( 0.0414, 0.1201, 1.3233, 0.0083 ), 
-	    Vec4( 0.0688, 0.1574, 1.2409, 0.0111 ), 
-	    Vec4( 0.1028, 0.1925, 1.1584, 0.0139 ), 
-	    Vec4( 0.1432, 0.2249, 1.0759, 0.0167 ), 
-	    Vec4( 0.1898, 0.2539, 0.9934, 0.0194 ), 
-	    Vec4( 0.2421, 0.2791, 0.9109, 0.0222 ), 
-	    Vec4( 0.3000, 0.3000, 0.8284, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp26);
-
-	MP mp27 = MP(
-	  27, 
-	  2, 
-	  Vec4( 0, 16, 2, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
-	    Vec4( 0.0000, 0.0444, 1.5708, -0.0028 ), 
-	    Vec4( 0.0000, 0.0889, 1.5708, -0.0056 ), 
-	    Vec4( 0.0000, 0.1333, 1.5708, -0.0083 ), 
-	    Vec4( 0.0000, 0.1778, 1.5708, -0.0111 ), 
-	    Vec4( 0.0000, 0.2222, 1.5708, -0.0139 ), 
-	    Vec4( 0.0000, 0.2667, 1.5708, -0.0167 ), 
-	    Vec4( 0.0000, 0.3111, 1.5708, -0.0194 ), 
-	    Vec4( 0.0000, 0.3556, 1.5708, -0.0222 ), 
-	    Vec4( 0.0000, 0.4000, 1.5708, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp27);
-
-	MP mp28 = MP(
-	  28, 
-	  2, 
-	  Vec4( -12, 12, 3, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
-	    Vec4( -0.0069, 0.0408, 1.6533, -0.0028 ), 
-	    Vec4( -0.0207, 0.0810, 1.7358, -0.0056 ), 
-	    Vec4( -0.0414, 0.1201, 1.8183, -0.0083 ), 
-	    Vec4( -0.0688, 0.1574, 1.9007, -0.0111 ), 
-	    Vec4( -0.1028, 0.1925, 1.9832, -0.0139 ), 
-	    Vec4( -0.1432, 0.2249, 2.0657, -0.0167 ), 
-	    Vec4( -0.1898, 0.2539, 2.1482, -0.0194 ), 
-	    Vec4( -0.2421, 0.2791, 2.2307, -0.0222 ), 
-	    Vec4( -0.3000, 0.3000, 2.3132, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp28);
-
-	MP mp29 = MP(
-	  29, 
-	  2, 
-	  Vec4( 12, 12, 1, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
-	    Vec4( 0.0069, 0.0408, 1.4883, -0.0028 ), 
-	    Vec4( 0.0207, 0.0810, 1.4058, -0.0056 ), 
-	    Vec4( 0.0414, 0.1201, 1.3233, -0.0083 ), 
-	    Vec4( 0.0688, 0.1574, 1.2409, -0.0111 ), 
-	    Vec4( 0.1028, 0.1925, 1.1584, -0.0139 ), 
-	    Vec4( 0.1432, 0.2249, 1.0759, -0.0167 ), 
-	    Vec4( 0.1898, 0.2539, 0.9934, -0.0194 ), 
-	    Vec4( 0.2421, 0.2791, 0.9109, -0.0222 ), 
-	    Vec4( 0.3000, 0.3000, 0.8284, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp29);
-
-	MP mp30 = MP(
-	  30, 
-	  3, 
-	  Vec4( -2, 2, 3, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
-	    Vec4( -0.0056, 0.0056, 2.3562, 0.0000 ), 
-	    Vec4( -0.0111, 0.0111, 2.3562, 0.0000 ), 
-	    Vec4( -0.0167, 0.0167, 2.3562, 0.0000 ), 
-	    Vec4( -0.0222, 0.0222, 2.3562, 0.0000 ), 
-	    Vec4( -0.0278, 0.0278, 2.3562, 0.0000 ), 
-	    Vec4( -0.0333, 0.0333, 2.3562, 0.0000 ), 
-	    Vec4( -0.0389, 0.0389, 2.3562, 0.0000 ), 
-	    Vec4( -0.0444, 0.0444, 2.3562, 0.0000 ), 
-	    Vec4( -0.0500, 0.0500, 2.3562, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp30);
-
-	MP mp31 = MP(
-	  31, 
-	  3, 
-	  Vec4( -12, 12, 3, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
-	    Vec4( -0.0333, 0.0333, 2.3562, 0.0000 ), 
-	    Vec4( -0.0667, 0.0667, 2.3562, 0.0000 ), 
-	    Vec4( -0.1000, 0.1000, 2.3562, 0.0000 ), 
-	    Vec4( -0.1333, 0.1333, 2.3562, 0.0000 ), 
-	    Vec4( -0.1667, 0.1667, 2.3562, 0.0000 ), 
-	    Vec4( -0.2000, 0.2000, 2.3562, 0.0000 ), 
-	    Vec4( -0.2333, 0.2333, 2.3562, 0.0000 ), 
-	    Vec4( -0.2667, 0.2667, 2.3562, 0.0000 ), 
-	    Vec4( -0.3000, 0.3000, 2.3562, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp31);
-
-	MP mp32 = MP(
-	  32, 
-	  3, 
-	  Vec4( -16, 0, 4, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
-	    Vec4( -0.0318, 0.0226, 2.4387, 0.0000 ), 
-	    Vec4( -0.0678, 0.0402, 2.5212, 0.0000 ), 
-	    Vec4( -0.1076, 0.0525, 2.6037, 0.0000 ), 
-	    Vec4( -0.1508, 0.0591, 2.6861, 0.0000 ), 
-	    Vec4( -0.1969, 0.0598, 2.7686, 0.0000 ), 
-	    Vec4( -0.2454, 0.0544, 2.8511, 0.0000 ), 
-	    Vec4( -0.2957, 0.0427, 2.9336, 0.0000 ), 
-	    Vec4( -0.3475, 0.0246, 3.0161, 0.0000 ), 
-	    Vec4( -0.4000, 0.0000, 3.0986, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp32);
-
-	MP mp33 = MP(
-	  33, 
-	  3, 
-	  Vec4( 0, 16, 2, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
-	    Vec4( -0.0226, 0.0318, 2.2737, 0.0000 ), 
-	    Vec4( -0.0402, 0.0678, 2.1912, 0.0000 ), 
-	    Vec4( -0.0525, 0.1076, 2.1087, 0.0000 ), 
-	    Vec4( -0.0591, 0.1508, 2.0263, 0.0000 ), 
-	    Vec4( -0.0598, 0.1969, 1.9438, 0.0000 ), 
-	    Vec4( -0.0544, 0.2454, 1.8613, 0.0000 ), 
-	    Vec4( -0.0427, 0.2957, 1.7788, 0.0000 ), 
-	    Vec4( -0.0246, 0.3475, 1.6963, 0.0000 ), 
-	    Vec4( 0.0000, 0.4000, 1.6138, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp33);
-
-	MP mp34 = MP(
-	  34, 
-	  3, 
-	  Vec4( -12, 12, 3, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
-	    Vec4( -0.0333, 0.0333, 2.3562, 0.0028 ), 
-	    Vec4( -0.0667, 0.0667, 2.3562, 0.0056 ), 
-	    Vec4( -0.1000, 0.1000, 2.3562, 0.0083 ), 
-	    Vec4( -0.1333, 0.1333, 2.3562, 0.0111 ), 
-	    Vec4( -0.1667, 0.1667, 2.3562, 0.0139 ), 
-	    Vec4( -0.2000, 0.2000, 2.3562, 0.0167 ), 
-	    Vec4( -0.2333, 0.2333, 2.3562, 0.0194 ), 
-	    Vec4( -0.2667, 0.2667, 2.3562, 0.0222 ), 
-	    Vec4( -0.3000, 0.3000, 2.3562, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp34);
-
-	MP mp35 = MP(
-	  35, 
-	  3, 
-	  Vec4( -16, 0, 4, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
-	    Vec4( -0.0318, 0.0226, 2.4387, 0.0028 ), 
-	    Vec4( -0.0678, 0.0402, 2.5212, 0.0056 ), 
-	    Vec4( -0.1076, 0.0525, 2.6037, 0.0083 ), 
-	    Vec4( -0.1508, 0.0591, 2.6861, 0.0111 ), 
-	    Vec4( -0.1969, 0.0598, 2.7686, 0.0139 ), 
-	    Vec4( -0.2454, 0.0544, 2.8511, 0.0167 ), 
-	    Vec4( -0.2957, 0.0427, 2.9336, 0.0194 ), 
-	    Vec4( -0.3475, 0.0246, 3.0161, 0.0222 ), 
-	    Vec4( -0.4000, 0.0000, 3.0986, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp35);
-
-	MP mp36 = MP(
-	  36, 
-	  3, 
-	  Vec4( 0, 16, 2, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
-	    Vec4( -0.0226, 0.0318, 2.2737, 0.0028 ), 
-	    Vec4( -0.0402, 0.0678, 2.1912, 0.0056 ), 
-	    Vec4( -0.0525, 0.1076, 2.1087, 0.0083 ), 
-	    Vec4( -0.0591, 0.1508, 2.0263, 0.0111 ), 
-	    Vec4( -0.0598, 0.1969, 1.9438, 0.0139 ), 
-	    Vec4( -0.0544, 0.2454, 1.8613, 0.0167 ), 
-	    Vec4( -0.0427, 0.2957, 1.7788, 0.0194 ), 
-	    Vec4( -0.0246, 0.3475, 1.6963, 0.0222 ), 
-	    Vec4( 0.0000, 0.4000, 1.6138, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp36);
-
-	MP mp37 = MP(
-	  37, 
-	  3, 
-	  Vec4( -12, 12, 3, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
-	    Vec4( -0.0333, 0.0333, 2.3562, -0.0028 ), 
-	    Vec4( -0.0667, 0.0667, 2.3562, -0.0056 ), 
-	    Vec4( -0.1000, 0.1000, 2.3562, -0.0083 ), 
-	    Vec4( -0.1333, 0.1333, 2.3562, -0.0111 ), 
-	    Vec4( -0.1667, 0.1667, 2.3562, -0.0139 ), 
-	    Vec4( -0.2000, 0.2000, 2.3562, -0.0167 ), 
-	    Vec4( -0.2333, 0.2333, 2.3562, -0.0194 ), 
-	    Vec4( -0.2667, 0.2667, 2.3562, -0.0222 ), 
-	    Vec4( -0.3000, 0.3000, 2.3562, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp37);
-
-	MP mp38 = MP(
-	  38, 
-	  3, 
-	  Vec4( -16, 0, 4, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
-	    Vec4( -0.0318, 0.0226, 2.4387, -0.0028 ), 
-	    Vec4( -0.0678, 0.0402, 2.5212, -0.0056 ), 
-	    Vec4( -0.1076, 0.0525, 2.6037, -0.0083 ), 
-	    Vec4( -0.1508, 0.0591, 2.6861, -0.0111 ), 
-	    Vec4( -0.1969, 0.0598, 2.7686, -0.0139 ), 
-	    Vec4( -0.2454, 0.0544, 2.8511, -0.0167 ), 
-	    Vec4( -0.2957, 0.0427, 2.9336, -0.0194 ), 
-	    Vec4( -0.3475, 0.0246, 3.0161, -0.0222 ), 
-	    Vec4( -0.4000, 0.0000, 3.0986, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp38);
-
-	MP mp39 = MP(
-	  39, 
-	  3, 
-	  Vec4( 0, 16, 2, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
-	    Vec4( -0.0226, 0.0318, 2.2737, -0.0028 ), 
-	    Vec4( -0.0402, 0.0678, 2.1912, -0.0056 ), 
-	    Vec4( -0.0525, 0.1076, 2.1087, -0.0083 ), 
-	    Vec4( -0.0591, 0.1508, 2.0263, -0.0111 ), 
-	    Vec4( -0.0598, 0.1969, 1.9438, -0.0139 ), 
-	    Vec4( -0.0544, 0.2454, 1.8613, -0.0167 ), 
-	    Vec4( -0.0427, 0.2957, 1.7788, -0.0194 ), 
-	    Vec4( -0.0246, 0.3475, 1.6963, -0.0222 ), 
-	    Vec4( 0.0000, 0.4000, 1.6138, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp39);
-
-	MP mp40 = MP(
-	  40, 
-	  4, 
-	  Vec4( -2, 0, 4, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0056, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0111, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0167, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0222, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0278, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0333, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0389, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0444, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0500, 0.0000, 3.1416, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp40);
-
-	MP mp41 = MP(
-	  41, 
-	  4, 
-	  Vec4( -16, 0, 4, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0444, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0889, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.1333, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.1778, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.2222, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.2667, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.3111, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.3556, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.4000, 0.0000, 3.1416, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp41);
-
-	MP mp42 = MP(
-	  42, 
-	  4, 
-	  Vec4( -12, -12, 5, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0408, -0.0069, 3.2241, 0.0000 ), 
-	    Vec4( -0.0810, -0.0207, 3.3066, 0.0000 ), 
-	    Vec4( -0.1201, -0.0414, 3.3890, 0.0000 ), 
-	    Vec4( -0.1574, -0.0688, 3.4715, 0.0000 ), 
-	    Vec4( -0.1925, -0.1028, 3.5540, 0.0000 ), 
-	    Vec4( -0.2249, -0.1432, 3.6365, 0.0000 ), 
-	    Vec4( -0.2539, -0.1898, 3.7190, 0.0000 ), 
-	    Vec4( -0.2791, -0.2421, 3.8015, 0.0000 ), 
-	    Vec4( -0.3000, -0.3000, 3.8840, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp42);
-
-	MP mp43 = MP(
-	  43, 
-	  4, 
-	  Vec4( -12, 12, 3, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0408, 0.0069, 3.0591, 0.0000 ), 
-	    Vec4( -0.0810, 0.0207, 2.9766, 0.0000 ), 
-	    Vec4( -0.1201, 0.0414, 2.8941, 0.0000 ), 
-	    Vec4( -0.1574, 0.0688, 2.8117, 0.0000 ), 
-	    Vec4( -0.1925, 0.1028, 2.7292, 0.0000 ), 
-	    Vec4( -0.2249, 0.1432, 2.6467, 0.0000 ), 
-	    Vec4( -0.2539, 0.1898, 2.5642, 0.0000 ), 
-	    Vec4( -0.2791, 0.2421, 2.4817, 0.0000 ), 
-	    Vec4( -0.3000, 0.3000, 2.3992, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp43);
-
-	MP mp44 = MP(
-	  44, 
-	  4, 
-	  Vec4( -16, 0, 4, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0444, 0.0000, 3.1416, 0.0028 ), 
-	    Vec4( -0.0889, 0.0000, 3.1416, 0.0056 ), 
-	    Vec4( -0.1333, 0.0000, 3.1416, 0.0083 ), 
-	    Vec4( -0.1778, 0.0000, 3.1416, 0.0111 ), 
-	    Vec4( -0.2222, 0.0000, 3.1416, 0.0139 ), 
-	    Vec4( -0.2667, 0.0000, 3.1416, 0.0167 ), 
-	    Vec4( -0.3111, 0.0000, 3.1416, 0.0194 ), 
-	    Vec4( -0.3556, 0.0000, 3.1416, 0.0222 ), 
-	    Vec4( -0.4000, 0.0000, 3.1416, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp44);
-
-	MP mp45 = MP(
-	  45, 
-	  4, 
-	  Vec4( -12, -12, 5, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0408, -0.0069, 3.2241, 0.0028 ), 
-	    Vec4( -0.0810, -0.0207, 3.3066, 0.0056 ), 
-	    Vec4( -0.1201, -0.0414, 3.3890, 0.0083 ), 
-	    Vec4( -0.1574, -0.0688, 3.4715, 0.0111 ), 
-	    Vec4( -0.1925, -0.1028, 3.5540, 0.0139 ), 
-	    Vec4( -0.2249, -0.1432, 3.6365, 0.0167 ), 
-	    Vec4( -0.2539, -0.1898, 3.7190, 0.0194 ), 
-	    Vec4( -0.2791, -0.2421, 3.8015, 0.0222 ), 
-	    Vec4( -0.3000, -0.3000, 3.8840, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp45);
-
-	MP mp46 = MP(
-	  46, 
-	  4, 
-	  Vec4( -12, 12, 3, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0408, 0.0069, 3.0591, 0.0028 ), 
-	    Vec4( -0.0810, 0.0207, 2.9766, 0.0056 ), 
-	    Vec4( -0.1201, 0.0414, 2.8941, 0.0083 ), 
-	    Vec4( -0.1574, 0.0688, 2.8117, 0.0111 ), 
-	    Vec4( -0.1925, 0.1028, 2.7292, 0.0139 ), 
-	    Vec4( -0.2249, 0.1432, 2.6467, 0.0167 ), 
-	    Vec4( -0.2539, 0.1898, 2.5642, 0.0194 ), 
-	    Vec4( -0.2791, 0.2421, 2.4817, 0.0222 ), 
-	    Vec4( -0.3000, 0.3000, 2.3992, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp46);
-
-	MP mp47 = MP(
-	  47, 
-	  4, 
-	  Vec4( -16, 0, 4, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0444, 0.0000, 3.1416, -0.0028 ), 
-	    Vec4( -0.0889, 0.0000, 3.1416, -0.0056 ), 
-	    Vec4( -0.1333, 0.0000, 3.1416, -0.0083 ), 
-	    Vec4( -0.1778, 0.0000, 3.1416, -0.0111 ), 
-	    Vec4( -0.2222, 0.0000, 3.1416, -0.0139 ), 
-	    Vec4( -0.2667, 0.0000, 3.1416, -0.0167 ), 
-	    Vec4( -0.3111, 0.0000, 3.1416, -0.0194 ), 
-	    Vec4( -0.3556, 0.0000, 3.1416, -0.0222 ), 
-	    Vec4( -0.4000, 0.0000, 3.1416, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp47);
-
-	MP mp48 = MP(
-	  48, 
-	  4, 
-	  Vec4( -12, -12, 5, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0408, -0.0069, 3.2241, -0.0028 ), 
-	    Vec4( -0.0810, -0.0207, 3.3066, -0.0056 ), 
-	    Vec4( -0.1201, -0.0414, 3.3890, -0.0083 ), 
-	    Vec4( -0.1574, -0.0688, 3.4715, -0.0111 ), 
-	    Vec4( -0.1925, -0.1028, 3.5540, -0.0139 ), 
-	    Vec4( -0.2249, -0.1432, 3.6365, -0.0167 ), 
-	    Vec4( -0.2539, -0.1898, 3.7190, -0.0194 ), 
-	    Vec4( -0.2791, -0.2421, 3.8015, -0.0222 ), 
-	    Vec4( -0.3000, -0.3000, 3.8840, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp48);
-
-	MP mp49 = MP(
-	  49, 
-	  4, 
-	  Vec4( -12, 12, 3, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
-	    Vec4( -0.0408, 0.0069, 3.0591, -0.0028 ), 
-	    Vec4( -0.0810, 0.0207, 2.9766, -0.0056 ), 
-	    Vec4( -0.1201, 0.0414, 2.8941, -0.0083 ), 
-	    Vec4( -0.1574, 0.0688, 2.8117, -0.0111 ), 
-	    Vec4( -0.1925, 0.1028, 2.7292, -0.0139 ), 
-	    Vec4( -0.2249, 0.1432, 2.6467, -0.0167 ), 
-	    Vec4( -0.2539, 0.1898, 2.5642, -0.0194 ), 
-	    Vec4( -0.2791, 0.2421, 2.4817, -0.0222 ), 
-	    Vec4( -0.3000, 0.3000, 2.3992, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp49);
-
-	MP mp50 = MP(
-	  50, 
-	  5, 
-	  Vec4( -2, -2, 5, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
-	    Vec4( -0.0056, -0.0056, 3.9270, 0.0000 ), 
-	    Vec4( -0.0111, -0.0111, 3.9270, 0.0000 ), 
-	    Vec4( -0.0167, -0.0167, 3.9270, 0.0000 ), 
-	    Vec4( -0.0222, -0.0222, 3.9270, 0.0000 ), 
-	    Vec4( -0.0278, -0.0278, 3.9270, 0.0000 ), 
-	    Vec4( -0.0333, -0.0333, 3.9270, 0.0000 ), 
-	    Vec4( -0.0389, -0.0389, 3.9270, 0.0000 ), 
-	    Vec4( -0.0444, -0.0444, 3.9270, 0.0000 ), 
-	    Vec4( -0.0500, -0.0500, 3.9270, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp50);
-
-	MP mp51 = MP(
-	  51, 
-	  5, 
-	  Vec4( -12, -12, 5, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
-	    Vec4( -0.0333, -0.0333, 3.9270, 0.0000 ), 
-	    Vec4( -0.0667, -0.0667, 3.9270, 0.0000 ), 
-	    Vec4( -0.1000, -0.1000, 3.9270, 0.0000 ), 
-	    Vec4( -0.1333, -0.1333, 3.9270, 0.0000 ), 
-	    Vec4( -0.1667, -0.1667, 3.9270, 0.0000 ), 
-	    Vec4( -0.2000, -0.2000, 3.9270, 0.0000 ), 
-	    Vec4( -0.2333, -0.2333, 3.9270, 0.0000 ), 
-	    Vec4( -0.2667, -0.2667, 3.9270, 0.0000 ), 
-	    Vec4( -0.3000, -0.3000, 3.9270, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp51);
-
-	MP mp52 = MP(
-	  52, 
-	  5, 
-	  Vec4( 0, -16, 6, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
-	    Vec4( -0.0226, -0.0318, 4.0095, 0.0000 ), 
-	    Vec4( -0.0402, -0.0678, 4.0920, 0.0000 ), 
-	    Vec4( -0.0525, -0.1076, 4.1744, 0.0000 ), 
-	    Vec4( -0.0591, -0.1508, 4.2569, 0.0000 ), 
-	    Vec4( -0.0598, -0.1969, 4.3394, 0.0000 ), 
-	    Vec4( -0.0544, -0.2454, 4.4219, 0.0000 ), 
-	    Vec4( -0.0427, -0.2957, 4.5044, 0.0000 ), 
-	    Vec4( -0.0246, -0.3475, 4.5869, 0.0000 ), 
-	    Vec4( 0.0000, -0.4000, 4.6694, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp52);
-
-	MP mp53 = MP(
-	  53, 
-	  5, 
-	  Vec4( -16, 0, 4, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
-	    Vec4( -0.0318, -0.0226, 3.8445, 0.0000 ), 
-	    Vec4( -0.0678, -0.0402, 3.7620, 0.0000 ), 
-	    Vec4( -0.1076, -0.0525, 3.6795, 0.0000 ), 
-	    Vec4( -0.1508, -0.0591, 3.5970, 0.0000 ), 
-	    Vec4( -0.1969, -0.0598, 3.5146, 0.0000 ), 
-	    Vec4( -0.2454, -0.0544, 3.4321, 0.0000 ), 
-	    Vec4( -0.2957, -0.0427, 3.3496, 0.0000 ), 
-	    Vec4( -0.3475, -0.0246, 3.2671, 0.0000 ), 
-	    Vec4( -0.4000, 0.0000, 3.1846, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp53);
-
-	MP mp54 = MP(
-	  54, 
-	  5, 
-	  Vec4( -12, -12, 5, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
-	    Vec4( -0.0333, -0.0333, 3.9270, 0.0028 ), 
-	    Vec4( -0.0667, -0.0667, 3.9270, 0.0056 ), 
-	    Vec4( -0.1000, -0.1000, 3.9270, 0.0083 ), 
-	    Vec4( -0.1333, -0.1333, 3.9270, 0.0111 ), 
-	    Vec4( -0.1667, -0.1667, 3.9270, 0.0139 ), 
-	    Vec4( -0.2000, -0.2000, 3.9270, 0.0167 ), 
-	    Vec4( -0.2333, -0.2333, 3.9270, 0.0194 ), 
-	    Vec4( -0.2667, -0.2667, 3.9270, 0.0222 ), 
-	    Vec4( -0.3000, -0.3000, 3.9270, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp54);
-
-	MP mp55 = MP(
-	  55, 
-	  5, 
-	  Vec4( 0, -16, 6, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
-	    Vec4( -0.0226, -0.0318, 4.0095, 0.0028 ), 
-	    Vec4( -0.0402, -0.0678, 4.0920, 0.0056 ), 
-	    Vec4( -0.0525, -0.1076, 4.1744, 0.0083 ), 
-	    Vec4( -0.0591, -0.1508, 4.2569, 0.0111 ), 
-	    Vec4( -0.0598, -0.1969, 4.3394, 0.0139 ), 
-	    Vec4( -0.0544, -0.2454, 4.4219, 0.0167 ), 
-	    Vec4( -0.0427, -0.2957, 4.5044, 0.0194 ), 
-	    Vec4( -0.0246, -0.3475, 4.5869, 0.0222 ), 
-	    Vec4( 0.0000, -0.4000, 4.6694, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp55);
-
-	MP mp56 = MP(
-	  56, 
-	  5, 
-	  Vec4( -16, 0, 4, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
-	    Vec4( -0.0318, -0.0226, 3.8445, 0.0028 ), 
-	    Vec4( -0.0678, -0.0402, 3.7620, 0.0056 ), 
-	    Vec4( -0.1076, -0.0525, 3.6795, 0.0083 ), 
-	    Vec4( -0.1508, -0.0591, 3.5970, 0.0111 ), 
-	    Vec4( -0.1969, -0.0598, 3.5146, 0.0139 ), 
-	    Vec4( -0.2454, -0.0544, 3.4321, 0.0167 ), 
-	    Vec4( -0.2957, -0.0427, 3.3496, 0.0194 ), 
-	    Vec4( -0.3475, -0.0246, 3.2671, 0.0222 ), 
-	    Vec4( -0.4000, 0.0000, 3.1846, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp56);
-
-	MP mp57 = MP(
-	  57, 
-	  5, 
-	  Vec4( -12, -12, 5, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
-	    Vec4( -0.0333, -0.0333, 3.9270, -0.0028 ), 
-	    Vec4( -0.0667, -0.0667, 3.9270, -0.0056 ), 
-	    Vec4( -0.1000, -0.1000, 3.9270, -0.0083 ), 
-	    Vec4( -0.1333, -0.1333, 3.9270, -0.0111 ), 
-	    Vec4( -0.1667, -0.1667, 3.9270, -0.0139 ), 
-	    Vec4( -0.2000, -0.2000, 3.9270, -0.0167 ), 
-	    Vec4( -0.2333, -0.2333, 3.9270, -0.0194 ), 
-	    Vec4( -0.2667, -0.2667, 3.9270, -0.0222 ), 
-	    Vec4( -0.3000, -0.3000, 3.9270, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp57);
-
-	MP mp58 = MP(
-	  58, 
-	  5, 
-	  Vec4( 0, -16, 6, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
-	    Vec4( -0.0226, -0.0318, 4.0095, -0.0028 ), 
-	    Vec4( -0.0402, -0.0678, 4.0920, -0.0056 ), 
-	    Vec4( -0.0525, -0.1076, 4.1744, -0.0083 ), 
-	    Vec4( -0.0591, -0.1508, 4.2569, -0.0111 ), 
-	    Vec4( -0.0598, -0.1969, 4.3394, -0.0139 ), 
-	    Vec4( -0.0544, -0.2454, 4.4219, -0.0167 ), 
-	    Vec4( -0.0427, -0.2957, 4.5044, -0.0194 ), 
-	    Vec4( -0.0246, -0.3475, 4.5869, -0.0222 ), 
-	    Vec4( 0.0000, -0.4000, 4.6694, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp58);
-
-	MP mp59 = MP(
-	  59, 
-	  5, 
-	  Vec4( -16, 0, 4, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
-	    Vec4( -0.0318, -0.0226, 3.8445, -0.0028 ), 
-	    Vec4( -0.0678, -0.0402, 3.7620, -0.0056 ), 
-	    Vec4( -0.1076, -0.0525, 3.6795, -0.0083 ), 
-	    Vec4( -0.1508, -0.0591, 3.5970, -0.0111 ), 
-	    Vec4( -0.1969, -0.0598, 3.5146, -0.0139 ), 
-	    Vec4( -0.2454, -0.0544, 3.4321, -0.0167 ), 
-	    Vec4( -0.2957, -0.0427, 3.3496, -0.0194 ), 
-	    Vec4( -0.3475, -0.0246, 3.2671, -0.0222 ), 
-	    Vec4( -0.4000, 0.0000, 3.1846, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp59);
-
-	MP mp60 = MP(
-	  60, 
-	  6, 
-	  Vec4( 0, -2, 6, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0056, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0111, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0167, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0222, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0278, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0333, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0389, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0444, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0500, 4.7124, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp60);
-
-	MP mp61 = MP(
-	  61, 
-	  6, 
-	  Vec4( 0, -16, 6, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0444, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0889, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.1333, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.1778, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.2222, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.2667, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.3111, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.3556, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.4000, 4.7124, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp61);
-
-	MP mp62 = MP(
-	  62, 
-	  6, 
-	  Vec4( 12, -12, 7, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
-	    Vec4( 0.0069, -0.0408, 4.7949, 0.0000 ), 
-	    Vec4( 0.0207, -0.0810, 4.8774, 0.0000 ), 
-	    Vec4( 0.0414, -0.1201, 4.9598, 0.0000 ), 
-	    Vec4( 0.0688, -0.1574, 5.0423, 0.0000 ), 
-	    Vec4( 0.1028, -0.1925, 5.1248, 0.0000 ), 
-	    Vec4( 0.1432, -0.2249, 5.2073, 0.0000 ), 
-	    Vec4( 0.1898, -0.2539, 5.2898, 0.0000 ), 
-	    Vec4( 0.2421, -0.2791, 5.3723, 0.0000 ), 
-	    Vec4( 0.3000, -0.3000, 5.4548, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp62);
-
-	MP mp63 = MP(
-	  63, 
-	  6, 
-	  Vec4( -12, -12, 5, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
-	    Vec4( -0.0069, -0.0408, 4.6299, 0.0000 ), 
-	    Vec4( -0.0207, -0.0810, 4.5474, 0.0000 ), 
-	    Vec4( -0.0414, -0.1201, 4.4649, 0.0000 ), 
-	    Vec4( -0.0688, -0.1574, 4.3824, 0.0000 ), 
-	    Vec4( -0.1028, -0.1925, 4.3000, 0.0000 ), 
-	    Vec4( -0.1432, -0.2249, 4.2175, 0.0000 ), 
-	    Vec4( -0.1898, -0.2539, 4.1350, 0.0000 ), 
-	    Vec4( -0.2421, -0.2791, 4.0525, 0.0000 ), 
-	    Vec4( -0.3000, -0.3000, 3.9700, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp63);
-
-	MP mp64 = MP(
-	  64, 
-	  6, 
-	  Vec4( 0, -16, 6, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0444, 4.7124, 0.0028 ), 
-	    Vec4( 0.0000, -0.0889, 4.7124, 0.0056 ), 
-	    Vec4( 0.0000, -0.1333, 4.7124, 0.0083 ), 
-	    Vec4( 0.0000, -0.1778, 4.7124, 0.0111 ), 
-	    Vec4( 0.0000, -0.2222, 4.7124, 0.0139 ), 
-	    Vec4( 0.0000, -0.2667, 4.7124, 0.0167 ), 
-	    Vec4( 0.0000, -0.3111, 4.7124, 0.0194 ), 
-	    Vec4( 0.0000, -0.3556, 4.7124, 0.0222 ), 
-	    Vec4( 0.0000, -0.4000, 4.7124, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp64);
-
-	MP mp65 = MP(
-	  65, 
-	  6, 
-	  Vec4( 12, -12, 7, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
-	    Vec4( 0.0069, -0.0408, 4.7949, 0.0028 ), 
-	    Vec4( 0.0207, -0.0810, 4.8774, 0.0056 ), 
-	    Vec4( 0.0414, -0.1201, 4.9598, 0.0083 ), 
-	    Vec4( 0.0688, -0.1574, 5.0423, 0.0111 ), 
-	    Vec4( 0.1028, -0.1925, 5.1248, 0.0139 ), 
-	    Vec4( 0.1432, -0.2249, 5.2073, 0.0167 ), 
-	    Vec4( 0.1898, -0.2539, 5.2898, 0.0194 ), 
-	    Vec4( 0.2421, -0.2791, 5.3723, 0.0222 ), 
-	    Vec4( 0.3000, -0.3000, 5.4548, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp65);
-
-	MP mp66 = MP(
-	  66, 
-	  6, 
-	  Vec4( -12, -12, 5, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
-	    Vec4( -0.0069, -0.0408, 4.6299, 0.0028 ), 
-	    Vec4( -0.0207, -0.0810, 4.5474, 0.0056 ), 
-	    Vec4( -0.0414, -0.1201, 4.4649, 0.0083 ), 
-	    Vec4( -0.0688, -0.1574, 4.3824, 0.0111 ), 
-	    Vec4( -0.1028, -0.1925, 4.3000, 0.0139 ), 
-	    Vec4( -0.1432, -0.2249, 4.2175, 0.0167 ), 
-	    Vec4( -0.1898, -0.2539, 4.1350, 0.0194 ), 
-	    Vec4( -0.2421, -0.2791, 4.0525, 0.0222 ), 
-	    Vec4( -0.3000, -0.3000, 3.9700, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp66);
-
-	MP mp67 = MP(
-	  67, 
-	  6, 
-	  Vec4( 0, -16, 6, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
-	    Vec4( 0.0000, -0.0444, 4.7124, -0.0028 ), 
-	    Vec4( 0.0000, -0.0889, 4.7124, -0.0056 ), 
-	    Vec4( 0.0000, -0.1333, 4.7124, -0.0083 ), 
-	    Vec4( 0.0000, -0.1778, 4.7124, -0.0111 ), 
-	    Vec4( 0.0000, -0.2222, 4.7124, -0.0139 ), 
-	    Vec4( 0.0000, -0.2667, 4.7124, -0.0167 ), 
-	    Vec4( 0.0000, -0.3111, 4.7124, -0.0194 ), 
-	    Vec4( 0.0000, -0.3556, 4.7124, -0.0222 ), 
-	    Vec4( 0.0000, -0.4000, 4.7124, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp67);
-
-	MP mp68 = MP(
-	  68, 
-	  6, 
-	  Vec4( 12, -12, 7, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
-	    Vec4( 0.0069, -0.0408, 4.7949, -0.0028 ), 
-	    Vec4( 0.0207, -0.0810, 4.8774, -0.0056 ), 
-	    Vec4( 0.0414, -0.1201, 4.9598, -0.0083 ), 
-	    Vec4( 0.0688, -0.1574, 5.0423, -0.0111 ), 
-	    Vec4( 0.1028, -0.1925, 5.1248, -0.0139 ), 
-	    Vec4( 0.1432, -0.2249, 5.2073, -0.0167 ), 
-	    Vec4( 0.1898, -0.2539, 5.2898, -0.0194 ), 
-	    Vec4( 0.2421, -0.2791, 5.3723, -0.0222 ), 
-	    Vec4( 0.3000, -0.3000, 5.4548, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp68);
-
-	MP mp69 = MP(
-	  69, 
-	  6, 
-	  Vec4( -12, -12, 5, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
-	    Vec4( -0.0069, -0.0408, 4.6299, -0.0028 ), 
-	    Vec4( -0.0207, -0.0810, 4.5474, -0.0056 ), 
-	    Vec4( -0.0414, -0.1201, 4.4649, -0.0083 ), 
-	    Vec4( -0.0688, -0.1574, 4.3824, -0.0111 ), 
-	    Vec4( -0.1028, -0.1925, 4.3000, -0.0139 ), 
-	    Vec4( -0.1432, -0.2249, 4.2175, -0.0167 ), 
-	    Vec4( -0.1898, -0.2539, 4.1350, -0.0194 ), 
-	    Vec4( -0.2421, -0.2791, 4.0525, -0.0222 ), 
-	    Vec4( -0.3000, -0.3000, 3.9700, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp69);
-
-	MP mp70 = MP(
-	  70, 
-	  7, 
-	  Vec4( 2, -2, 7, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
-	    Vec4( 0.0056, -0.0056, 5.4978, 0.0000 ), 
-	    Vec4( 0.0111, -0.0111, 5.4978, 0.0000 ), 
-	    Vec4( 0.0167, -0.0167, 5.4978, 0.0000 ), 
-	    Vec4( 0.0222, -0.0222, 5.4978, 0.0000 ), 
-	    Vec4( 0.0278, -0.0278, 5.4978, 0.0000 ), 
-	    Vec4( 0.0333, -0.0333, 5.4978, 0.0000 ), 
-	    Vec4( 0.0389, -0.0389, 5.4978, 0.0000 ), 
-	    Vec4( 0.0444, -0.0444, 5.4978, 0.0000 ), 
-	    Vec4( 0.0500, -0.0500, 5.4978, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp70);
-
-	MP mp71 = MP(
-	  71, 
-	  7, 
-	  Vec4( 12, -12, 7, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
-	    Vec4( 0.0333, -0.0333, 5.4978, 0.0000 ), 
-	    Vec4( 0.0667, -0.0667, 5.4978, 0.0000 ), 
-	    Vec4( 0.1000, -0.1000, 5.4978, 0.0000 ), 
-	    Vec4( 0.1333, -0.1333, 5.4978, 0.0000 ), 
-	    Vec4( 0.1667, -0.1667, 5.4978, 0.0000 ), 
-	    Vec4( 0.2000, -0.2000, 5.4978, 0.0000 ), 
-	    Vec4( 0.2333, -0.2333, 5.4978, 0.0000 ), 
-	    Vec4( 0.2667, -0.2667, 5.4978, 0.0000 ), 
-	    Vec4( 0.3000, -0.3000, 5.4978, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp71);
-
-	MP mp72 = MP(
-	  72, 
-	  7, 
-	  Vec4( 16, 0, 0, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
-	    Vec4( 0.0318, -0.0226, 5.5803, 0.0000 ), 
-	    Vec4( 0.0678, -0.0402, 5.6628, 0.0000 ), 
-	    Vec4( 0.1076, -0.0525, 5.7452, 0.0000 ), 
-	    Vec4( 0.1508, -0.0591, 5.8277, 0.0000 ), 
-	    Vec4( 0.1969, -0.0598, 5.9102, 0.0000 ), 
-	    Vec4( 0.2454, -0.0544, 5.9927, 0.0000 ), 
-	    Vec4( 0.2957, -0.0427, 6.0752, 0.0000 ), 
-	    Vec4( 0.3475, -0.0246, 6.1577, 0.0000 ), 
-	    Vec4( 0.4000, 0.0000, 6.2402, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp72);
-
-	MP mp73 = MP(
-	  73, 
-	  7, 
-	  Vec4( 0, -16, 6, 0 ), 
-	  0, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
-	    Vec4( 0.0226, -0.0318, 5.4153, 0.0000 ), 
-	    Vec4( 0.0402, -0.0678, 5.3328, 0.0000 ), 
-	    Vec4( 0.0525, -0.1076, 5.2503, 0.0000 ), 
-	    Vec4( 0.0591, -0.1508, 5.1678, 0.0000 ), 
-	    Vec4( 0.0598, -0.1969, 5.0854, 0.0000 ), 
-	    Vec4( 0.0544, -0.2454, 5.0029, 0.0000 ), 
-	    Vec4( 0.0427, -0.2957, 4.9204, 0.0000 ), 
-	    Vec4( 0.0246, -0.3475, 4.8379, 0.0000 ), 
-	    Vec4( 0.0000, -0.4000, 4.7554, 0.0000 )
-	  } 
-	);
-	mprims.push_back(mp73);
-
-	MP mp74 = MP(
-	  74, 
-	  7, 
-	  Vec4( 12, -12, 7, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
-	    Vec4( 0.0333, -0.0333, 5.4978, 0.0028 ), 
-	    Vec4( 0.0667, -0.0667, 5.4978, 0.0056 ), 
-	    Vec4( 0.1000, -0.1000, 5.4978, 0.0083 ), 
-	    Vec4( 0.1333, -0.1333, 5.4978, 0.0111 ), 
-	    Vec4( 0.1667, -0.1667, 5.4978, 0.0139 ), 
-	    Vec4( 0.2000, -0.2000, 5.4978, 0.0167 ), 
-	    Vec4( 0.2333, -0.2333, 5.4978, 0.0194 ), 
-	    Vec4( 0.2667, -0.2667, 5.4978, 0.0222 ), 
-	    Vec4( 0.3000, -0.3000, 5.4978, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp74);
-
-	MP mp75 = MP(
-	  75, 
-	  7, 
-	  Vec4( 16, 0, 0, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
-	    Vec4( 0.0318, -0.0226, 5.5803, 0.0028 ), 
-	    Vec4( 0.0678, -0.0402, 5.6628, 0.0056 ), 
-	    Vec4( 0.1076, -0.0525, 5.7452, 0.0083 ), 
-	    Vec4( 0.1508, -0.0591, 5.8277, 0.0111 ), 
-	    Vec4( 0.1969, -0.0598, 5.9102, 0.0139 ), 
-	    Vec4( 0.2454, -0.0544, 5.9927, 0.0167 ), 
-	    Vec4( 0.2957, -0.0427, 6.0752, 0.0194 ), 
-	    Vec4( 0.3475, -0.0246, 6.1577, 0.0222 ), 
-	    Vec4( 0.4000, 0.0000, 6.2402, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp75);
-
-	MP mp76 = MP(
-	  76, 
-	  7, 
-	  Vec4( 0, -16, 6, 1 ), 
-	  1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
-	    Vec4( 0.0226, -0.0318, 5.4153, 0.0028 ), 
-	    Vec4( 0.0402, -0.0678, 5.3328, 0.0056 ), 
-	    Vec4( 0.0525, -0.1076, 5.2503, 0.0083 ), 
-	    Vec4( 0.0591, -0.1508, 5.1678, 0.0111 ), 
-	    Vec4( 0.0598, -0.1969, 5.0854, 0.0139 ), 
-	    Vec4( 0.0544, -0.2454, 5.0029, 0.0167 ), 
-	    Vec4( 0.0427, -0.2957, 4.9204, 0.0194 ), 
-	    Vec4( 0.0246, -0.3475, 4.8379, 0.0222 ), 
-	    Vec4( 0.0000, -0.4000, 4.7554, 0.0250 )
-	  } 
-	);
-	mprims.push_back(mp76);
-
-	MP mp77 = MP(
-	  77, 
-	  7, 
-	  Vec4( 12, -12, 7, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
-	    Vec4( 0.0333, -0.0333, 5.4978, -0.0028 ), 
-	    Vec4( 0.0667, -0.0667, 5.4978, -0.0056 ), 
-	    Vec4( 0.1000, -0.1000, 5.4978, -0.0083 ), 
-	    Vec4( 0.1333, -0.1333, 5.4978, -0.0111 ), 
-	    Vec4( 0.1667, -0.1667, 5.4978, -0.0139 ), 
-	    Vec4( 0.2000, -0.2000, 5.4978, -0.0167 ), 
-	    Vec4( 0.2333, -0.2333, 5.4978, -0.0194 ), 
-	    Vec4( 0.2667, -0.2667, 5.4978, -0.0222 ), 
-	    Vec4( 0.3000, -0.3000, 5.4978, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp77);
-
-	MP mp78 = MP(
-	  78, 
-	  7, 
-	  Vec4( 16, 0, 0, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
-	    Vec4( 0.0318, -0.0226, 5.5803, -0.0028 ), 
-	    Vec4( 0.0678, -0.0402, 5.6628, -0.0056 ), 
-	    Vec4( 0.1076, -0.0525, 5.7452, -0.0083 ), 
-	    Vec4( 0.1508, -0.0591, 5.8277, -0.0111 ), 
-	    Vec4( 0.1969, -0.0598, 5.9102, -0.0139 ), 
-	    Vec4( 0.2454, -0.0544, 5.9927, -0.0167 ), 
-	    Vec4( 0.2957, -0.0427, 6.0752, -0.0194 ), 
-	    Vec4( 0.3475, -0.0246, 6.1577, -0.0222 ), 
-	    Vec4( 0.4000, 0.0000, 6.2402, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp78);
-
-	MP mp79 = MP(
-	  79, 
-	  7, 
-	  Vec4( 0, -16, 6, -1 ), 
-	  -1, 
-	  { 
-	    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
-	    Vec4( 0.0226, -0.0318, 5.4153, -0.0028 ), 
-	    Vec4( 0.0402, -0.0678, 5.3328, -0.0056 ), 
-	    Vec4( 0.0525, -0.1076, 5.2503, -0.0083 ), 
-	    Vec4( 0.0591, -0.1508, 5.1678, -0.0111 ), 
-	    Vec4( 0.0598, -0.1969, 5.0854, -0.0139 ), 
-	    Vec4( 0.0544, -0.2454, 5.0029, -0.0167 ), 
-	    Vec4( 0.0427, -0.2957, 4.9204, -0.0194 ), 
-	    Vec4( 0.0246, -0.3475, 4.8379, -0.0222 ), 
-	    Vec4( 0.0000, -0.4000, 4.7554, -0.0250 )
-	  } 
-	);
-	mprims.push_back(mp79);
+  0, 
+  0, 
+  Vec4( 2, 0, 0, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0056, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0111, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0167, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0222, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0278, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0333, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0389, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0444, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0500, 0.0000, 0.0000, 0.0000 )
+  } 
+);
+mprims.push_back(mp0);
+
+MP mp1 = MP(
+  1, 
+  0, 
+  Vec4( 16, 0, 0, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0444, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0889, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.1333, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.1778, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.2222, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.2667, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.3111, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.3556, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.4000, 0.0000, 0.0000, 0.0000 )
+  } 
+);
+mprims.push_back(mp1);
+
+MP mp2 = MP(
+  2, 
+  0, 
+  Vec4( 14, 6, 1, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0429, 0.0028, 0.0846, 0.0000 ), 
+    Vec4( 0.0855, 0.0092, 0.1693, 0.0000 ), 
+    Vec4( 0.1275, 0.0192, 0.2539, 0.0000 ), 
+    Vec4( 0.1685, 0.0328, 0.3385, 0.0000 ), 
+    Vec4( 0.2084, 0.0499, 0.4232, 0.0000 ), 
+    Vec4( 0.2467, 0.0703, 0.5078, 0.0000 ), 
+    Vec4( 0.2833, 0.0939, 0.5924, 0.0000 ), 
+    Vec4( 0.3178, 0.1205, 0.6771, 0.0000 ), 
+    Vec4( 0.3500, 0.1500, 0.7617, 0.0000 )
+  } 
+);
+mprims.push_back(mp2);
+
+MP mp3 = MP(
+  3, 
+  0, 
+  Vec4( 14, -6, 7, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0429, -0.0028, -0.0846, 0.0000 ), 
+    Vec4( 0.0855, -0.0092, -0.1693, 0.0000 ), 
+    Vec4( 0.1275, -0.0192, -0.2539, 0.0000 ), 
+    Vec4( 0.1685, -0.0328, -0.3385, 0.0000 ), 
+    Vec4( 0.2084, -0.0499, -0.4232, 0.0000 ), 
+    Vec4( 0.2467, -0.0703, -0.5078, 0.0000 ), 
+    Vec4( 0.2833, -0.0939, -0.5924, 0.0000 ), 
+    Vec4( 0.3178, -0.1205, -0.6771, 0.0000 ), 
+    Vec4( 0.3500, -0.1500, -0.7617, 0.0000 )
+  } 
+);
+mprims.push_back(mp3);
+
+MP mp4 = MP(
+  4, 
+  0, 
+  Vec4( 16, 0, 0, 1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0444, 0.0000, 0.0000, 0.0028 ), 
+    Vec4( 0.0889, 0.0000, 0.0000, 0.0056 ), 
+    Vec4( 0.1333, 0.0000, 0.0000, 0.0083 ), 
+    Vec4( 0.1778, 0.0000, 0.0000, 0.0111 ), 
+    Vec4( 0.2222, 0.0000, 0.0000, 0.0139 ), 
+    Vec4( 0.2667, 0.0000, 0.0000, 0.0167 ), 
+    Vec4( 0.3111, 0.0000, 0.0000, 0.0194 ), 
+    Vec4( 0.3556, 0.0000, 0.0000, 0.0222 ), 
+    Vec4( 0.4000, 0.0000, 0.0000, 0.0250 )
+  } 
+);
+mprims.push_back(mp4);
+
+MP mp5 = MP(
+  5, 
+  0, 
+  Vec4( 14, 6, 1, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0429, 0.0028, 0.0846, 0.0028 ), 
+    Vec4( 0.0855, 0.0092, 0.1693, 0.0056 ), 
+    Vec4( 0.1275, 0.0192, 0.2539, 0.0083 ), 
+    Vec4( 0.1685, 0.0328, 0.3385, 0.0111 ), 
+    Vec4( 0.2084, 0.0499, 0.4232, 0.0139 ), 
+    Vec4( 0.2467, 0.0703, 0.5078, 0.0167 ), 
+    Vec4( 0.2833, 0.0939, 0.5924, 0.0194 ), 
+    Vec4( 0.3178, 0.1205, 0.6771, 0.0222 ), 
+    Vec4( 0.3500, 0.1500, 0.7617, 0.0250 )
+  } 
+);
+mprims.push_back(mp5);
+
+MP mp6 = MP(
+  6, 
+  0, 
+  Vec4( 14, -6, 7, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0429, -0.0028, -0.0846, 0.0028 ), 
+    Vec4( 0.0855, -0.0092, -0.1693, 0.0056 ), 
+    Vec4( 0.1275, -0.0192, -0.2539, 0.0083 ), 
+    Vec4( 0.1685, -0.0328, -0.3385, 0.0111 ), 
+    Vec4( 0.2084, -0.0499, -0.4232, 0.0139 ), 
+    Vec4( 0.2467, -0.0703, -0.5078, 0.0167 ), 
+    Vec4( 0.2833, -0.0939, -0.5924, 0.0194 ), 
+    Vec4( 0.3178, -0.1205, -0.6771, 0.0222 ), 
+    Vec4( 0.3500, -0.1500, -0.7617, 0.0250 )
+  } 
+);
+mprims.push_back(mp6);
+
+MP mp7 = MP(
+  7, 
+  0, 
+  Vec4( 16, 0, 0, -1 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0444, 0.0000, 0.0000, -0.0028 ), 
+    Vec4( 0.0889, 0.0000, 0.0000, -0.0056 ), 
+    Vec4( 0.1333, 0.0000, 0.0000, -0.0083 ), 
+    Vec4( 0.1778, 0.0000, 0.0000, -0.0111 ), 
+    Vec4( 0.2222, 0.0000, 0.0000, -0.0139 ), 
+    Vec4( 0.2667, 0.0000, 0.0000, -0.0167 ), 
+    Vec4( 0.3111, 0.0000, 0.0000, -0.0194 ), 
+    Vec4( 0.3556, 0.0000, 0.0000, -0.0222 ), 
+    Vec4( 0.4000, 0.0000, 0.0000, -0.0250 )
+  } 
+);
+mprims.push_back(mp7);
+
+MP mp8 = MP(
+  8, 
+  0, 
+  Vec4( 14, 6, 1, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0429, 0.0028, 0.0846, -0.0028 ), 
+    Vec4( 0.0855, 0.0092, 0.1693, -0.0056 ), 
+    Vec4( 0.1275, 0.0192, 0.2539, -0.0083 ), 
+    Vec4( 0.1685, 0.0328, 0.3385, -0.0111 ), 
+    Vec4( 0.2084, 0.0499, 0.4232, -0.0139 ), 
+    Vec4( 0.2467, 0.0703, 0.5078, -0.0167 ), 
+    Vec4( 0.2833, 0.0939, 0.5924, -0.0194 ), 
+    Vec4( 0.3178, 0.1205, 0.6771, -0.0222 ), 
+    Vec4( 0.3500, 0.1500, 0.7617, -0.0250 )
+  } 
+);
+mprims.push_back(mp8);
+
+MP mp9 = MP(
+  9, 
+  0, 
+  Vec4( 14, -6, 7, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.0000, 0.0000 ), 
+    Vec4( 0.0429, -0.0028, -0.0846, -0.0028 ), 
+    Vec4( 0.0855, -0.0092, -0.1693, -0.0056 ), 
+    Vec4( 0.1275, -0.0192, -0.2539, -0.0083 ), 
+    Vec4( 0.1685, -0.0328, -0.3385, -0.0111 ), 
+    Vec4( 0.2084, -0.0499, -0.4232, -0.0139 ), 
+    Vec4( 0.2467, -0.0703, -0.5078, -0.0167 ), 
+    Vec4( 0.2833, -0.0939, -0.5924, -0.0194 ), 
+    Vec4( 0.3178, -0.1205, -0.6771, -0.0222 ), 
+    Vec4( 0.3500, -0.1500, -0.7617, -0.0250 )
+  } 
+);
+mprims.push_back(mp9);
+
+MP mp10 = MP(
+  10, 
+  1, 
+  Vec4( 2, 2, 1, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
+    Vec4( 0.0056, 0.0056, 0.7854, 0.0000 ), 
+    Vec4( 0.0111, 0.0111, 0.7854, 0.0000 ), 
+    Vec4( 0.0167, 0.0167, 0.7854, 0.0000 ), 
+    Vec4( 0.0222, 0.0222, 0.7854, 0.0000 ), 
+    Vec4( 0.0278, 0.0278, 0.7854, 0.0000 ), 
+    Vec4( 0.0333, 0.0333, 0.7854, 0.0000 ), 
+    Vec4( 0.0389, 0.0389, 0.7854, 0.0000 ), 
+    Vec4( 0.0444, 0.0444, 0.7854, 0.0000 ), 
+    Vec4( 0.0500, 0.0500, 0.7854, 0.0000 )
+  } 
+);
+mprims.push_back(mp10);
+
+MP mp11 = MP(
+  11, 
+  1, 
+  Vec4( 12, 12, 1, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
+    Vec4( 0.0333, 0.0333, 0.7854, 0.0000 ), 
+    Vec4( 0.0667, 0.0667, 0.7854, 0.0000 ), 
+    Vec4( 0.1000, 0.1000, 0.7854, 0.0000 ), 
+    Vec4( 0.1333, 0.1333, 0.7854, 0.0000 ), 
+    Vec4( 0.1667, 0.1667, 0.7854, 0.0000 ), 
+    Vec4( 0.2000, 0.2000, 0.7854, 0.0000 ), 
+    Vec4( 0.2333, 0.2333, 0.7854, 0.0000 ), 
+    Vec4( 0.2667, 0.2667, 0.7854, 0.0000 ), 
+    Vec4( 0.3000, 0.3000, 0.7854, 0.0000 )
+  } 
+);
+mprims.push_back(mp11);
+
+MP mp12 = MP(
+  12, 
+  1, 
+  Vec4( 5, 12, 2, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
+    Vec4( 0.0251, 0.0272, 0.8689, 0.0000 ), 
+    Vec4( 0.0478, 0.0565, 0.9567, 0.0000 ), 
+    Vec4( 0.0678, 0.0877, 1.0444, 0.0000 ), 
+    Vec4( 0.0850, 0.1206, 1.1321, 0.0000 ), 
+    Vec4( 0.0993, 0.1548, 1.2199, 0.0000 ), 
+    Vec4( 0.1105, 0.1901, 1.3076, 0.0000 ), 
+    Vec4( 0.1185, 0.2262, 1.3953, 0.0000 ), 
+    Vec4( 0.1234, 0.2630, 1.4831, 0.0000 ), 
+    Vec4( 0.1250, 0.3000, 1.5708, 0.0000 )
+  } 
+);
+mprims.push_back(mp12);
+
+MP mp13 = MP(
+  13, 
+  1, 
+  Vec4( 12, 5, 0, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
+    Vec4( 0.0272, 0.0251, 0.7019, 0.0000 ), 
+    Vec4( 0.0565, 0.0478, 0.6141, 0.0000 ), 
+    Vec4( 0.0877, 0.0678, 0.5264, 0.0000 ), 
+    Vec4( 0.1206, 0.0850, 0.4387, 0.0000 ), 
+    Vec4( 0.1548, 0.0993, 0.3509, 0.0000 ), 
+    Vec4( 0.1901, 0.1105, 0.2632, 0.0000 ), 
+    Vec4( 0.2262, 0.1185, 0.1755, 0.0000 ), 
+    Vec4( 0.2630, 0.1234, 0.0877, 0.0000 ), 
+    Vec4( 0.3000, 0.1250, 0.0000, 0.0000 )
+  } 
+);
+mprims.push_back(mp13);
+
+MP mp14 = MP(
+  14, 
+  1, 
+  Vec4( 12, 12, 1, 1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
+    Vec4( 0.0333, 0.0333, 0.7854, 0.0028 ), 
+    Vec4( 0.0667, 0.0667, 0.7854, 0.0056 ), 
+    Vec4( 0.1000, 0.1000, 0.7854, 0.0083 ), 
+    Vec4( 0.1333, 0.1333, 0.7854, 0.0111 ), 
+    Vec4( 0.1667, 0.1667, 0.7854, 0.0139 ), 
+    Vec4( 0.2000, 0.2000, 0.7854, 0.0167 ), 
+    Vec4( 0.2333, 0.2333, 0.7854, 0.0194 ), 
+    Vec4( 0.2667, 0.2667, 0.7854, 0.0222 ), 
+    Vec4( 0.3000, 0.3000, 0.7854, 0.0250 )
+  } 
+);
+mprims.push_back(mp14);
+
+MP mp15 = MP(
+  15, 
+  1, 
+  Vec4( 5, 12, 2, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
+    Vec4( 0.0251, 0.0272, 0.8689, 0.0028 ), 
+    Vec4( 0.0478, 0.0565, 0.9567, 0.0056 ), 
+    Vec4( 0.0678, 0.0877, 1.0444, 0.0083 ), 
+    Vec4( 0.0850, 0.1206, 1.1321, 0.0111 ), 
+    Vec4( 0.0993, 0.1548, 1.2199, 0.0139 ), 
+    Vec4( 0.1105, 0.1901, 1.3076, 0.0167 ), 
+    Vec4( 0.1185, 0.2262, 1.3953, 0.0194 ), 
+    Vec4( 0.1234, 0.2630, 1.4831, 0.0222 ), 
+    Vec4( 0.1250, 0.3000, 1.5708, 0.0250 )
+  } 
+);
+mprims.push_back(mp15);
+
+MP mp16 = MP(
+  16, 
+  1, 
+  Vec4( 12, 5, 0, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
+    Vec4( 0.0272, 0.0251, 0.7019, 0.0028 ), 
+    Vec4( 0.0565, 0.0478, 0.6141, 0.0056 ), 
+    Vec4( 0.0877, 0.0678, 0.5264, 0.0083 ), 
+    Vec4( 0.1206, 0.0850, 0.4387, 0.0111 ), 
+    Vec4( 0.1548, 0.0993, 0.3509, 0.0139 ), 
+    Vec4( 0.1901, 0.1105, 0.2632, 0.0167 ), 
+    Vec4( 0.2262, 0.1185, 0.1755, 0.0194 ), 
+    Vec4( 0.2630, 0.1234, 0.0877, 0.0222 ), 
+    Vec4( 0.3000, 0.1250, 0.0000, 0.0250 )
+  } 
+);
+mprims.push_back(mp16);
+
+MP mp17 = MP(
+  17, 
+  1, 
+  Vec4( 12, 12, 1, -1 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
+    Vec4( 0.0333, 0.0333, 0.7854, -0.0028 ), 
+    Vec4( 0.0667, 0.0667, 0.7854, -0.0056 ), 
+    Vec4( 0.1000, 0.1000, 0.7854, -0.0083 ), 
+    Vec4( 0.1333, 0.1333, 0.7854, -0.0111 ), 
+    Vec4( 0.1667, 0.1667, 0.7854, -0.0139 ), 
+    Vec4( 0.2000, 0.2000, 0.7854, -0.0167 ), 
+    Vec4( 0.2333, 0.2333, 0.7854, -0.0194 ), 
+    Vec4( 0.2667, 0.2667, 0.7854, -0.0222 ), 
+    Vec4( 0.3000, 0.3000, 0.7854, -0.0250 )
+  } 
+);
+mprims.push_back(mp17);
+
+MP mp18 = MP(
+  18, 
+  1, 
+  Vec4( 5, 12, 2, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
+    Vec4( 0.0251, 0.0272, 0.8689, -0.0028 ), 
+    Vec4( 0.0478, 0.0565, 0.9567, -0.0056 ), 
+    Vec4( 0.0678, 0.0877, 1.0444, -0.0083 ), 
+    Vec4( 0.0850, 0.1206, 1.1321, -0.0111 ), 
+    Vec4( 0.0993, 0.1548, 1.2199, -0.0139 ), 
+    Vec4( 0.1105, 0.1901, 1.3076, -0.0167 ), 
+    Vec4( 0.1185, 0.2262, 1.3953, -0.0194 ), 
+    Vec4( 0.1234, 0.2630, 1.4831, -0.0222 ), 
+    Vec4( 0.1250, 0.3000, 1.5708, -0.0250 )
+  } 
+);
+mprims.push_back(mp18);
+
+MP mp19 = MP(
+  19, 
+  1, 
+  Vec4( 12, 5, 0, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 0.7854, 0.0000 ), 
+    Vec4( 0.0272, 0.0251, 0.7019, -0.0028 ), 
+    Vec4( 0.0565, 0.0478, 0.6141, -0.0056 ), 
+    Vec4( 0.0877, 0.0678, 0.5264, -0.0083 ), 
+    Vec4( 0.1206, 0.0850, 0.4387, -0.0111 ), 
+    Vec4( 0.1548, 0.0993, 0.3509, -0.0139 ), 
+    Vec4( 0.1901, 0.1105, 0.2632, -0.0167 ), 
+    Vec4( 0.2262, 0.1185, 0.1755, -0.0194 ), 
+    Vec4( 0.2630, 0.1234, 0.0877, -0.0222 ), 
+    Vec4( 0.3000, 0.1250, 0.0000, -0.0250 )
+  } 
+);
+mprims.push_back(mp19);
+
+MP mp20 = MP(
+  20, 
+  2, 
+  Vec4( 0, 2, 2, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0056, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0111, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0167, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0222, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0278, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0333, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0389, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0444, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0500, 1.5708, 0.0000 )
+  } 
+);
+mprims.push_back(mp20);
+
+MP mp21 = MP(
+  21, 
+  2, 
+  Vec4( 0, 16, 2, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0444, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0889, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.1333, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.1778, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.2222, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.2667, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.3111, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.3556, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.4000, 1.5708, 0.0000 )
+  } 
+);
+mprims.push_back(mp21);
+
+MP mp22 = MP(
+  22, 
+  2, 
+  Vec4( -6, 14, 3, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
+    Vec4( -0.0028, 0.0429, 1.6554, 0.0000 ), 
+    Vec4( -0.0092, 0.0855, 1.7401, 0.0000 ), 
+    Vec4( -0.0192, 0.1275, 1.8247, 0.0000 ), 
+    Vec4( -0.0328, 0.1685, 1.9093, 0.0000 ), 
+    Vec4( -0.0499, 0.2084, 1.9940, 0.0000 ), 
+    Vec4( -0.0703, 0.2467, 2.0786, 0.0000 ), 
+    Vec4( -0.0939, 0.2833, 2.1632, 0.0000 ), 
+    Vec4( -0.1205, 0.3178, 2.2479, 0.0000 ), 
+    Vec4( -0.1500, 0.3500, 2.3325, 0.0000 )
+  } 
+);
+mprims.push_back(mp22);
+
+MP mp23 = MP(
+  23, 
+  2, 
+  Vec4( 6, 14, 1, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
+    Vec4( 0.0028, 0.0429, 1.4862, 0.0000 ), 
+    Vec4( 0.0092, 0.0855, 1.4015, 0.0000 ), 
+    Vec4( 0.0192, 0.1275, 1.3169, 0.0000 ), 
+    Vec4( 0.0328, 0.1685, 1.2323, 0.0000 ), 
+    Vec4( 0.0499, 0.2084, 1.1476, 0.0000 ), 
+    Vec4( 0.0703, 0.2467, 1.0630, 0.0000 ), 
+    Vec4( 0.0939, 0.2833, 0.9784, 0.0000 ), 
+    Vec4( 0.1205, 0.3178, 0.8937, 0.0000 ), 
+    Vec4( 0.1500, 0.3500, 0.8091, 0.0000 )
+  } 
+);
+mprims.push_back(mp23);
+
+MP mp24 = MP(
+  24, 
+  2, 
+  Vec4( 0, 16, 2, 1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0444, 1.5708, 0.0028 ), 
+    Vec4( 0.0000, 0.0889, 1.5708, 0.0056 ), 
+    Vec4( 0.0000, 0.1333, 1.5708, 0.0083 ), 
+    Vec4( 0.0000, 0.1778, 1.5708, 0.0111 ), 
+    Vec4( 0.0000, 0.2222, 1.5708, 0.0139 ), 
+    Vec4( 0.0000, 0.2667, 1.5708, 0.0167 ), 
+    Vec4( 0.0000, 0.3111, 1.5708, 0.0194 ), 
+    Vec4( 0.0000, 0.3556, 1.5708, 0.0222 ), 
+    Vec4( 0.0000, 0.4000, 1.5708, 0.0250 )
+  } 
+);
+mprims.push_back(mp24);
+
+MP mp25 = MP(
+  25, 
+  2, 
+  Vec4( -6, 14, 3, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
+    Vec4( -0.0028, 0.0429, 1.6554, 0.0028 ), 
+    Vec4( -0.0092, 0.0855, 1.7401, 0.0056 ), 
+    Vec4( -0.0192, 0.1275, 1.8247, 0.0083 ), 
+    Vec4( -0.0328, 0.1685, 1.9093, 0.0111 ), 
+    Vec4( -0.0499, 0.2084, 1.9940, 0.0139 ), 
+    Vec4( -0.0703, 0.2467, 2.0786, 0.0167 ), 
+    Vec4( -0.0939, 0.2833, 2.1632, 0.0194 ), 
+    Vec4( -0.1205, 0.3178, 2.2479, 0.0222 ), 
+    Vec4( -0.1500, 0.3500, 2.3325, 0.0250 )
+  } 
+);
+mprims.push_back(mp25);
+
+MP mp26 = MP(
+  26, 
+  2, 
+  Vec4( 6, 14, 1, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
+    Vec4( 0.0028, 0.0429, 1.4862, 0.0028 ), 
+    Vec4( 0.0092, 0.0855, 1.4015, 0.0056 ), 
+    Vec4( 0.0192, 0.1275, 1.3169, 0.0083 ), 
+    Vec4( 0.0328, 0.1685, 1.2323, 0.0111 ), 
+    Vec4( 0.0499, 0.2084, 1.1476, 0.0139 ), 
+    Vec4( 0.0703, 0.2467, 1.0630, 0.0167 ), 
+    Vec4( 0.0939, 0.2833, 0.9784, 0.0194 ), 
+    Vec4( 0.1205, 0.3178, 0.8937, 0.0222 ), 
+    Vec4( 0.1500, 0.3500, 0.8091, 0.0250 )
+  } 
+);
+mprims.push_back(mp26);
+
+MP mp27 = MP(
+  27, 
+  2, 
+  Vec4( 0, 16, 2, -1 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
+    Vec4( 0.0000, 0.0444, 1.5708, -0.0028 ), 
+    Vec4( 0.0000, 0.0889, 1.5708, -0.0056 ), 
+    Vec4( 0.0000, 0.1333, 1.5708, -0.0083 ), 
+    Vec4( 0.0000, 0.1778, 1.5708, -0.0111 ), 
+    Vec4( 0.0000, 0.2222, 1.5708, -0.0139 ), 
+    Vec4( 0.0000, 0.2667, 1.5708, -0.0167 ), 
+    Vec4( 0.0000, 0.3111, 1.5708, -0.0194 ), 
+    Vec4( 0.0000, 0.3556, 1.5708, -0.0222 ), 
+    Vec4( 0.0000, 0.4000, 1.5708, -0.0250 )
+  } 
+);
+mprims.push_back(mp27);
+
+MP mp28 = MP(
+  28, 
+  2, 
+  Vec4( -6, 14, 3, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
+    Vec4( -0.0028, 0.0429, 1.6554, -0.0028 ), 
+    Vec4( -0.0092, 0.0855, 1.7401, -0.0056 ), 
+    Vec4( -0.0192, 0.1275, 1.8247, -0.0083 ), 
+    Vec4( -0.0328, 0.1685, 1.9093, -0.0111 ), 
+    Vec4( -0.0499, 0.2084, 1.9940, -0.0139 ), 
+    Vec4( -0.0703, 0.2467, 2.0786, -0.0167 ), 
+    Vec4( -0.0939, 0.2833, 2.1632, -0.0194 ), 
+    Vec4( -0.1205, 0.3178, 2.2479, -0.0222 ), 
+    Vec4( -0.1500, 0.3500, 2.3325, -0.0250 )
+  } 
+);
+mprims.push_back(mp28);
+
+MP mp29 = MP(
+  29, 
+  2, 
+  Vec4( 6, 14, 1, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 1.5708, 0.0000 ), 
+    Vec4( 0.0028, 0.0429, 1.4862, -0.0028 ), 
+    Vec4( 0.0092, 0.0855, 1.4015, -0.0056 ), 
+    Vec4( 0.0192, 0.1275, 1.3169, -0.0083 ), 
+    Vec4( 0.0328, 0.1685, 1.2323, -0.0111 ), 
+    Vec4( 0.0499, 0.2084, 1.1476, -0.0139 ), 
+    Vec4( 0.0703, 0.2467, 1.0630, -0.0167 ), 
+    Vec4( 0.0939, 0.2833, 0.9784, -0.0194 ), 
+    Vec4( 0.1205, 0.3178, 0.8937, -0.0222 ), 
+    Vec4( 0.1500, 0.3500, 0.8091, -0.0250 )
+  } 
+);
+mprims.push_back(mp29);
+
+MP mp30 = MP(
+  30, 
+  3, 
+  Vec4( -2, 2, 3, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
+    Vec4( -0.0056, 0.0056, 2.3562, 0.0000 ), 
+    Vec4( -0.0111, 0.0111, 2.3562, 0.0000 ), 
+    Vec4( -0.0167, 0.0167, 2.3562, 0.0000 ), 
+    Vec4( -0.0222, 0.0222, 2.3562, 0.0000 ), 
+    Vec4( -0.0278, 0.0278, 2.3562, 0.0000 ), 
+    Vec4( -0.0333, 0.0333, 2.3562, 0.0000 ), 
+    Vec4( -0.0389, 0.0389, 2.3562, 0.0000 ), 
+    Vec4( -0.0444, 0.0444, 2.3562, 0.0000 ), 
+    Vec4( -0.0500, 0.0500, 2.3562, 0.0000 )
+  } 
+);
+mprims.push_back(mp30);
+
+MP mp31 = MP(
+  31, 
+  3, 
+  Vec4( -12, 12, 3, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
+    Vec4( -0.0333, 0.0333, 2.3562, 0.0000 ), 
+    Vec4( -0.0667, 0.0667, 2.3562, 0.0000 ), 
+    Vec4( -0.1000, 0.1000, 2.3562, 0.0000 ), 
+    Vec4( -0.1333, 0.1333, 2.3562, 0.0000 ), 
+    Vec4( -0.1667, 0.1667, 2.3562, 0.0000 ), 
+    Vec4( -0.2000, 0.2000, 2.3562, 0.0000 ), 
+    Vec4( -0.2333, 0.2333, 2.3562, 0.0000 ), 
+    Vec4( -0.2667, 0.2667, 2.3562, 0.0000 ), 
+    Vec4( -0.3000, 0.3000, 2.3562, 0.0000 )
+  } 
+);
+mprims.push_back(mp31);
+
+MP mp32 = MP(
+  32, 
+  3, 
+  Vec4( -12, 5, 4, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
+    Vec4( -0.0272, 0.0251, 2.4397, 0.0000 ), 
+    Vec4( -0.0565, 0.0478, 2.5275, 0.0000 ), 
+    Vec4( -0.0877, 0.0678, 2.6152, 0.0000 ), 
+    Vec4( -0.1206, 0.0850, 2.7029, 0.0000 ), 
+    Vec4( -0.1548, 0.0993, 2.7907, 0.0000 ), 
+    Vec4( -0.1901, 0.1105, 2.8784, 0.0000 ), 
+    Vec4( -0.2262, 0.1185, 2.9661, 0.0000 ), 
+    Vec4( -0.2630, 0.1234, 3.0539, 0.0000 ), 
+    Vec4( -0.3000, 0.1250, 3.1416, 0.0000 )
+  } 
+);
+mprims.push_back(mp32);
+
+MP mp33 = MP(
+  33, 
+  3, 
+  Vec4( -5, 12, 2, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
+    Vec4( -0.0251, 0.0272, 2.2727, 0.0000 ), 
+    Vec4( -0.0478, 0.0565, 2.1849, 0.0000 ), 
+    Vec4( -0.0678, 0.0877, 2.0972, 0.0000 ), 
+    Vec4( -0.0850, 0.1206, 2.0095, 0.0000 ), 
+    Vec4( -0.0993, 0.1548, 1.9217, 0.0000 ), 
+    Vec4( -0.1105, 0.1901, 1.8340, 0.0000 ), 
+    Vec4( -0.1185, 0.2262, 1.7463, 0.0000 ), 
+    Vec4( -0.1234, 0.2630, 1.6585, 0.0000 ), 
+    Vec4( -0.1250, 0.3000, 1.5708, 0.0000 )
+  } 
+);
+mprims.push_back(mp33);
+
+MP mp34 = MP(
+  34, 
+  3, 
+  Vec4( -12, 12, 3, 1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
+    Vec4( -0.0333, 0.0333, 2.3562, 0.0028 ), 
+    Vec4( -0.0667, 0.0667, 2.3562, 0.0056 ), 
+    Vec4( -0.1000, 0.1000, 2.3562, 0.0083 ), 
+    Vec4( -0.1333, 0.1333, 2.3562, 0.0111 ), 
+    Vec4( -0.1667, 0.1667, 2.3562, 0.0139 ), 
+    Vec4( -0.2000, 0.2000, 2.3562, 0.0167 ), 
+    Vec4( -0.2333, 0.2333, 2.3562, 0.0194 ), 
+    Vec4( -0.2667, 0.2667, 2.3562, 0.0222 ), 
+    Vec4( -0.3000, 0.3000, 2.3562, 0.0250 )
+  } 
+);
+mprims.push_back(mp34);
+
+MP mp35 = MP(
+  35, 
+  3, 
+  Vec4( -12, 5, 4, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
+    Vec4( -0.0272, 0.0251, 2.4397, 0.0028 ), 
+    Vec4( -0.0565, 0.0478, 2.5275, 0.0056 ), 
+    Vec4( -0.0877, 0.0678, 2.6152, 0.0083 ), 
+    Vec4( -0.1206, 0.0850, 2.7029, 0.0111 ), 
+    Vec4( -0.1548, 0.0993, 2.7907, 0.0139 ), 
+    Vec4( -0.1901, 0.1105, 2.8784, 0.0167 ), 
+    Vec4( -0.2262, 0.1185, 2.9661, 0.0194 ), 
+    Vec4( -0.2630, 0.1234, 3.0539, 0.0222 ), 
+    Vec4( -0.3000, 0.1250, 3.1416, 0.0250 )
+  } 
+);
+mprims.push_back(mp35);
+
+MP mp36 = MP(
+  36, 
+  3, 
+  Vec4( -5, 12, 2, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
+    Vec4( -0.0251, 0.0272, 2.2727, 0.0028 ), 
+    Vec4( -0.0478, 0.0565, 2.1849, 0.0056 ), 
+    Vec4( -0.0678, 0.0877, 2.0972, 0.0083 ), 
+    Vec4( -0.0850, 0.1206, 2.0095, 0.0111 ), 
+    Vec4( -0.0993, 0.1548, 1.9217, 0.0139 ), 
+    Vec4( -0.1105, 0.1901, 1.8340, 0.0167 ), 
+    Vec4( -0.1185, 0.2262, 1.7463, 0.0194 ), 
+    Vec4( -0.1234, 0.2630, 1.6585, 0.0222 ), 
+    Vec4( -0.1250, 0.3000, 1.5708, 0.0250 )
+  } 
+);
+mprims.push_back(mp36);
+
+MP mp37 = MP(
+  37, 
+  3, 
+  Vec4( -12, 12, 3, -1 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
+    Vec4( -0.0333, 0.0333, 2.3562, -0.0028 ), 
+    Vec4( -0.0667, 0.0667, 2.3562, -0.0056 ), 
+    Vec4( -0.1000, 0.1000, 2.3562, -0.0083 ), 
+    Vec4( -0.1333, 0.1333, 2.3562, -0.0111 ), 
+    Vec4( -0.1667, 0.1667, 2.3562, -0.0139 ), 
+    Vec4( -0.2000, 0.2000, 2.3562, -0.0167 ), 
+    Vec4( -0.2333, 0.2333, 2.3562, -0.0194 ), 
+    Vec4( -0.2667, 0.2667, 2.3562, -0.0222 ), 
+    Vec4( -0.3000, 0.3000, 2.3562, -0.0250 )
+  } 
+);
+mprims.push_back(mp37);
+
+MP mp38 = MP(
+  38, 
+  3, 
+  Vec4( -12, 5, 4, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
+    Vec4( -0.0272, 0.0251, 2.4397, -0.0028 ), 
+    Vec4( -0.0565, 0.0478, 2.5275, -0.0056 ), 
+    Vec4( -0.0877, 0.0678, 2.6152, -0.0083 ), 
+    Vec4( -0.1206, 0.0850, 2.7029, -0.0111 ), 
+    Vec4( -0.1548, 0.0993, 2.7907, -0.0139 ), 
+    Vec4( -0.1901, 0.1105, 2.8784, -0.0167 ), 
+    Vec4( -0.2262, 0.1185, 2.9661, -0.0194 ), 
+    Vec4( -0.2630, 0.1234, 3.0539, -0.0222 ), 
+    Vec4( -0.3000, 0.1250, 3.1416, -0.0250 )
+  } 
+);
+mprims.push_back(mp38);
+
+MP mp39 = MP(
+  39, 
+  3, 
+  Vec4( -5, 12, 2, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 2.3562, 0.0000 ), 
+    Vec4( -0.0251, 0.0272, 2.2727, -0.0028 ), 
+    Vec4( -0.0478, 0.0565, 2.1849, -0.0056 ), 
+    Vec4( -0.0678, 0.0877, 2.0972, -0.0083 ), 
+    Vec4( -0.0850, 0.1206, 2.0095, -0.0111 ), 
+    Vec4( -0.0993, 0.1548, 1.9217, -0.0139 ), 
+    Vec4( -0.1105, 0.1901, 1.8340, -0.0167 ), 
+    Vec4( -0.1185, 0.2262, 1.7463, -0.0194 ), 
+    Vec4( -0.1234, 0.2630, 1.6585, -0.0222 ), 
+    Vec4( -0.1250, 0.3000, 1.5708, -0.0250 )
+  } 
+);
+mprims.push_back(mp39);
+
+MP mp40 = MP(
+  40, 
+  4, 
+  Vec4( -2, 0, 4, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0056, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0111, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0167, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0222, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0278, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0333, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0389, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0444, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0500, 0.0000, 3.1416, 0.0000 )
+  } 
+);
+mprims.push_back(mp40);
+
+MP mp41 = MP(
+  41, 
+  4, 
+  Vec4( -16, 0, 4, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0444, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0889, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.1333, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.1778, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.2222, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.2667, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.3111, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.3556, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.4000, 0.0000, 3.1416, 0.0000 )
+  } 
+);
+mprims.push_back(mp41);
+
+MP mp42 = MP(
+  42, 
+  4, 
+  Vec4( -14, -6, 5, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0429, -0.0028, 3.2262, 0.0000 ), 
+    Vec4( -0.0855, -0.0092, 3.3109, 0.0000 ), 
+    Vec4( -0.1275, -0.0192, 3.3955, 0.0000 ), 
+    Vec4( -0.1685, -0.0328, 3.4801, 0.0000 ), 
+    Vec4( -0.2084, -0.0499, 3.5648, 0.0000 ), 
+    Vec4( -0.2467, -0.0703, 3.6494, 0.0000 ), 
+    Vec4( -0.2833, -0.0939, 3.7340, 0.0000 ), 
+    Vec4( -0.3178, -0.1205, 3.8187, 0.0000 ), 
+    Vec4( -0.3500, -0.1500, 3.9033, 0.0000 )
+  } 
+);
+mprims.push_back(mp42);
+
+MP mp43 = MP(
+  43, 
+  4, 
+  Vec4( -14, 6, 3, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0429, 0.0028, 3.0570, 0.0000 ), 
+    Vec4( -0.0855, 0.0092, 2.9723, 0.0000 ), 
+    Vec4( -0.1275, 0.0192, 2.8877, 0.0000 ), 
+    Vec4( -0.1685, 0.0328, 2.8031, 0.0000 ), 
+    Vec4( -0.2084, 0.0499, 2.7184, 0.0000 ), 
+    Vec4( -0.2467, 0.0703, 2.6338, 0.0000 ), 
+    Vec4( -0.2833, 0.0939, 2.5492, 0.0000 ), 
+    Vec4( -0.3178, 0.1205, 2.4645, 0.0000 ), 
+    Vec4( -0.3500, 0.1500, 2.3799, 0.0000 )
+  } 
+);
+mprims.push_back(mp43);
+
+MP mp44 = MP(
+  44, 
+  4, 
+  Vec4( -16, 0, 4, 1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0444, 0.0000, 3.1416, 0.0028 ), 
+    Vec4( -0.0889, 0.0000, 3.1416, 0.0056 ), 
+    Vec4( -0.1333, 0.0000, 3.1416, 0.0083 ), 
+    Vec4( -0.1778, 0.0000, 3.1416, 0.0111 ), 
+    Vec4( -0.2222, 0.0000, 3.1416, 0.0139 ), 
+    Vec4( -0.2667, 0.0000, 3.1416, 0.0167 ), 
+    Vec4( -0.3111, 0.0000, 3.1416, 0.0194 ), 
+    Vec4( -0.3556, 0.0000, 3.1416, 0.0222 ), 
+    Vec4( -0.4000, 0.0000, 3.1416, 0.0250 )
+  } 
+);
+mprims.push_back(mp44);
+
+MP mp45 = MP(
+  45, 
+  4, 
+  Vec4( -14, -6, 5, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0429, -0.0028, 3.2262, 0.0028 ), 
+    Vec4( -0.0855, -0.0092, 3.3109, 0.0056 ), 
+    Vec4( -0.1275, -0.0192, 3.3955, 0.0083 ), 
+    Vec4( -0.1685, -0.0328, 3.4801, 0.0111 ), 
+    Vec4( -0.2084, -0.0499, 3.5648, 0.0139 ), 
+    Vec4( -0.2467, -0.0703, 3.6494, 0.0167 ), 
+    Vec4( -0.2833, -0.0939, 3.7340, 0.0194 ), 
+    Vec4( -0.3178, -0.1205, 3.8187, 0.0222 ), 
+    Vec4( -0.3500, -0.1500, 3.9033, 0.0250 )
+  } 
+);
+mprims.push_back(mp45);
+
+MP mp46 = MP(
+  46, 
+  4, 
+  Vec4( -14, 6, 3, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0429, 0.0028, 3.0570, 0.0028 ), 
+    Vec4( -0.0855, 0.0092, 2.9723, 0.0056 ), 
+    Vec4( -0.1275, 0.0192, 2.8877, 0.0083 ), 
+    Vec4( -0.1685, 0.0328, 2.8031, 0.0111 ), 
+    Vec4( -0.2084, 0.0499, 2.7184, 0.0139 ), 
+    Vec4( -0.2467, 0.0703, 2.6338, 0.0167 ), 
+    Vec4( -0.2833, 0.0939, 2.5492, 0.0194 ), 
+    Vec4( -0.3178, 0.1205, 2.4645, 0.0222 ), 
+    Vec4( -0.3500, 0.1500, 2.3799, 0.0250 )
+  } 
+);
+mprims.push_back(mp46);
+
+MP mp47 = MP(
+  47, 
+  4, 
+  Vec4( -16, 0, 4, -1 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0444, 0.0000, 3.1416, -0.0028 ), 
+    Vec4( -0.0889, 0.0000, 3.1416, -0.0056 ), 
+    Vec4( -0.1333, 0.0000, 3.1416, -0.0083 ), 
+    Vec4( -0.1778, 0.0000, 3.1416, -0.0111 ), 
+    Vec4( -0.2222, 0.0000, 3.1416, -0.0139 ), 
+    Vec4( -0.2667, 0.0000, 3.1416, -0.0167 ), 
+    Vec4( -0.3111, 0.0000, 3.1416, -0.0194 ), 
+    Vec4( -0.3556, 0.0000, 3.1416, -0.0222 ), 
+    Vec4( -0.4000, 0.0000, 3.1416, -0.0250 )
+  } 
+);
+mprims.push_back(mp47);
+
+MP mp48 = MP(
+  48, 
+  4, 
+  Vec4( -14, -6, 5, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0429, -0.0028, 3.2262, -0.0028 ), 
+    Vec4( -0.0855, -0.0092, 3.3109, -0.0056 ), 
+    Vec4( -0.1275, -0.0192, 3.3955, -0.0083 ), 
+    Vec4( -0.1685, -0.0328, 3.4801, -0.0111 ), 
+    Vec4( -0.2084, -0.0499, 3.5648, -0.0139 ), 
+    Vec4( -0.2467, -0.0703, 3.6494, -0.0167 ), 
+    Vec4( -0.2833, -0.0939, 3.7340, -0.0194 ), 
+    Vec4( -0.3178, -0.1205, 3.8187, -0.0222 ), 
+    Vec4( -0.3500, -0.1500, 3.9033, -0.0250 )
+  } 
+);
+mprims.push_back(mp48);
+
+MP mp49 = MP(
+  49, 
+  4, 
+  Vec4( -14, 6, 3, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.1416, 0.0000 ), 
+    Vec4( -0.0429, 0.0028, 3.0570, -0.0028 ), 
+    Vec4( -0.0855, 0.0092, 2.9723, -0.0056 ), 
+    Vec4( -0.1275, 0.0192, 2.8877, -0.0083 ), 
+    Vec4( -0.1685, 0.0328, 2.8031, -0.0111 ), 
+    Vec4( -0.2084, 0.0499, 2.7184, -0.0139 ), 
+    Vec4( -0.2467, 0.0703, 2.6338, -0.0167 ), 
+    Vec4( -0.2833, 0.0939, 2.5492, -0.0194 ), 
+    Vec4( -0.3178, 0.1205, 2.4645, -0.0222 ), 
+    Vec4( -0.3500, 0.1500, 2.3799, -0.0250 )
+  } 
+);
+mprims.push_back(mp49);
+
+MP mp50 = MP(
+  50, 
+  5, 
+  Vec4( -2, -2, 5, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
+    Vec4( -0.0056, -0.0056, 3.9270, 0.0000 ), 
+    Vec4( -0.0111, -0.0111, 3.9270, 0.0000 ), 
+    Vec4( -0.0167, -0.0167, 3.9270, 0.0000 ), 
+    Vec4( -0.0222, -0.0222, 3.9270, 0.0000 ), 
+    Vec4( -0.0278, -0.0278, 3.9270, 0.0000 ), 
+    Vec4( -0.0333, -0.0333, 3.9270, 0.0000 ), 
+    Vec4( -0.0389, -0.0389, 3.9270, 0.0000 ), 
+    Vec4( -0.0444, -0.0444, 3.9270, 0.0000 ), 
+    Vec4( -0.0500, -0.0500, 3.9270, 0.0000 )
+  } 
+);
+mprims.push_back(mp50);
+
+MP mp51 = MP(
+  51, 
+  5, 
+  Vec4( -12, -12, 5, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
+    Vec4( -0.0333, -0.0333, 3.9270, 0.0000 ), 
+    Vec4( -0.0667, -0.0667, 3.9270, 0.0000 ), 
+    Vec4( -0.1000, -0.1000, 3.9270, 0.0000 ), 
+    Vec4( -0.1333, -0.1333, 3.9270, 0.0000 ), 
+    Vec4( -0.1667, -0.1667, 3.9270, 0.0000 ), 
+    Vec4( -0.2000, -0.2000, 3.9270, 0.0000 ), 
+    Vec4( -0.2333, -0.2333, 3.9270, 0.0000 ), 
+    Vec4( -0.2667, -0.2667, 3.9270, 0.0000 ), 
+    Vec4( -0.3000, -0.3000, 3.9270, 0.0000 )
+  } 
+);
+mprims.push_back(mp51);
+
+MP mp52 = MP(
+  52, 
+  5, 
+  Vec4( -5, -12, 6, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
+    Vec4( -0.0251, -0.0272, 4.0105, 0.0000 ), 
+    Vec4( -0.0478, -0.0565, 4.0983, 0.0000 ), 
+    Vec4( -0.0678, -0.0877, 4.1860, 0.0000 ), 
+    Vec4( -0.0850, -0.1206, 4.2737, 0.0000 ), 
+    Vec4( -0.0993, -0.1548, 4.3615, 0.0000 ), 
+    Vec4( -0.1105, -0.1901, 4.4492, 0.0000 ), 
+    Vec4( -0.1185, -0.2262, 4.5369, 0.0000 ), 
+    Vec4( -0.1234, -0.2630, 4.6247, 0.0000 ), 
+    Vec4( -0.1250, -0.3000, 4.7124, 0.0000 )
+  } 
+);
+mprims.push_back(mp52);
+
+MP mp53 = MP(
+  53, 
+  5, 
+  Vec4( -12, -5, 4, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
+    Vec4( -0.0272, -0.0251, 3.8435, 0.0000 ), 
+    Vec4( -0.0565, -0.0478, 3.7557, 0.0000 ), 
+    Vec4( -0.0877, -0.0678, 3.6680, 0.0000 ), 
+    Vec4( -0.1206, -0.0850, 3.5803, 0.0000 ), 
+    Vec4( -0.1548, -0.0993, 3.4925, 0.0000 ), 
+    Vec4( -0.1901, -0.1105, 3.4048, 0.0000 ), 
+    Vec4( -0.2262, -0.1185, 3.3171, 0.0000 ), 
+    Vec4( -0.2630, -0.1234, 3.2293, 0.0000 ), 
+    Vec4( -0.3000, -0.1250, 3.1416, 0.0000 )
+  } 
+);
+mprims.push_back(mp53);
+
+MP mp54 = MP(
+  54, 
+  5, 
+  Vec4( -12, -12, 5, 1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
+    Vec4( -0.0333, -0.0333, 3.9270, 0.0028 ), 
+    Vec4( -0.0667, -0.0667, 3.9270, 0.0056 ), 
+    Vec4( -0.1000, -0.1000, 3.9270, 0.0083 ), 
+    Vec4( -0.1333, -0.1333, 3.9270, 0.0111 ), 
+    Vec4( -0.1667, -0.1667, 3.9270, 0.0139 ), 
+    Vec4( -0.2000, -0.2000, 3.9270, 0.0167 ), 
+    Vec4( -0.2333, -0.2333, 3.9270, 0.0194 ), 
+    Vec4( -0.2667, -0.2667, 3.9270, 0.0222 ), 
+    Vec4( -0.3000, -0.3000, 3.9270, 0.0250 )
+  } 
+);
+mprims.push_back(mp54);
+
+MP mp55 = MP(
+  55, 
+  5, 
+  Vec4( -5, -12, 6, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
+    Vec4( -0.0251, -0.0272, 4.0105, 0.0028 ), 
+    Vec4( -0.0478, -0.0565, 4.0983, 0.0056 ), 
+    Vec4( -0.0678, -0.0877, 4.1860, 0.0083 ), 
+    Vec4( -0.0850, -0.1206, 4.2737, 0.0111 ), 
+    Vec4( -0.0993, -0.1548, 4.3615, 0.0139 ), 
+    Vec4( -0.1105, -0.1901, 4.4492, 0.0167 ), 
+    Vec4( -0.1185, -0.2262, 4.5369, 0.0194 ), 
+    Vec4( -0.1234, -0.2630, 4.6247, 0.0222 ), 
+    Vec4( -0.1250, -0.3000, 4.7124, 0.0250 )
+  } 
+);
+mprims.push_back(mp55);
+
+MP mp56 = MP(
+  56, 
+  5, 
+  Vec4( -12, -5, 4, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
+    Vec4( -0.0272, -0.0251, 3.8435, 0.0028 ), 
+    Vec4( -0.0565, -0.0478, 3.7557, 0.0056 ), 
+    Vec4( -0.0877, -0.0678, 3.6680, 0.0083 ), 
+    Vec4( -0.1206, -0.0850, 3.5803, 0.0111 ), 
+    Vec4( -0.1548, -0.0993, 3.4925, 0.0139 ), 
+    Vec4( -0.1901, -0.1105, 3.4048, 0.0167 ), 
+    Vec4( -0.2262, -0.1185, 3.3171, 0.0194 ), 
+    Vec4( -0.2630, -0.1234, 3.2293, 0.0222 ), 
+    Vec4( -0.3000, -0.1250, 3.1416, 0.0250 )
+  } 
+);
+mprims.push_back(mp56);
+
+MP mp57 = MP(
+  57, 
+  5, 
+  Vec4( -12, -12, 5, -1 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
+    Vec4( -0.0333, -0.0333, 3.9270, -0.0028 ), 
+    Vec4( -0.0667, -0.0667, 3.9270, -0.0056 ), 
+    Vec4( -0.1000, -0.1000, 3.9270, -0.0083 ), 
+    Vec4( -0.1333, -0.1333, 3.9270, -0.0111 ), 
+    Vec4( -0.1667, -0.1667, 3.9270, -0.0139 ), 
+    Vec4( -0.2000, -0.2000, 3.9270, -0.0167 ), 
+    Vec4( -0.2333, -0.2333, 3.9270, -0.0194 ), 
+    Vec4( -0.2667, -0.2667, 3.9270, -0.0222 ), 
+    Vec4( -0.3000, -0.3000, 3.9270, -0.0250 )
+  } 
+);
+mprims.push_back(mp57);
+
+MP mp58 = MP(
+  58, 
+  5, 
+  Vec4( -5, -12, 6, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
+    Vec4( -0.0251, -0.0272, 4.0105, -0.0028 ), 
+    Vec4( -0.0478, -0.0565, 4.0983, -0.0056 ), 
+    Vec4( -0.0678, -0.0877, 4.1860, -0.0083 ), 
+    Vec4( -0.0850, -0.1206, 4.2737, -0.0111 ), 
+    Vec4( -0.0993, -0.1548, 4.3615, -0.0139 ), 
+    Vec4( -0.1105, -0.1901, 4.4492, -0.0167 ), 
+    Vec4( -0.1185, -0.2262, 4.5369, -0.0194 ), 
+    Vec4( -0.1234, -0.2630, 4.6247, -0.0222 ), 
+    Vec4( -0.1250, -0.3000, 4.7124, -0.0250 )
+  } 
+);
+mprims.push_back(mp58);
+
+MP mp59 = MP(
+  59, 
+  5, 
+  Vec4( -12, -5, 4, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 3.9270, 0.0000 ), 
+    Vec4( -0.0272, -0.0251, 3.8435, -0.0028 ), 
+    Vec4( -0.0565, -0.0478, 3.7557, -0.0056 ), 
+    Vec4( -0.0877, -0.0678, 3.6680, -0.0083 ), 
+    Vec4( -0.1206, -0.0850, 3.5803, -0.0111 ), 
+    Vec4( -0.1548, -0.0993, 3.4925, -0.0139 ), 
+    Vec4( -0.1901, -0.1105, 3.4048, -0.0167 ), 
+    Vec4( -0.2262, -0.1185, 3.3171, -0.0194 ), 
+    Vec4( -0.2630, -0.1234, 3.2293, -0.0222 ), 
+    Vec4( -0.3000, -0.1250, 3.1416, -0.0250 )
+  } 
+);
+mprims.push_back(mp59);
+
+MP mp60 = MP(
+  60, 
+  6, 
+  Vec4( 0, -2, 6, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0056, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0111, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0167, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0222, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0278, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0333, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0389, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0444, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0500, 4.7124, 0.0000 )
+  } 
+);
+mprims.push_back(mp60);
+
+MP mp61 = MP(
+  61, 
+  6, 
+  Vec4( 0, -16, 6, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0444, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0889, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.1333, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.1778, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.2222, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.2667, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.3111, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.3556, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.4000, 4.7124, 0.0000 )
+  } 
+);
+mprims.push_back(mp61);
+
+MP mp62 = MP(
+  62, 
+  6, 
+  Vec4( 6, -14, 7, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
+    Vec4( 0.0028, -0.0429, 4.7970, 0.0000 ), 
+    Vec4( 0.0092, -0.0855, 4.8817, 0.0000 ), 
+    Vec4( 0.0192, -0.1275, 4.9663, 0.0000 ), 
+    Vec4( 0.0328, -0.1685, 5.0509, 0.0000 ), 
+    Vec4( 0.0499, -0.2084, 5.1356, 0.0000 ), 
+    Vec4( 0.0703, -0.2467, 5.2202, 0.0000 ), 
+    Vec4( 0.0939, -0.2833, 5.3048, 0.0000 ), 
+    Vec4( 0.1205, -0.3178, 5.3895, 0.0000 ), 
+    Vec4( 0.1500, -0.3500, 5.4741, 0.0000 )
+  } 
+);
+mprims.push_back(mp62);
+
+MP mp63 = MP(
+  63, 
+  6, 
+  Vec4( -6, -14, 5, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
+    Vec4( -0.0028, -0.0429, 4.6278, 0.0000 ), 
+    Vec4( -0.0092, -0.0855, 4.5431, 0.0000 ), 
+    Vec4( -0.0192, -0.1275, 4.4585, 0.0000 ), 
+    Vec4( -0.0328, -0.1685, 4.3739, 0.0000 ), 
+    Vec4( -0.0499, -0.2084, 4.2892, 0.0000 ), 
+    Vec4( -0.0703, -0.2467, 4.2046, 0.0000 ), 
+    Vec4( -0.0939, -0.2833, 4.1199, 0.0000 ), 
+    Vec4( -0.1205, -0.3178, 4.0353, 0.0000 ), 
+    Vec4( -0.1500, -0.3500, 3.9507, 0.0000 )
+  } 
+);
+mprims.push_back(mp63);
+
+MP mp64 = MP(
+  64, 
+  6, 
+  Vec4( 0, -16, 6, 1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0444, 4.7124, 0.0028 ), 
+    Vec4( 0.0000, -0.0889, 4.7124, 0.0056 ), 
+    Vec4( 0.0000, -0.1333, 4.7124, 0.0083 ), 
+    Vec4( 0.0000, -0.1778, 4.7124, 0.0111 ), 
+    Vec4( 0.0000, -0.2222, 4.7124, 0.0139 ), 
+    Vec4( 0.0000, -0.2667, 4.7124, 0.0167 ), 
+    Vec4( 0.0000, -0.3111, 4.7124, 0.0194 ), 
+    Vec4( 0.0000, -0.3556, 4.7124, 0.0222 ), 
+    Vec4( 0.0000, -0.4000, 4.7124, 0.0250 )
+  } 
+);
+mprims.push_back(mp64);
+
+MP mp65 = MP(
+  65, 
+  6, 
+  Vec4( 6, -14, 7, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
+    Vec4( 0.0028, -0.0429, 4.7970, 0.0028 ), 
+    Vec4( 0.0092, -0.0855, 4.8817, 0.0056 ), 
+    Vec4( 0.0192, -0.1275, 4.9663, 0.0083 ), 
+    Vec4( 0.0328, -0.1685, 5.0509, 0.0111 ), 
+    Vec4( 0.0499, -0.2084, 5.1356, 0.0139 ), 
+    Vec4( 0.0703, -0.2467, 5.2202, 0.0167 ), 
+    Vec4( 0.0939, -0.2833, 5.3048, 0.0194 ), 
+    Vec4( 0.1205, -0.3178, 5.3895, 0.0222 ), 
+    Vec4( 0.1500, -0.3500, 5.4741, 0.0250 )
+  } 
+);
+mprims.push_back(mp65);
+
+MP mp66 = MP(
+  66, 
+  6, 
+  Vec4( -6, -14, 5, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
+    Vec4( -0.0028, -0.0429, 4.6278, 0.0028 ), 
+    Vec4( -0.0092, -0.0855, 4.5431, 0.0056 ), 
+    Vec4( -0.0192, -0.1275, 4.4585, 0.0083 ), 
+    Vec4( -0.0328, -0.1685, 4.3739, 0.0111 ), 
+    Vec4( -0.0499, -0.2084, 4.2892, 0.0139 ), 
+    Vec4( -0.0703, -0.2467, 4.2046, 0.0167 ), 
+    Vec4( -0.0939, -0.2833, 4.1199, 0.0194 ), 
+    Vec4( -0.1205, -0.3178, 4.0353, 0.0222 ), 
+    Vec4( -0.1500, -0.3500, 3.9507, 0.0250 )
+  } 
+);
+mprims.push_back(mp66);
+
+MP mp67 = MP(
+  67, 
+  6, 
+  Vec4( 0, -16, 6, -1 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
+    Vec4( 0.0000, -0.0444, 4.7124, -0.0028 ), 
+    Vec4( 0.0000, -0.0889, 4.7124, -0.0056 ), 
+    Vec4( 0.0000, -0.1333, 4.7124, -0.0083 ), 
+    Vec4( 0.0000, -0.1778, 4.7124, -0.0111 ), 
+    Vec4( 0.0000, -0.2222, 4.7124, -0.0139 ), 
+    Vec4( 0.0000, -0.2667, 4.7124, -0.0167 ), 
+    Vec4( 0.0000, -0.3111, 4.7124, -0.0194 ), 
+    Vec4( 0.0000, -0.3556, 4.7124, -0.0222 ), 
+    Vec4( 0.0000, -0.4000, 4.7124, -0.0250 )
+  } 
+);
+mprims.push_back(mp67);
+
+MP mp68 = MP(
+  68, 
+  6, 
+  Vec4( 6, -14, 7, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
+    Vec4( 0.0028, -0.0429, 4.7970, -0.0028 ), 
+    Vec4( 0.0092, -0.0855, 4.8817, -0.0056 ), 
+    Vec4( 0.0192, -0.1275, 4.9663, -0.0083 ), 
+    Vec4( 0.0328, -0.1685, 5.0509, -0.0111 ), 
+    Vec4( 0.0499, -0.2084, 5.1356, -0.0139 ), 
+    Vec4( 0.0703, -0.2467, 5.2202, -0.0167 ), 
+    Vec4( 0.0939, -0.2833, 5.3048, -0.0194 ), 
+    Vec4( 0.1205, -0.3178, 5.3895, -0.0222 ), 
+    Vec4( 0.1500, -0.3500, 5.4741, -0.0250 )
+  } 
+);
+mprims.push_back(mp68);
+
+MP mp69 = MP(
+  69, 
+  6, 
+  Vec4( -6, -14, 5, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 4.7124, 0.0000 ), 
+    Vec4( -0.0028, -0.0429, 4.6278, -0.0028 ), 
+    Vec4( -0.0092, -0.0855, 4.5431, -0.0056 ), 
+    Vec4( -0.0192, -0.1275, 4.4585, -0.0083 ), 
+    Vec4( -0.0328, -0.1685, 4.3739, -0.0111 ), 
+    Vec4( -0.0499, -0.2084, 4.2892, -0.0139 ), 
+    Vec4( -0.0703, -0.2467, 4.2046, -0.0167 ), 
+    Vec4( -0.0939, -0.2833, 4.1199, -0.0194 ), 
+    Vec4( -0.1205, -0.3178, 4.0353, -0.0222 ), 
+    Vec4( -0.1500, -0.3500, 3.9507, -0.0250 )
+  } 
+);
+mprims.push_back(mp69);
+
+MP mp70 = MP(
+  70, 
+  7, 
+  Vec4( 2, -2, 7, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
+    Vec4( 0.0056, -0.0056, 5.4978, 0.0000 ), 
+    Vec4( 0.0111, -0.0111, 5.4978, 0.0000 ), 
+    Vec4( 0.0167, -0.0167, 5.4978, 0.0000 ), 
+    Vec4( 0.0222, -0.0222, 5.4978, 0.0000 ), 
+    Vec4( 0.0278, -0.0278, 5.4978, 0.0000 ), 
+    Vec4( 0.0333, -0.0333, 5.4978, 0.0000 ), 
+    Vec4( 0.0389, -0.0389, 5.4978, 0.0000 ), 
+    Vec4( 0.0444, -0.0444, 5.4978, 0.0000 ), 
+    Vec4( 0.0500, -0.0500, 5.4978, 0.0000 )
+  } 
+);
+mprims.push_back(mp70);
+
+MP mp71 = MP(
+  71, 
+  7, 
+  Vec4( 12, -12, 7, 0 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
+    Vec4( 0.0333, -0.0333, 5.4978, 0.0000 ), 
+    Vec4( 0.0667, -0.0667, 5.4978, 0.0000 ), 
+    Vec4( 0.1000, -0.1000, 5.4978, 0.0000 ), 
+    Vec4( 0.1333, -0.1333, 5.4978, 0.0000 ), 
+    Vec4( 0.1667, -0.1667, 5.4978, 0.0000 ), 
+    Vec4( 0.2000, -0.2000, 5.4978, 0.0000 ), 
+    Vec4( 0.2333, -0.2333, 5.4978, 0.0000 ), 
+    Vec4( 0.2667, -0.2667, 5.4978, 0.0000 ), 
+    Vec4( 0.3000, -0.3000, 5.4978, 0.0000 )
+  } 
+);
+mprims.push_back(mp71);
+
+MP mp72 = MP(
+  72, 
+  7, 
+  Vec4( 12, -5, 0, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
+    Vec4( 0.0272, -0.0251, 5.5813, 0.0000 ), 
+    Vec4( 0.0565, -0.0478, 5.6690, 0.0000 ), 
+    Vec4( 0.0877, -0.0678, 5.7568, 0.0000 ), 
+    Vec4( 0.1206, -0.0850, 5.8445, 0.0000 ), 
+    Vec4( 0.1548, -0.0993, 5.9323, 0.0000 ), 
+    Vec4( 0.1901, -0.1105, 6.0200, 0.0000 ), 
+    Vec4( 0.2262, -0.1185, 6.1077, 0.0000 ), 
+    Vec4( 0.2630, -0.1234, 6.1955, 0.0000 ), 
+    Vec4( 0.3000, -0.1250, 6.2832, 0.0000 )
+  } 
+);
+mprims.push_back(mp72);
+
+MP mp73 = MP(
+  73, 
+  7, 
+  Vec4( 5, -12, 6, 0 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
+    Vec4( 0.0251, -0.0272, 5.4143, 0.0000 ), 
+    Vec4( 0.0478, -0.0565, 5.3265, 0.0000 ), 
+    Vec4( 0.0678, -0.0877, 5.2388, 0.0000 ), 
+    Vec4( 0.0850, -0.1206, 5.1511, 0.0000 ), 
+    Vec4( 0.0993, -0.1548, 5.0633, 0.0000 ), 
+    Vec4( 0.1105, -0.1901, 4.9756, 0.0000 ), 
+    Vec4( 0.1185, -0.2262, 4.8879, 0.0000 ), 
+    Vec4( 0.1234, -0.2630, 4.8001, 0.0000 ), 
+    Vec4( 0.1250, -0.3000, 4.7124, 0.0000 )
+  } 
+);
+mprims.push_back(mp73);
+
+MP mp74 = MP(
+  74, 
+  7, 
+  Vec4( 12, -12, 7, 1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
+    Vec4( 0.0333, -0.0333, 5.4978, 0.0028 ), 
+    Vec4( 0.0667, -0.0667, 5.4978, 0.0056 ), 
+    Vec4( 0.1000, -0.1000, 5.4978, 0.0083 ), 
+    Vec4( 0.1333, -0.1333, 5.4978, 0.0111 ), 
+    Vec4( 0.1667, -0.1667, 5.4978, 0.0139 ), 
+    Vec4( 0.2000, -0.2000, 5.4978, 0.0167 ), 
+    Vec4( 0.2333, -0.2333, 5.4978, 0.0194 ), 
+    Vec4( 0.2667, -0.2667, 5.4978, 0.0222 ), 
+    Vec4( 0.3000, -0.3000, 5.4978, 0.0250 )
+  } 
+);
+mprims.push_back(mp74);
+
+MP mp75 = MP(
+  75, 
+  7, 
+  Vec4( 12, -5, 0, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
+    Vec4( 0.0272, -0.0251, 5.5813, 0.0028 ), 
+    Vec4( 0.0565, -0.0478, 5.6690, 0.0056 ), 
+    Vec4( 0.0877, -0.0678, 5.7568, 0.0083 ), 
+    Vec4( 0.1206, -0.0850, 5.8445, 0.0111 ), 
+    Vec4( 0.1548, -0.0993, 5.9323, 0.0139 ), 
+    Vec4( 0.1901, -0.1105, 6.0200, 0.0167 ), 
+    Vec4( 0.2262, -0.1185, 6.1077, 0.0194 ), 
+    Vec4( 0.2630, -0.1234, 6.1955, 0.0222 ), 
+    Vec4( 0.3000, -0.1250, 6.2832, 0.0250 )
+  } 
+);
+mprims.push_back(mp75);
+
+MP mp76 = MP(
+  76, 
+  7, 
+  Vec4( 5, -12, 6, 1 ), 
+  3, 
+  { 
+    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
+    Vec4( 0.0251, -0.0272, 5.4143, 0.0028 ), 
+    Vec4( 0.0478, -0.0565, 5.3265, 0.0056 ), 
+    Vec4( 0.0678, -0.0877, 5.2388, 0.0083 ), 
+    Vec4( 0.0850, -0.1206, 5.1511, 0.0111 ), 
+    Vec4( 0.0993, -0.1548, 5.0633, 0.0139 ), 
+    Vec4( 0.1105, -0.1901, 4.9756, 0.0167 ), 
+    Vec4( 0.1185, -0.2262, 4.8879, 0.0194 ), 
+    Vec4( 0.1234, -0.2630, 4.8001, 0.0222 ), 
+    Vec4( 0.1250, -0.3000, 4.7124, 0.0250 )
+  } 
+);
+mprims.push_back(mp76);
+
+MP mp77 = MP(
+  77, 
+  7, 
+  Vec4( 12, -12, 7, -1 ), 
+  1, 
+  { 
+    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
+    Vec4( 0.0333, -0.0333, 5.4978, -0.0028 ), 
+    Vec4( 0.0667, -0.0667, 5.4978, -0.0056 ), 
+    Vec4( 0.1000, -0.1000, 5.4978, -0.0083 ), 
+    Vec4( 0.1333, -0.1333, 5.4978, -0.0111 ), 
+    Vec4( 0.1667, -0.1667, 5.4978, -0.0139 ), 
+    Vec4( 0.2000, -0.2000, 5.4978, -0.0167 ), 
+    Vec4( 0.2333, -0.2333, 5.4978, -0.0194 ), 
+    Vec4( 0.2667, -0.2667, 5.4978, -0.0222 ), 
+    Vec4( 0.3000, -0.3000, 5.4978, -0.0250 )
+  } 
+);
+mprims.push_back(mp77);
+
+MP mp78 = MP(
+  78, 
+  7, 
+  Vec4( 12, -5, 0, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
+    Vec4( 0.0272, -0.0251, 5.5813, -0.0028 ), 
+    Vec4( 0.0565, -0.0478, 5.6690, -0.0056 ), 
+    Vec4( 0.0877, -0.0678, 5.7568, -0.0083 ), 
+    Vec4( 0.1206, -0.0850, 5.8445, -0.0111 ), 
+    Vec4( 0.1548, -0.0993, 5.9323, -0.0139 ), 
+    Vec4( 0.1901, -0.1105, 6.0200, -0.0167 ), 
+    Vec4( 0.2262, -0.1185, 6.1077, -0.0194 ), 
+    Vec4( 0.2630, -0.1234, 6.1955, -0.0222 ), 
+    Vec4( 0.3000, -0.1250, 6.2832, -0.0250 )
+  } 
+);
+mprims.push_back(mp78);
+
+MP mp79 = MP(
+  79, 
+  7, 
+  Vec4( 5, -12, 6, -1 ), 
+  2, 
+  { 
+    Vec4( 0.0000, 0.0000, 5.4978, 0.0000 ), 
+    Vec4( 0.0251, -0.0272, 5.4143, -0.0028 ), 
+    Vec4( 0.0478, -0.0565, 5.3265, -0.0056 ), 
+    Vec4( 0.0678, -0.0877, 5.2388, -0.0083 ), 
+    Vec4( 0.0850, -0.1206, 5.1511, -0.0111 ), 
+    Vec4( 0.0993, -0.1548, 5.0633, -0.0139 ), 
+    Vec4( 0.1105, -0.1901, 4.9756, -0.0167 ), 
+    Vec4( 0.1185, -0.2262, 4.8879, -0.0194 ), 
+    Vec4( 0.1234, -0.2630, 4.8001, -0.0222 ), 
+    Vec4( 0.1250, -0.3000, 4.7124, -0.0250 )
+  } 
+);
+mprims.push_back(mp79);
 
 
 	return mprims;
