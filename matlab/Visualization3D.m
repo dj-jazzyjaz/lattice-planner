@@ -14,14 +14,14 @@ end
 drone_shape = [[-.5 1.5 -.5 -.5]; [-.5 0 .5 0]; [-.5 0. -.5 .5]]; % x, y, z
 % highres_drone = stlread('drone1.stl');
 
-tablemap = readtable('../maps/map8.txt');
+tablemap = readtable('../maps/map7.txt');
 envmap = table2array(tablemap);
 
 
 Visualize(plan, drone_shape, envmap)
 
 function[] = Visualize(plan, drone_shape, map)
-    z_scale = 1;
+    z_scale = 10;
     c_map = [ 1 1 1 ; 1 1 .5 ; 1 .75 0 ; 1 .5 0 ; 1 0 0];
     figure(); % 'units','normalized','outerposition',[0 0 1 1]);
     %imagesc(map); axis square; colorbar; colormap(c_map); hold on;
