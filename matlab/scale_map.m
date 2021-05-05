@@ -5,7 +5,7 @@ height = 600;
 width = 600;
 
 %% Save to file
-fileID = fopen('../maps/map8.txt','w');
+fileID = fopen('../maps/map7.txt','w');
     
 fprintf(fileID, "N\n%d, %d\nC\n", height, width);
 for r=1:height
