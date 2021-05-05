@@ -315,9 +315,19 @@ for angleind = 1:numberofangles
             end
             fprintf(fout, ']; \n');
         end
-        plot(intermcells_m(:,1), intermcells_m(:,2));
-        axis([-0.3 0.3 -0.3 0.3]);
-        text(intermcells_m(numofsamples,1), intermcells_m(numofsamples,2), int2str(endpose_c(3)));
+        switch endpose_c(4)
+            case 1
+                color = 'r';
+            case 0
+                color = 'g';
+            case -1
+               color = 'b';
+        end
+                
+        
+        plot3(intermcells_m(:,1), intermcells_m(:,2), intermcells_m(:,4), color);
+        axis([-0.45 0.45 -0.3 0.3 -0.3 0.3]);
+        %text(intermcells_m(numofsamples,1), intermcells_m(numofsamples,2), intermcells_m(numofsamples,4), int2str(endpose_c(3)));
         hold on;
         
     end

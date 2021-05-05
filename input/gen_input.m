@@ -11,7 +11,9 @@ hold on;
 [X, Y] = meshgrid(1:size(map, 1), 1:size(map, 2));
 s = surf(X, Y, z_scale * map);
 s.EdgeColor = 'none';
+colormap('summer');
 colorbar;
+zlim([0, 400]);
 
 ThreeD = -1;
 
