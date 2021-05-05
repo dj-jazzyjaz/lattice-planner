@@ -16,7 +16,8 @@
 double computeH(int x1, int y1, int th1, int z1, const StatePtr s2, int num_Angle_Discretizations, bool threeD) 
 {
     double dist = hypot(x1- s2->x, y1 - s2->y);
-    if(threeD) dist = hypot(dist, 10 * (z1 - s2->z));
+    if(threeD) dist = hypot(dist, (z1 - s2->z));
+    dist = dist * 0.1;
 
     double s = abs(th1 - s2->t);
     double angleDiff = min(s, num_Angle_Discretizations - s);
@@ -24,7 +25,7 @@ double computeH(int x1, int y1, int th1, int z1, const StatePtr s2, int num_Angl
     // TODO: play around more with this heuristic 
     double angleScale = dist == 0 ? 10 : (10/dist);
     // printf("Dist = %.2f, Angle Scale = %.2f, s = %.2f, h=%.2f\n", dist, angleScale, s, dist+angleScale*s);
-    return dist + angleScale * s;
+    return dist; // + angleScale * s;
 }
 
 bool startAngleEqual(StatePtr prevState, int new_mp_type, int new_angle){
@@ -191,7 +192,7 @@ bool astar(
         output << endl;
 
         printf("State %d: ", i);
-        if(i > 0) path[i]->printWithMp(path[i]->mp_type == 0 ? mprims_hi_res : mprims_lo_res, map);
+        if(i > 0) path[i]->print();//path[i]->printWithMp(path[i]->mp_type == 0 ? mprims_hi_res : mprims_lo_res, map);
     }
 
     //output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << -1 << " " << -1 << endl;
