@@ -1,7 +1,7 @@
 close all;
 formatSpec = '%d %d %d %d %d %d';
 sizePlan = [6 Inf];
-file = fopen('plan.txt', 'r');
+file = fopen('plan_around_the_mountain.txt', 'r');
 text = textscan(file,formatSpec, 'headerlines', 8);
 
 cols = size(text, 2);
@@ -14,7 +14,7 @@ end
 drone_shape = [[0 2 0 0]; [0 .5 1 .5]; [0 .5 0 1]]; % x, y, z
 % highres_drone = stlread('drone1.stl');
 
-tablemap = readtable('../maps/map7.txt');
+tablemap = readtable('../maps/map5.txt');
 envmap = table2array(tablemap);
 
 
