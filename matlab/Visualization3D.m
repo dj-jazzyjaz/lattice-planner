@@ -11,7 +11,7 @@ for i =1:cols
     plan(:, i) = (cell2mat(text(i)));
 end
 
-drone_shape = [[0 2 0 0]; [0 .5 1 .5]; [0 .5 0 1]]; % x, y, z
+drone_shape = [[-.5 1.5 -.5 -.5]; [-.5 0 .5 0]; [-.5 0. -.5 .5]]; % x, y, z
 % highres_drone = stlread('drone1.stl');
 
 tablemap = readtable('../maps/map5.txt');
@@ -28,9 +28,10 @@ function[] = Visualize(plan, drone_shape, map)
     hold on;
     [X, Y] = meshgrid(1:size(map, 1), 1:size(map, 2));
     s = surf(X, Y, z_scale * map);
+    colormap('summer');
     s.EdgeColor = 'none';
     colorbar;
-    drone_scale = 5;
+    drone_scale = 8;
 
     Intermediate_Pts_Highres = load('IntermediatePointsHighRes3D.mat');
     Intermediate_Pts_Highres = Intermediate_Pts_Highres.Intermediate_Pts_Highres3D;
@@ -86,9 +87,11 @@ function[] = Visualize(plan, drone_shape, map)
         Zs = z_scale * Zs;
         shp = alphaShape(Xs', Ys', Zs');
         shape = plot(shp);
-        shape.FaceColor = 'r';
-        shape.FaceAlpha = .25;
-        text(Xs(1), Ys(1), Zs(1), int2str(i), 'fontsize', 10);
+        shape.FaceColor = [.5 .5 .5];
+        shape.FaceAlpha = 1;
+        lighting gouraud;
+        
+        % text(Xs(1), Ys(1), Zs(1), int2str(i), 'fontsize', 10);
         
         %draw primitive
         if(i ~= 1) % no primitive for last point
@@ -98,7 +101,7 @@ function[] = Visualize(plan, drone_shape, map)
             elseif (low_res)
                 Inter_pts = Intermediate_Pts_Lowres(prim_num*num_intermediates+1:(prim_num+1)*num_intermediates, :);
             end
-            plot3(Inter_pts(:, 1)*scale+plan(i-1, 1)*resolution, Inter_pts(:, 2)*scale+plan(i-1, 2)*resolution, (Inter_pts(:, 4)*scale+plan(i-1, 6)*resolution) * z_scale, ':', 'Color', color, 'linewidth', 2);
+            plot3(Inter_pts(:, 1)*scale+plan(i-1, 1)*resolution, Inter_pts(:, 2)*scale+plan(i-1, 2)*resolution, (Inter_pts(:, 4)*scale+plan(i-1, 6)*resolution) * z_scale, '-', 'Color', color, 'linewidth', 4);
         end
     end
 
