@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <vector>
 #include <queue>
+#include <time.h>
 
 // Threshold of distance from goal to switch from using high-resolution primitives to low-resolution primitives
 #define HI_RES_THRESH 25 // TODO: play around with this parameter
@@ -51,9 +52,14 @@ bool astar(
   const vector<MP>& mprims_hi_res,
   const vector<MP>& mprims_lo_res,
   const Map* map,
+  int mapNum,
   string output_filename,
   bool threeD)
 {
+    clock_t t1, t2;
+    double time;
+    t1 = clock();
+
     if(!map->isFree(goalNode->x, goalNode->y)) {
         cerr << "Goal post is obstacle" << endl;
         return false;
@@ -136,7 +142,7 @@ bool astar(
         // Mark state as closed
         closed.insert(state);
     }
-
+    int num_iters = c;
     StatePtr curr;
     if (!found_goal)
     {
@@ -160,12 +166,25 @@ bool astar(
     path.push_back(curr); // Insert start state
     reverse(path.begin(), path.end());
 
+    t2 = clock();
+    time = (t2 - t1) / (double)CLOCKS_PER_SEC;
+
     // Write path to file
     ofstream output;
     output.open(output_filename, ofstream::out | ofstream::trunc);
-    cout << "Writing path to " << output_filename << endl;;
+    cout << "Writing path to " << output_filename << endl;
+    output << "Map Num: " << mapNum << endl;
+    output << "ThreeD: " << threeD << endl;
+    output << "Num states: " << path.size() << endl;
+    output << "Path cost: " << path[path.size() - 1]->g << endl;
+    output << "Num A* iters: " << num_iters << endl;
+    output << "Plan Time: " << time << " s\n" << endl;
+
+    if(threeD) output << "x y t mp_id mp_type z" << endl;
+    else output << "x y t mp_id mp_type" << endl;
+    
     int i;
-    for (i = 0; i < path.size()-1; i++)
+    for (i = 0; i < path.size(); i++)
     {
         output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i]->mp_id << " " << path[i]->mp_type;
         if(threeD) output << " " << path[i]->z;

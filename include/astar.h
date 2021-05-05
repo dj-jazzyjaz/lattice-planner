@@ -17,5 +17,6 @@ bool astar(
   const vector<MP>& mprims_hi_res,
   const vector<MP>& mprims_lo_res,
   const Map* map,
+  int mapNum,
   string output_filename,
   bool threeD);

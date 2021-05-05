@@ -91,7 +91,7 @@ function[] = Visualize(plan, drone_shape, map)
             elseif (low_res)
                 Inter_pts = Intermediate_Pts_Lowres(prim_num*num_intermediates+1:(prim_num+1)*num_intermediates, :);
             end
-            plot3(Inter_pts(:, 1)*scale+plan(i-1, 1)*resolution, Inter_pts(:, 2)*scale+plan(i-1, 2)*resolution, Inter_pts(:, 4)*scale+plan(i-1, 6)*resolution * z_scale, ':', 'Color', color, 'linewidth', 2);
+            plot3(Inter_pts(:, 1)*scale+plan(i-1, 1)*resolution, Inter_pts(:, 2)*scale+plan(i-1, 2)*resolution, (Inter_pts(:, 4)*scale+plan(i-1, 6)*resolution) * z_scale, ':', 'Color', color, 'linewidth', 2);
         end
     end
 

@@ -1,3 +1,11 @@
+Map Num: 5
+ThreeD: 1
+Num states: 33
+Path cost: 32
+Num A* iters: 286652
+Plan Time: 6.42188 s
+
+x y t mp_id mp_type z
 120 570 0 -1 1 5
 132 558 7 6 1 6
 132 542 6 73 1 6
@@ -30,3 +38,4 @@
 220 190 4 53 1 6
 212 191 7 83 0 6
 207 195 6 72 0 6
+200 200 7 62 0 6

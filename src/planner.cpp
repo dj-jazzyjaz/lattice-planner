@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include<string>  
 #include "../include/map.h"
 #include "../include/motionPrimitives.h"
 #include "../include/state.h"
@@ -9,12 +10,22 @@
 using namespace std;
 
 int main() {
+    int threeDIn;
+    int startX, startY, startZ, startTh, goalX, goalY, goalZ, goalTh;
+    int mapNum;
+    scanf("ThreeD: %d\n", &threeDIn), 
+    scanf("Start: %d %d %d %d\n", &startX, &startY, &startZ, &startTh);
+    scanf("Goal: %d %d %d %d\n", &goalX, &goalY, &goalZ, &goalTh);
+    scanf("Map Num: %d\n", &mapNum);
+
     string output_filename = "matlab/plan.txt";
-    Map map("maps/map5.txt");
+    string map_filename = "maps/map" + to_string(mapNum) + ".txt";
+    Map map(map_filename);
+
     // map.printMap();
     vector<MP> mprims_highres, mprims_lowres;
 
-    bool threeD = true;
+    bool threeD = (threeDIn == 1) ? true : false;
     
     if(threeD) {
         mprims_highres = MPrims_highres3D();
@@ -24,20 +35,12 @@ int main() {
         mprims_lowres = MPrims_lowres();
     }
 
-    int startX = 120;
-    int startY = 570;
-    int startTh = 0;
-    int startZ = 5;
-    int goalX = 200;
-    int goalY = 200;
-    int goalTh = 7;
-    int goalZ = 6; 
     StatePtr initState = make_shared<State>(startX, startY, startTh, 0, 0, nullptr, -1, 1, startZ);
     StatePtr goalState = make_shared<State>(goalX, goalY, goalTh, 0, 0, nullptr, -1, -1, goalZ);
     vector<StatePtr> path;
     
     // Do planning
-    astar(initState, goalState, path, mprims_highres, mprims_lowres, &map, output_filename, threeD);
+    astar(initState, goalState, path, mprims_highres, mprims_lowres, &map, mapNum, output_filename, threeD);
 
     /* Write to output file:
     List of (state, action) tuples, where 
