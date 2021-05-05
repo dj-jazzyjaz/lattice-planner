@@ -76,12 +76,13 @@ public:
         printf("(%d, %d, %d) th=%d g=%.2f h=%.2f f=%.2f\n", x, y, z, t, g, h, f);
     }
 
-    void printWithMp(const vector<MP> & mps) 
+    void printWithMp(const vector<MP> & mps, const Map* map) 
     {
         Vec4 mp_end = mps[mp_id].endpose;
-        printf("MP: type=%d start_angle=%d endpose=(%.2f, %.2f, %.2f) th=%.2f State: (%d, %d, %d) th=%d\n", 
+        printf("MP: type=%d start_angle=%d endpose=(%.2f, %.2f, %.2f) th=%.2f. State: (%d, %d, %d) th=%d. Map Height: %d\n", 
             mp_type, mps[mp_id].startangle_c, mp_end.x, mp_end.y, mp_end.z, mp_end.theta,
-            x, y, z, t);
+            x, y, z, t,
+            map->getValue(x, y));
     }
 
     void printShort() {

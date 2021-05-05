@@ -74,7 +74,7 @@ bool astar(
     StatePtr found_goal_state;
     StatePtr closest_goal_state = startNode;
     int c = 0;
-    int c_limit = 20000; // Time out after ~20 seconds
+    int c_limit = 1000000; // Time out after ~20 seconds
 
     // Start search
     while (!pq.empty() && !found_goal && c < c_limit)
@@ -84,12 +84,13 @@ bool astar(
         StatePtr state = pq.top();
         pq.pop();
         // printf("Searching iter %d:", c); state->print();
-        if(c % 100 == 0) {
+        if(c % 1000 == 0) {
             printf("Searching iter %d:", c); state->print();
         } 
         // Check if goalPose
         if (state->x == goalNode->x && state->y == goalNode->y && state->t == goalNode->t && (!threeD || state->z == goalNode->z))
         {
+            printf("FOUND GOAL!\n");
             found_goal = true;
             found_goal_state = state;
             break;
@@ -124,7 +125,7 @@ bool astar(
                 if ((!threeD && map->isFree(newx, newy) && mp.isFree(map)) 
                     || (threeD && map->isAbove(newx, newy, newz) && mp.isAbove(map, (float)state->z)))
                 {
-                    double g = state->g + mp.cost_mult;
+                    double g = state->g + max(1, mp.cost_mult);
                     double h = computeH(newx, newy, newth, newz, goalNode, isHighRes ? 16 : 8, threeD); // TODO: fix angle disc
                     StatePtr new_s = make_shared<State>(newx, newy, newth, g, h, state, mp.ID, new_mp_type, newz);
                     // printf("New state:"); new_s->print();
@@ -169,7 +170,7 @@ bool astar(
         output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i]->mp_id << " " << path[i]->mp_type;
         if(threeD) output << " " << path[i]->z;
         output << endl;
-        path[i]->printWithMp(path[i]->mp_type == 0 ? mprims_hi_res : mprims_lo_res);
+        path[i]->printWithMp(path[i]->mp_type == 0 ? mprims_hi_res : mprims_lo_res, map);
     }
 
     //output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << -1 << " " << -1 << endl;

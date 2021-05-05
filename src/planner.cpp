@@ -27,13 +27,13 @@ int main() {
     int startX = 120;
     int startY = 570;
     int startTh = 0;
-    int startZ = 10;
+    int startZ = 5;
     int goalX = 200;
     int goalY = 200;
     int goalTh = 7;
     int goalZ = 6; 
     StatePtr initState = make_shared<State>(startX, startY, startTh, 0, 0, nullptr, -1, 1, startZ);
-    StatePtr goalState = make_shared<State>(goalX, goalY, goalTh, 0, 0, nullptr, -1, -1, startZ);
+    StatePtr goalState = make_shared<State>(goalX, goalY, goalTh, 0, 0, nullptr, -1, -1, goalZ);
     vector<StatePtr> path;
     
     // Do planning

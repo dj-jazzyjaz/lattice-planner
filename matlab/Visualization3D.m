@@ -14,13 +14,13 @@ envmap = table2array(tablemap);
 Visualize(plan, drone_shape, envmap)
 
 function[] = Visualize(plan, drone_shape, map)
-
+    z_scale = 10;
     c_map = [ 1 1 1 ; 1 1 .5 ; 1 .75 0 ; 1 .5 0 ; 1 0 0];
     figure(); % 'units','normalized','outerposition',[0 0 1 1]);
     %imagesc(map); axis square; colorbar; colormap(c_map); hold on;
     hold on;
     [X, Y] = meshgrid(1:size(map, 1), 1:size(map, 2));
-    s = surf(X, Y, map*10);
+    s = surf(X, Y, z_scale * map);
     s.EdgeColor = 'none';
     colorbar;
     drone_scale = 5;
@@ -75,7 +75,8 @@ function[] = Visualize(plan, drone_shape, map)
    
         Xs = drone_shape(1,:)*cos(th)*drone_scale - drone_shape(2,:)*sin(th)*drone_scale + plan(i, 1)*resolution;
         Ys = drone_shape(1,:)*sin(th)*drone_scale + drone_shape(2,:)*cos(th)*drone_scale + plan(i, 2)*resolution;
-        Zs = drone_shape(3,:)*drone_scale + plan(i, 6)*resolution;
+        Zs = drone_shape(3,:)*drone_scale/z_scale + plan(i, 6)*resolution;
+        Zs = z_scale * Zs;
         shp = alphaShape(Xs', Ys', Zs');
         shape = plot(shp);
         shape.FaceColor = 'r';
@@ -90,7 +91,7 @@ function[] = Visualize(plan, drone_shape, map)
             elseif (low_res)
                 Inter_pts = Intermediate_Pts_Lowres(prim_num*num_intermediates+1:(prim_num+1)*num_intermediates, :);
             end
-            plot3(Inter_pts(:, 1)*scale+plan(i-1, 1)*resolution, Inter_pts(:, 2)*scale+plan(i-1, 2)*resolution, Inter_pts(:, 4)*scale+plan(i-1, 6)*resolution, ':', 'Color', color, 'linewidth', 2);
+            plot3(Inter_pts(:, 1)*scale+plan(i-1, 1)*resolution, Inter_pts(:, 2)*scale+plan(i-1, 2)*resolution, Inter_pts(:, 4)*scale+plan(i-1, 6)*resolution * z_scale, ':', 'Color', color, 'linewidth', 2);
         end
     end
 
