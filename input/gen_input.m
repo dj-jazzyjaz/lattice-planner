@@ -13,6 +13,7 @@ s = surf(X, Y, z_scale * map);
 s.EdgeColor = 'none';
 colormap('summer');
 colorbar;
+interp;
 zlim([0, 400]);
 
 ThreeD = -1;
