@@ -1,7 +1,7 @@
 close all;
 formatSpec = '%d %d %d %d %d %d';
 sizePlan = [6 Inf];
-file = fopen('plan_around_the_mountain.txt', 'r');
+file = fopen('plan.txt', 'r');
 text = textscan(file,formatSpec, 'headerlines', 8);
 
 cols = size(text, 2);
@@ -14,14 +14,14 @@ end
 drone_shape = [[0 2 0 0]; [0 .5 1 .5]; [0 .5 0 1]]; % x, y, z
 % highres_drone = stlread('drone1.stl');
 
-tablemap = readtable('../maps/map5.txt');
+tablemap = readtable('../maps/map8.txt');
 envmap = table2array(tablemap);
 
 
 Visualize(plan, drone_shape, envmap)
 
 function[] = Visualize(plan, drone_shape, map)
-    z_scale = 10;
+    z_scale = 1;
     c_map = [ 1 1 1 ; 1 1 .5 ; 1 .75 0 ; 1 .5 0 ; 1 0 0];
     figure(); % 'units','normalized','outerposition',[0 0 1 1]);
     %imagesc(map); axis square; colorbar; colormap(c_map); hold on;
