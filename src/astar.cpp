@@ -16,7 +16,7 @@
 double computeH(int x1, int y1, int th1, int z1, const StatePtr s2, int num_Angle_Discretizations, bool threeD) 
 {
     double dist = hypot(x1- s2->x, y1 - s2->y);
-    if(threeD) dist = hypot(dist, z1 - s2->z);
+    if(threeD) dist = hypot(dist, 10 * (z1 - s2->z));
 
     double s = abs(th1 - s2->t);
     double angleDiff = min(s, num_Angle_Discretizations - s);
@@ -90,7 +90,7 @@ bool astar(
         StatePtr state = pq.top();
         pq.pop();
         // printf("Searching iter %d:", c); state->print();
-        if(c % 100000 == 0) {
+        if(c % 10000 == 0) {
             printf("Searching iter %d:", c); state->print();
         } 
         // Check if goalPose
@@ -129,7 +129,7 @@ bool astar(
                 int newz = threeD ? state->z + mp.endpose.z : 0;
                 int newth = mp.endpose.theta;
                 if ((!threeD && map->isFree(newx, newy) && mp.isFree(map)) 
-                    || (threeD && map->isAbove(newx, newy, newz) && mp.isAbove(map, (float)state->z)))
+                    || (threeD && map->isAbove(newx, newy, newz) && mp.isAbove(map, state->x, state->y, state->z)))
                 {
                     double g = state->g + max(1, mp.cost_mult);
                     double h = computeH(newx, newy, newth, newz, goalNode, isHighRes ? 16 : 8, threeD); // TODO: fix angle disc
@@ -189,7 +189,9 @@ bool astar(
         output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << path[i]->mp_id << " " << path[i]->mp_type;
         if(threeD) output << " " << path[i]->z;
         output << endl;
-        path[i]->printWithMp(path[i]->mp_type == 0 ? mprims_hi_res : mprims_lo_res, map);
+
+        printf("State %d: ", i);
+        if(i > 0) path[i]->printWithMp(path[i]->mp_type == 0 ? mprims_hi_res : mprims_lo_res, map);
     }
 
     //output << path[i]->x << " " << path[i]->y << " " << path[i]->t << " " << -1 << " " << -1 << endl;

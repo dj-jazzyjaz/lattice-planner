@@ -2,8 +2,8 @@ Map Num: 7
 ThreeD: 1
 Num states: 118
 Path cost: 138
-Num A* iters: 80164
-Plan Time: 4.71875 s
+Num A* iters: 58217
+Plan Time: 2.09375 s
 
 x y t mp_id mp_type z
 205 205 5 -1 1 5
