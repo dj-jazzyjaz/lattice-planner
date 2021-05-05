@@ -14,7 +14,7 @@ end
 drone_shape = [[0 2 0 0]; [0 .5 1 .5]; [0 .5 0 1]]; % x, y, z
 % highres_drone = stlread('drone1.stl');
 
-tablemap = readtable('../maps/map7.txt');
+tablemap = readtable('../maps/map5.txt');
 envmap = table2array(tablemap);
 
 
