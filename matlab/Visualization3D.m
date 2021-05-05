@@ -2,8 +2,14 @@ close all;
 formatSpec = '%d %d %d %d %d %d';
 sizePlan = [6 Inf];
 file = fopen('plan.txt', 'r');
-plan = fscanf(file,formatSpec,sizePlan);
-plan = plan';
+text = textscan(file,formatSpec, 'headerlines', 8);
+
+cols = size(text, 2);
+rows = size(cell2mat(text(1)), 1);
+plan = zeros(rows, cols);
+for i =1:cols
+    plan(:, i) = (cell2mat(text(i)));
+end
 
 drone_shape = [[0 2 0 0]; [0 .5 1 .5]; [0 .5 0 1]]; % x, y, z
 
@@ -81,7 +87,7 @@ function[] = Visualize(plan, drone_shape, map)
         shape = plot(shp);
         shape.FaceColor = 'r';
         shape.FaceAlpha = .25;
-        text(Xs(1), Ys(1), Zs(1), int2str(i), 'fontsize', 20);
+        text(Xs(1), Ys(1), Zs(1), int2str(i), 'fontsize', 10);
         
         %draw primitive
         if(i ~= 1) % no primitive for last point
