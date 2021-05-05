@@ -1,0 +1,4 @@
+ThreeD: 1
+Start: 148 50 10 2
+Goal: 532 181 0 0
+Map Num: 5
