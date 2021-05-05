@@ -83,6 +83,10 @@ public:
             mp_type, mps[mp_id].startangle_c, mp_end.x, mp_end.y, mp_end.z, mp_end.theta,
             x, y, z, t,
             map->getValue(x, y));
+        for(Vec4 pose : mps[mp_id].intermediate_poses) {
+            printf("Interm pose(%.2f, %.2f, %.2f), Map Height: %d\n",
+                pose.x*40 + x, pose.y*40 + y, pose.z*40 + z, map->getValue(floor(pose.x*40+x), floor(pose.y*40+y)));
+        }
     }
 
     void printShort() {

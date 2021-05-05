@@ -32,7 +32,7 @@ public:
     {}
 
     bool isFree(const Map* m);
-    bool isAbove(const Map* m, float z);
+    bool isAbove(const Map* m, int x, int y, int z);
 };
 
 vector<MP> MPrims_highres();

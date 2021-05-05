@@ -12,9 +12,14 @@ bool MP::isFree(const Map* m) {
 	return true;
 }
 
-bool MP::isAbove(const Map* m, float z) {
+bool MP::isAbove(const Map* m, int x, int y, int z) {
 	for(Vec4 p: intermediate_poses) {
-		if(!m->isAbove(p.x, p.y, p.z + z)) return false;
+		int x_r = (int)floor(p.x*40 + (double)x)-1;
+		int y_r = (int)floor(p.x*40 + (double)y)-1;
+		int z_r = (int)floor(p.z*40 + (double)z)-1;
+		if(!m->isAbove(x_r, y_r, z_r)) {
+			return false;
+		}
 	}
 	return true;
 }
