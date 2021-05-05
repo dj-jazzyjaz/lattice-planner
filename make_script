@@ -1,1 +1,2 @@
 g++ src/planner.cpp src/motionPrimitives.cpp src/astar.cpp -std=c++11 -o lattice-planner
+./lattice-planner < input/in1.txt

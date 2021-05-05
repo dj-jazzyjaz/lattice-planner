@@ -24,7 +24,7 @@ double computeH(int x1, int y1, int th1, int z1, const StatePtr s2, int num_Angl
     // TODO: play around more with this heuristic 
     double angleScale = dist == 0 ? 10 : (10/dist);
     // printf("Dist = %.2f, Angle Scale = %.2f, s = %.2f, h=%.2f\n", dist, angleScale, s, dist+angleScale*s);
-    return dist + + angleScale * s;
+    return dist + angleScale * s;
 }
 
 bool startAngleEqual(StatePtr prevState, int new_mp_type, int new_angle){
@@ -90,7 +90,7 @@ bool astar(
         StatePtr state = pq.top();
         pq.pop();
         // printf("Searching iter %d:", c); state->print();
-        if(c % 1000 == 0) {
+        if(c % 100000 == 0) {
             printf("Searching iter %d:", c); state->print();
         } 
         // Check if goalPose
