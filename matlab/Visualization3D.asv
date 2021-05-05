@@ -2,10 +2,17 @@ close all;
 formatSpec = '%d %d %d %d %d %d';
 sizePlan = [6 Inf];
 file = fopen('plan.txt', 'r');
-plan = fscanf(file,formatSpec,sizePlan);
-plan = plan';
+text = textscan(file,formatSpec, 'headerlines', 8);
+
+cols = size(text, 2);
+rows = size(cell2mat(text(1)), 1);
+plan = zeros(rows, cols);
+for i =1:cols
+    plan(:, i) = (cell2mat(text(i)));
+end
 
 drone_shape = [[0 2 0 0]; [0 .5 1 .5]; [0 .5 0 1]]; % x, y, z
+
 
 tablemap = readtable('../maps/map5.txt');
 envmap = table2array(tablemap);
@@ -20,7 +27,7 @@ function[] = Visualize(plan, drone_shape, map)
     %imagesc(map); axis square; colorbar; colormap(c_map); hold on;
     hold on;
     [X, Y] = meshgrid(1:size(map, 1), 1:size(map, 2));
-    s = surf(X, Y, map);
+    s = surf(X, Y, z_scale * map);
     s.EdgeColor = 'none';
     colorbar;
     drone_scale = 5;
@@ -75,13 +82,13 @@ function[] = Visualize(plan, drone_shape, map)
    
         Xs = drone_shape(1,:)*cos(th)*drone_scale - drone_shape(2,:)*sin(th)*drone_scale + plan(i, 1)*resolution;
         Ys = drone_shape(1,:)*sin(th)*drone_scale + drone_shape(2,:)*cos(th)*drone_scale + plan(i, 2)*resolution;
-        Zs = drone_shape(3,:)*drone_scale + plan(i, 6)*resolution;
+        Zs = drone_shape(3,:)*drone_scale/z_scale + plan(i, 6)*resolution;
         Zs = z_scale * Zs;
         shp = alphaShape(Xs', Ys', Zs');
         shape = plot(shp);
         shape.FaceColor = 'r';
         shape.FaceAlpha = .25;
-        text(Xs(1), Ys(1), Zs(1), int2str(i), 'fontsize', 20);
+        text(Xs(1), Ys(1), Zs(1), int2str(i), 'fontsize', 10);
         
         %draw primitive
         if(i ~= 1) % no primitive for last point
@@ -91,7 +98,7 @@ function[] = Visualize(plan, drone_shape, map)
             elseif (low_res)
                 Inter_pts = Intermediate_Pts_Lowres(prim_num*num_intermediates+1:(prim_num+1)*num_intermediates, :);
             end
-            plot3(Inter_pts(:, 1)*scale+plan(i-1, 1)*resolution, Inter_pts(:, 2)*scale+plan(i-1, 2)*resolution, Inter_pts(:, 4)*scale+plan(i-1, 6)*resolution * z_scale, ':', 'Color', color, 'linewidth', 2);
+            plot3(Inter_pts(:, 1)*scale+plan(i-1, 1)*resolution, Inter_pts(:, 2)*scale+plan(i-1, 2)*resolution, (Inter_pts(:, 4)*scale+plan(i-1, 6)*resolution) * z_scale, ':', 'Color', color, 'linewidth', 2);
         end
     end
 
