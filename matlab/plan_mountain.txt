@@ -3,11 +3,7 @@ ThreeD: 1
 Num states: 44
 Path cost: 55
 Num A* iters: 4222
-<<<<<<< Updated upstream
-Plan Time: 0.171875 s
-=======
 Plan Time: 0.328125 s
->>>>>>> Stashed changes
 
 x y t mp_id mp_type z
 140 586 5 -1 1 40
